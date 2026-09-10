@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "鱼类学笔记/鱼类形态学/外部形态/头部器官.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "头部器官"
             }
           }
         ],
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "鱼类学笔记/鱼类形态学/外部形态/头部器官.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "鱼类学笔记/鱼类形态学/外部形态/头部器官.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -176,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "鱼类学笔记/鱼类形态学/外部形态/头部器官.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -225,8 +225,10 @@
       "copilot:Open Copilot Agent Chat": false
     }
   },
-  "active": "6c16daf32721e1c5",
+  "active": "b24874572980c511",
   "lastOpenFiles": [
+    "分子生物学期刊(学术英文积累)",
+    "README.md",
     "鱼类学笔记/鱼类形态学/外部形态/头部器官.md",
     "生物化学笔记/生物化学笔记/蛋白质/组成蛋白质氨基酸的结构与分类.md",
     "鱼类学笔记/鱼类形态学/外部形态",
@@ -235,7 +237,6 @@
     "新建文件夹",
     "copilot/skills/obsidian-cli/SKILL.md",
     "copilot/copilot-log.md",
-    "README.md",
     "copilot/skills/obsidian-cli/LICENSE",
     "copilot/skills/obsidian-cli",
     "copilot/skills/json-canvas/SKILL.md",
