@@ -1,21 +1,46 @@
+2026-09-10T02:04:21.151Z INFO [settings-**migration**] migrating from v0 to v14
+2026-09-10T02:04:21.152Z INFO [byok-migration] no legacy BYOK providers to migrate
+2026-09-10T02:04:21.230Z ERROR createChainWithNewModel failed: MissingModelKeyError: No chat model enabled. Enable a model under Settings → Basic → Agents → Quick Chat, or add one on the Models (BYOK) tab.
+2026-09-10T02:04:21.230Z INFO configuredModelId: google/gemini-2.5-flash|openrouterai
+2026-09-10T02:04:21.255Z INFO VaultDataManager: Initializing with vault event listeners
+2026-09-10T02:04:21.263Z INFO [Projects] Initializing ProjectFileManager
+2026-09-10T02:04:21.263Z ERROR createChainWithNewModel failed: MissingModelKeyError: No chat model enabled. Enable a model under Settings → Basic → Agents → Quick Chat, or add one on the Models (BYOK) tab.
+2026-09-10T02:04:21.263Z INFO configuredModelId: google/gemini-2.5-flash|openrouterai
+2026-09-10T02:04:21.263Z ERROR createChainWithNewModel failed: MissingModelKeyError: No chat model enabled. Enable a model under Settings → Basic → Agents → Quick Chat, or add one on the Models (BYOK) tab.
+2026-09-10T02:04:21.263Z INFO configuredModelId: google/gemini-2.5-flash|openrouterai
+2026-09-10T02:04:21.263Z INFO No legacy userSystemPrompt to migrate
+2026-09-10T02:04:21.626Z INFO [Skills] seeded builtin skills: copilot-web-search, copilot-web-fetch, copilot-read-pdf, copilot-youtube-transcript, copilot-fetch-x, openartifacts-publish, obsidian-markdown, obsidian-bases, json-canvas, obsidian-cli
+2026-09-10T02:04:21.674Z INFO [skills] Skill set changed for opencode; signature=skills:v1:95f503f6
+2026-09-10T02:04:21.674Z INFO [skills] Skill set changed for claude; signature=skills:v1:95f503f6
+2026-09-10T02:04:21.674Z INFO [skills] Skill set changed for codex; signature=skills:v1:95f503f6
+2026-09-10T02:04:21.674Z INFO [skills] Discovered 10 managed skill(s) under "copilot/skills"
+2026-09-10T02:04:22.755Z INFO [skills] Discovered 10 managed skill(s) under "copilot/skills"
+2026-09-10T02:04:31.805Z WARN [skills] Gave up waiting for vault events on: .claude/skills/copilot-fetch-x, .agents/skills/copilot-fetch-x, .opencode/skills/copilot-fetch-x, .claude/skills/copilot-read-pdf, .agents/skills/copilot-read-pdf, .opencode/skills/copilot-read-pdf, .claude/skills/copilot-web-fetch, .agents/skills/copilot-web-fetch, .opencode/skills/copilot-web-fetch, .claude/skills/copilot-web-search, .agents/skills/copilot-web-search, .opencode/skills/copilot-web-search, .claude/skills/copilot-youtube-transcript, .agents/skills/copilot-youtube-transcript, .opencode/skills/copilot-youtube-transcript, .claude/skills/json-canvas, .agents/skills/json-canvas, .opencode/skills/json-canvas, .claude/skills/obsidian-bases, .agents/skills/obsidian-bases, .opencode/skills/obsidian-bases, .claude/skills/obsidian-cli, .agents/skills/obsidian-cli, .opencode/skills/obsidian-cli, .claude/skills/obsidian-markdown, .agents/skills/obsidian-markdown, .opencode/skills/obsidian-markdown, .claude/skills/openartifacts-publish, .agents/skills/openartifacts-publish, .opencode/skills/openartifacts-publish
+2026-09-10T02:04:32.752Z INFO [skills] Discovered 10 managed skill(s) under "copilot/skills"
+2026-09-10T02:04:41.943Z INFO [skills] Discovered 10 managed skill(s) under "copilot/skills"
+2026-09-10T02:05:06.844Z INFO [skills] Discovered 10 managed skill(s) under "copilot/skills"
+2026-09-10T02:06:22.493Z WARN [AgentMode] claude auth status failed spawn EFTYPE
+2026-09-10T02:06:32.624Z ERROR [AgentMode] opencode install failed unable to verify the first certificate\nError: unable to verify the first certificate\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1697:34)\n    at TLSSocket.emit (node:events:519:28)\n    at TLSSocket._finishInit (node:_tls_wrap:1095:8)\n    at ssl.onhandshakedone (node:_tls_wrap:881:12)
+2026-09-10T02:06:32.626Z ERROR [AgentMode] inline opencode install failed unable to verify the first certificate\nError: unable to verify the first certificate\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1697:34)\n    at TLSSocket.emit (node:events:519:28)\n    at TLSSocket._finishInit (node:_tls_wrap:1095:8)\n    at ssl.onhandshakedone (node:_tls_wrap:881:12)
+2026-09-10T02:07:26.221Z ERROR [AgentMode] opencode install failed unable to verify the first certificate\nError: unable to verify the first certificate\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1697:34)\n    at TLSSocket.emit (node:events:519:28)\n    at TLSSocket._finishInit (node:_tls_wrap:1095:8)\n    at ssl.onhandshakedone (node:_tls_wrap:881:12)
+2026-09-10T02:07:26.222Z ERROR [AgentMode] opencode install failed unable to verify the first certificate\nError: unable to verify the first certificate\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1697:34)\n    at TLSSocket.emit (node:events:519:28)\n    at TLSSocket._finishInit (node:_tls_wrap:1095:8)\n    at ssl.onhandshakedone (node:_tls_wrap:881:12)
+2026-09-10T02:07:49.732Z ERROR [AgentMode] opencode install failed unable to verify the first certificate\nError: unable to verify the first certificate\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1697:34)\n    at TLSSocket.emit (node:events:519:28)\n    at TLSSocket._finishInit (node:_tls_wrap:1095:8)\n    at ssl.onhandshakedone (node:_tls_wrap:881:12)
+2026-09-10T02:07:49.733Z ERROR [AgentMode] opencode install failed unable to verify the first certificate\nError: unable to verify the first certificate\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1697:34)\n    at TLSSocket.emit (node:events:519:28)\n    at TLSSocket._finishInit (node:_tls_wrap:1095:8)\n    at ssl.onhandshakedone (node:_tls_wrap:881:12)
+2026-09-10T02:08:01.821Z INFO [skills] Discovered 10 managed skill(s) under "copilot/skills"
+2026-09-10T02:08:04.599Z INFO [skills] Discovered 10 managed skill(s) under "copilot/skills"
+2026-09-10T02:08:17.081Z ERROR [AgentMode] opencode install failed unable to verify the first certificate\nError: unable to verify the first certificate\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1697:34)\n    at TLSSocket.emit (node:events:519:28)\n    at TLSSocket._finishInit (node:_tls_wrap:1095:8)\n    at ssl.onhandshakedone (node:_tls_wrap:881:12)
+2026-09-10T02:08:17.083Z ERROR [AgentMode] opencode install failed unable to verify the first certificate\nError: unable to verify the first certificate\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1697:34)\n    at TLSSocket.emit (node:events:519:28)\n    at TLSSocket._finishInit (node:_tls_wrap:1095:8)\n    at ssl.onhandshakedone (node:_tls_wrap:881:12)
+2026-09-10T02:26:13.472Z INFO [skills] Discovered 10 managed skill(s) under "copilot/skills"
+2026-09-10T02:26:43.827Z ERROR createChainWithNewModel failed: MissingModelKeyError: No chat model enabled. Enable a model under Settings → Basic → Agents → Quick Chat, or add one on the Models (BYOK) tab.
+2026-09-10T02:26:43.827Z INFO configuredModelId: google/gemini-2.5-flash|openrouterai
+
+## Settings
+```json
 {
   "userId": "ffb8fc83-7b1e-487d-9c63-f17c82cbb909",
   "isPaidUser": false,
   "isPlusUser": false,
-  "entitlementToken": "",
   "entitlementExpiresAt": 0,
-  "plusLicenseKey": "",
-  "openAIApiKey": "",
-  "openAIOrgId": "",
-  "huggingfaceApiKey": "",
-  "cohereApiKey": "",
-  "anthropicApiKey": "",
-  "googleApiKey": "",
-  "openRouterAiApiKey": "",
-  "xaiApiKey": "",
-  "mistralApiKey": "",
-  "deepseekApiKey": "",
-  "siliconflowApiKey": "",
   "defaultChainType": "llm_chain",
   "defaultModelKey": "google/gemini-2.5-flash|openrouterai",
   "contextTurns": 15,
@@ -41,7 +66,6 @@
   "debug": false,
   "maxSourceChunks": 30,
   "enableInlineCitations": true,
-  "groqApiKey": "",
   "activeModels": [
     {
       "name": "copilot-plus-flash",
@@ -52,8 +76,7 @@
       "plusExclusive": true,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "google/gemini-2.5-flash",
@@ -63,8 +86,7 @@
       "core": true,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "gpt-5.5",
@@ -74,8 +96,7 @@
       "core": true,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "gpt-5.4-mini",
@@ -85,8 +106,7 @@
       "core": true,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "google/gemini-3.5-flash",
@@ -96,8 +116,7 @@
       "capabilities": [
         "vision",
         "reasoning"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "claude-sonnet-4-6",
@@ -107,8 +126,7 @@
       "capabilities": [
         "vision",
         "reasoning"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "gemini-3.5-flash",
@@ -118,8 +136,7 @@
       "capabilities": [
         "vision",
         "reasoning"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "gemini-3.1-flash-lite",
@@ -128,8 +145,7 @@
       "isBuiltIn": true,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "gemini-2.5-flash",
@@ -138,8 +154,7 @@
       "isBuiltIn": true,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "google/gemini-3.1-pro-preview",
@@ -149,8 +164,7 @@
       "capabilities": [
         "vision",
         "reasoning"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "google/gemini-2.5-pro",
@@ -160,8 +174,7 @@
       "core": false,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "openai/gpt-5.5",
@@ -171,8 +184,7 @@
       "core": false,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "openai/gpt-5.4-mini",
@@ -182,8 +194,7 @@
       "core": false,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "grok-4.3",
@@ -193,8 +204,7 @@
       "core": false,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "x-ai/grok-4.3",
@@ -204,8 +214,7 @@
       "core": false,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "gpt-4.1",
@@ -215,8 +224,7 @@
       "core": false,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "gpt-4.1-mini",
@@ -226,8 +234,7 @@
       "core": false,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "claude-opus-4-7",
@@ -237,8 +244,7 @@
       "capabilities": [
         "vision",
         "reasoning"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "claude-haiku-4-5",
@@ -248,8 +254,7 @@
       "capabilities": [
         "vision",
         "reasoning"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "gemini-3.1-pro-preview",
@@ -259,8 +264,7 @@
       "capabilities": [
         "vision",
         "reasoning"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "gemini-2.5-pro",
@@ -269,15 +273,13 @@
       "isBuiltIn": true,
       "capabilities": [
         "vision"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "deepseek-chat",
       "provider": "deepseek",
       "enabled": true,
-      "isBuiltIn": true,
-      "apiKey": ""
+      "isBuiltIn": true
     },
     {
       "name": "deepseek-reasoner",
@@ -286,16 +288,14 @@
       "isBuiltIn": true,
       "capabilities": [
         "reasoning"
-      ],
-      "apiKey": ""
+      ]
     },
     {
       "name": "deepseek-ai/DeepSeek-V3",
       "provider": "siliconflow",
       "enabled": true,
       "isBuiltIn": false,
-      "baseUrl": "https://api.siliconflow.com/v1",
-      "apiKey": ""
+      "baseUrl": "https://api.siliconflow.com/v1"
     },
     {
       "name": "deepseek-ai/DeepSeek-R1",
@@ -305,8 +305,7 @@
       "baseUrl": "https://api.siliconflow.com/v1",
       "capabilities": [
         "reasoning"
-      ],
-      "apiKey": ""
+      ]
     }
   ],
   "lexicalSearchRamLimit": 100,
@@ -328,11 +327,6 @@
   "relevantNotesLiveUpdate": true,
   "miyoServerUrl": "",
   "selfHostSearchProvider": "firecrawl",
-  "firecrawlApiKey": "",
-  "perplexityApiKey": "",
-  "parallelApiKey": "",
-  "exaApiKey": "",
-  "supadataApiKey": "",
   "docProcessorBackend": "plus",
   "enableLexicalBoosts": true,
   "suggestedDefaultCommands": false,
@@ -380,3 +374,4 @@
   "_keychainVaultId": "67580ff9",
   "settingsVersion": 14
 }
+```
