@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789093292780-x15fmnqhn",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789093292825-tonr7oa",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789093292775-1kegikq",
+      "timestamp": 1789093292775,
+      "rawDisplayText": "密码子的简并性是什么?",
+      "canonicalText": "密码子的简并性是什么?",
+      "context": {
+        "linkedContent": {
+          "path": "生物化学笔记/生物化学笔记/蛋白质/组成蛋白质氨基酸的结构与分类.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "7a6f645088b5e4958d39ff6f52a567906f655b201ba58f09ade7b2c6100dd741",
+      "providerUserMessageId": "bd4eb7fc-08dd-4d52-aa9b-07091e0a6d94",
+      "providerAssistantMessageId": "d13ee72b-fea1-4c0c-a1a4-4198dbdec4f7"
+    }
+  ]
+}

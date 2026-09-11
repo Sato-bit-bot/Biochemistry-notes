@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "鱼类学笔记/鱼类形态学/外部形态/头部器官.md",
+                "file": "生物化学笔记/生物化学笔记/蛋白质/组成蛋白质氨基酸的结构与分类.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "鱼类学笔记/鱼类形态学/外部形态/头部器官.md",
+                "file": "生物化学笔记/生物化学笔记/蛋白质/组成蛋白质氨基酸的结构与分类.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -179,13 +179,34 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "e29bd82f150ed755",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {
+                "tabWorkspace": {
+                  "version": 1,
+                  "openTabs": [
+                    {
+                      "tabId": "tab-1789092671312-xvx8zu3",
+                      "conversationId": "conv-1789093292780-x15fmnqhn"
+                    }
+                  ],
+                  "activeTabId": "tab-1789092671312-xvx8zu3"
+                }
+              },
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
         ],
         "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 360.699951171875
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -201,8 +222,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "65fbda92ef0d871d",
+  "active": "6c16daf32721e1c5",
   "lastOpenFiles": [
+    "Pasted image 20260911103550.png",
     "copilot/copilot-log.md",
     "生物化学笔记/生物化学笔记/蛋白质/组成蛋白质氨基酸的结构与分类.md",
     "copilot/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md",

@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789093292780-x15fmnqhn",
+  "providerId": "claude",
+  "title": "密码子的简并性是什么",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789093292785,
+  "lastActivityAt": 1789093307402,
+  "sessionId": "b1391e48-f525-40b4-b2b8-b4c4b0323d09",
+  "selectedModel": "opus",
+  "providerState": {
+    "providerSessionId": "b1391e48-f525-40b4-b2b8-b4c4b0323d09"
+  },
+  "linkedContentPath": "生物化学笔记/生物化学笔记/蛋白质/组成蛋白质氨基酸的结构与分类.md",
+  "usage": {
+    "model": "opus",
+    "inputTokens": 399,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 14208,
+    "contextWindow": 1000000,
+    "contextTokens": 14607,
+    "percentage": 1,
+    "contextWindowIsAuthoritative": true
+  }
+}
