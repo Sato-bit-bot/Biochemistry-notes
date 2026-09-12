@@ -1,8 +1,8 @@
 {
   "userName": "Severus",
   "permissionMode": "yolo",
-  "model": "haiku",
-  "thinkingBudget": "off",
+  "model": "opencode:opencode/mimo-v2.5-free",
+  "thinkingBudget": "high",
   "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
@@ -25,7 +25,7 @@
   "locale": "zh-CN",
   "providerConfigs": {
     "claude": {
-      "enabled": true,
+      "enabled": false,
       "safeMode": "acceptEdits",
       "cliPath": "",
       "cliPathsByHost": {},
@@ -73,14 +73,32 @@
     "opencode": {
       "cliPath": "",
       "cliPathsByHost": {},
-      "enabled": false,
+      "enabled": true,
       "environmentHash": "",
       "environmentVariables": "OPENCODE_ENABLE_EXA=1",
       "modelAliases": {},
       "preferredThinkingByModel": {},
       "selectedMode": "",
-      "thinkingOptionsByModel": {},
-      "visibleModels": []
+      "thinkingOptionsByModel": {
+        "deepseek/deepseek-flash": [
+          {
+            "label": "Low",
+            "value": "low"
+          },
+          {
+            "label": "High",
+            "value": "high"
+          },
+          {
+            "label": "Max",
+            "value": "max"
+          }
+        ]
+      },
+      "visibleModels": [
+        "opencode/mimo-v2.5-free",
+        "deepseek/deepseek-flash"
+      ]
     },
     "pi": {
       "cliPath": "",
@@ -95,18 +113,23 @@
       "visibleModels": []
     }
   },
-  "settingsProvider": "claude",
+  "settingsProvider": "opencode",
   "lastSelectedChatModel": null,
   "savedProviderModel": {
-    "claude": "haiku"
+    "claude": "haiku",
+    "opencode": "opencode:opencode/mimo-v2.5-free"
   },
   "savedProviderEffort": {
-    "claude": "high"
+    "claude": "high",
+    "opencode": "high"
   },
   "savedProviderServiceTier": {},
-  "savedProviderThinkingBudget": {},
+  "savedProviderThinkingBudget": {
+    "opencode": "high"
+  },
   "savedProviderPermissionMode": {
-    "claude": "yolo"
+    "claude": "yolo",
+    "opencode": "yolo"
   },
   "pendingProviderSessionInvalidations": {},
   "lastCustomModel": "",

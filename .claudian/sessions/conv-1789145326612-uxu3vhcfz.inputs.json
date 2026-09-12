@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789145326612-uxu3vhcfz",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789145326641-pjxnkre",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789145326602-9mhn8ez",
+      "timestamp": 1789145326602,
+      "rawDisplayText": "@分子生物学期刊(学术英文积累)/揭开鱼类病原菌的基因组秘密： 水产养殖可持续发展的路线图.md \n把英文第三段中的学术名词翻译并解释, 然后写到第三段中文注释下面",
+      "canonicalText": "@分子生物学期刊(学术英文积累)/揭开鱼类病原菌的基因组秘密： 水产养殖可持续发展的路线图.md \n把英文第三段中的学术名词翻译并解释, 然后写到第三段中文注释下面",
+      "context": {
+        "linkedContent": {
+          "path": "分子生物学期刊(学术英文积累)/揭开鱼类病原菌的基因组秘密： 水产养殖可持续发展的路线图.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "ebc3ce2af0a837a1a8688ce4ac6d9357782bdde85d722a504804c85eb271bef2",
+      "providerAssistantMessageId": "msg_0915fed89001leYJCdzmN6aOB8"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789145505771-qovlyio",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789145505767-2ak5ixe",
+      "timestamp": 1789145505767,
+      "rawDisplayText": "将这些名词解释列成表格, 更直观",
+      "canonicalText": "将这些名词解释列成表格, 更直观",
+      "images": [],
+      "contentDigest": "13fadfd49f421f84b6a19365873f2aa30831902b25f659aea05c4d8844a6f308",
+      "providerAssistantMessageId": "msg_091623665001hoybGVR4Fj5IYv"
+    }
+  ]
+}

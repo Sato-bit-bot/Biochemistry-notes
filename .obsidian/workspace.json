@@ -196,7 +196,7 @@
             }
           },
           {
-            "id": "e29bd82f150ed755",
+            "id": "882f5e0781f41249",
             "type": "leaf",
             "state": {
               "type": "claudian-view",
@@ -205,11 +205,11 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789092671312-xvx8zu3",
-                      "conversationId": "conv-1789093292780-x15fmnqhn"
+                      "tabId": "tab-1789144790404-5lvwatd",
+                      "conversationId": "conv-1789145326612-uxu3vhcfz"
                     }
                   ],
-                  "activeTabId": "tab-1789092671312-xvx8zu3"
+                  "activeTabId": "tab-1789144790404-5lvwatd"
                 }
               },
               "icon": "bot",
@@ -236,7 +236,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "4fbe18996394bea4",
+  "active": "6c16daf32721e1c5",
   "lastOpenFiles": [
     "V. anguillarum.md",
     "分子生物学期刊(学术英文积累)/揭开鱼类病原菌的基因组秘密： 水产养殖可持续发展的路线图.md",

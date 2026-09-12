@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789145326612-uxu3vhcfz",
+  "providerId": "opencode",
+  "title": "翻译英文第三段学术名词并解释",
+  "titleGenerationStatus": "success",
+  "createdAt": 1789145326617,
+  "lastActivityAt": 1789145538228,
+  "sessionId": "ses_f6ea0c6adffeaVphed0pqFmhTL",
+  "selectedModel": "opencode:opencode/mimo-v2.5-free",
+  "providerState": {
+    "databasePath": "C:\\Users\\severus\\.local\\share\\opencode\\opencode.db",
+    "nativeConversationContextEstablished": true
+  },
+  "linkedContentPath": "分子生物学期刊(学术英文积累)/揭开鱼类病原菌的基因组秘密： 水产养殖可持续发展的路线图.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 25920,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 0,
+    "model": "opencode/mimo-v2.5-free",
+    "percentage": 13
+  }
+}
