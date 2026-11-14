@@ -1,0 +1,25 @@
+{
+  "id": "conv-1791967091047-504eyn4s1",
+  "providerId": "opencode",
+  "title": "@底栖生物/头足纲贝类的形态和构造与生理特征",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1791967091054,
+  "lastActivityAt": 1791967952987,
+  "sessionId": "ses_ec6700dd1ffecx3Vrz4HTk0XGJ",
+  "selectedModel": "opencode:deepseek/deepseek-flash",
+  "providerState": {
+    "databasePath": "C:\\Users\\severus\\.local\\share\\opencode\\opencode.db",
+    "nativeConversationContextEstablished": true
+  },
+  "linkedContentPath": "底栖生物/头足纲贝类的形态和构造与生理特征.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 46665,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 0,
+    "model": "gpt-5.6-sol",
+    "percentage": 23
+  }
+}

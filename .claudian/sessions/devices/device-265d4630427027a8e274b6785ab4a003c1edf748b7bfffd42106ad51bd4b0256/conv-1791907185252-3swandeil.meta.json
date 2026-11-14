@@ -1,0 +1,24 @@
+{
+  "id": "conv-1791907185252-3swandeil",
+  "providerId": "opencode",
+  "title": "@浮游动物/",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1791907185258,
+  "lastActivityAt": 1791944679580,
+  "sessionId": "ses_eca020bcfffeFiWr1OBFrFFsng",
+  "selectedModel": "opencode:opencode/mimo-v2.6-flash-free",
+  "providerState": {
+    "databasePath": "C:\\Users\\severus\\.local\\share\\opencode\\opencode.db",
+    "nativeConversationContextEstablished": true
+  },
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 80320,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 0,
+    "model": "deepseek-v4-flash",
+    "percentage": 40
+  }
+}

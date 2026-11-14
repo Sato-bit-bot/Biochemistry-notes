@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789542049071-ggrix886l",
+  "providerId": "opencode",
+  "title": "@6",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789542049078,
+  "lastActivityAt": 1789543029228,
+  "sessionId": "ses_f56fb2e0cffezaCBkaVek92zjs",
+  "selectedModel": "opencode:deepseek/deepseek-flash",
+  "providerState": {
+    "databasePath": "C:\\Users\\severus\\.local\\share\\opencode\\opencode.db",
+    "nativeConversationContextEstablished": true
+  },
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 56742,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 0,
+    "model": "deepseek-v4-flash",
+    "percentage": 28
+  }
+}

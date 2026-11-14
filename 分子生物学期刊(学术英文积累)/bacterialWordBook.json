@@ -1,0 +1,497 @@
+[
+  {
+    "word": "taxonomic",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "“分类学的”：与生物分类学（taxonomy）相关的，即涉及对生物进行命名、描述和分类的学科。",
+    "color": "",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Vibrio  Aeromonas",
+    "aliases": [],
+    "phonetic": "/ˈvɪbri.oʊ ˌɛəroʊˈmoʊnəs/",
+    "definition": "**Vibrio Aeromonas**  \n音标：/ˈvɪbri.oʊ ˌɛəroʊˈmoʊnəs/  \n例句：Vibrio Aeromonas is a genus of Gram-negative bacteria commonly found in aquatic environments.",
+    "color": "",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Francisella  Edwardsiella",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "弗朗西斯菌属（Francisella）和爱德华菌属（Edwardsiella）是两种不同的细菌属。弗朗西斯菌属（Francisella）是一种革兰氏阴性球杆菌，其中土拉弗朗西斯菌（Francisella tularensis）可引起兔热病。爱德华菌属（Edwardsiella）也是一种革兰氏阴性杆菌，其中迟缓爱德华菌（Edwardsiella tarda）可引起人类胃肠道感染和鱼类疾病。两者在分类学上并无直接关联。",
+    "color": "",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Francisella",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "弗朗西斯菌属（Francisella）是一类革兰氏阴性、多形性、兼性细胞内寄生的小球杆菌，属于γ-变形菌纲。该属最著名的种是土拉弗朗西斯菌（Francisella tularensis），可引起兔热病（土拉菌病），是一种人畜共患病，可通过接触、蜱虫叮咬、吸入或摄入传播。",
+    "color": "",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "pathogenicity",
+    "aliases": [],
+    "phonetic": "/ˌpæθədʒəˈnɪsəti/",
+    "definition": "**pathogenicity** /ˌpæθədʒəˈnɪsəti/\n\n**中文解释：** 致病性；指病原体（如细菌、病毒、真菌等）引起疾病的能力。\n\n**例句：** The pathogenicity of this virus strain has raised serious concerns among public health officials.",
+    "color": "",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "genus",
+    "aliases": [],
+    "phonetic": "us /ˈdʒiːnəs/",
+    "definition": "**genus** /ˈdʒiːnəs/\n\n**释义：** 属（生物分类学中介于科和种之间的一个等级）。\n\n**例句：** 狮子属于豹属，该属还包括老虎、美洲豹和豹。",
+    "color": "",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Edwardsiella,",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "爱德华氏菌属（Edwardsiella）：革兰氏阴性、兼性厌氧的杆状细菌属，属于肠杆菌科，常见于水生环境，可感染鱼类和人类，代表种为迟缓爱德华氏菌（Edwardsiella tarda）。",
+    "color": "",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Streptococcus,",
+    "aliases": [],
+    "phonetic": "us /ˌstrɛptəˈkɒkəs/",
+    "definition": "链球菌（Streptococcus）：/ˌstrɛptəˈkɒkəs/  \n一种呈球形的革兰氏阳性细菌，常成链状排列，可引起多种感染，如咽喉炎、猩红热和肺炎。  \n例句：Streptococcus is a common cause of bacterial throat infections.",
+    "color": "",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Pseudomonas",
+    "aliases": [],
+    "phonetic": "/ˌsjuːdəˈməʊnəs/",
+    "definition": "**Pseudomonas** /ˌsjuːdəˈməʊnəs/\n\n假单胞菌属，一类广泛存在于土壤、水和植物表面的革兰氏阴性杆菌，部分种类可致病。\n\n例句：Pseudomonas aeruginosa is a common cause of hospital-acquired infections.",
+    "color": "",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Flavobacterium",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "黄杆菌属（Flavobacterium）：革兰氏阴性、好氧或兼性厌氧的杆状细菌属，广泛分布于土壤和水体，部分种可致鱼类疾病。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Tenacibaculum",
+    "aliases": [],
+    "phonetic": "/təˌnæsɪˈbækjʊləm/",
+    "definition": "**Tenacibaculum** /təˌnæsɪˈbækjʊləm/\n\n一种细菌属，属于拟杆菌门（Bacteroidetes），常见于海洋环境，部分种类是鱼类病原体。\n\n例句：*Tenacibaculum* species can cause disease in farmed marine fish.\n（Tenacibaculum 属的某些种类可导致养殖海水鱼类患病。）",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Lactococcus",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "乳球菌（Lactococcus）：革兰氏阳性、兼性厌氧的乳酸菌属，常呈球状或卵圆形，成对或成链排列。广泛用于乳制品发酵，如制作奶酪、酸奶和发酵乳。模式种为乳酸乳球菌（Lactococcus lactis）。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Acinetobacter",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "不动杆菌属（Acinetobacter）：一种革兰氏阴性球杆菌，广泛存在于自然环境中，为条件致病菌，常引起医院内感染。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Nocardia",
+    "aliases": [],
+    "phonetic": "/noʊˈkɑːrdiə/",
+    "definition": "**Nocardia** /noʊˈkɑːrdiə/\n\n诺卡氏菌属，一种革兰氏阳性、部分抗酸的丝状细菌，广泛存在于土壤和腐烂有机物中，可引起人类和动物的诺卡氏菌病。\n\n例句：Nocardia can cause serious infections in immunocompromised patients.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Mycobacteria",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "分枝杆菌（Mycobacteria）：一类细长、杆状的细菌，其细胞壁含有高浓度的分枝菌酸，因此具有抗酸性（耐酸染色）。例如：结核分枝杆菌（Mycobacterium tuberculosis）是一种分枝杆菌，可引起结核病。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Shewanella",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "希瓦氏菌属（Shewanella）：一种革兰氏阴性、兼性厌氧的细菌属，广泛分布于水生环境中，以能还原多种金属和化合物（如铁、锰、硝酸盐）而著称，在生物修复和微生物燃料电池研究中具有重要应用。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "aerobic",
+    "aliases": [],
+    "phonetic": "/eəˈroʊbɪk/",
+    "definition": "**aerobic** /eəˈroʊbɪk/\n\n需要氧气参与的；有氧的。\n\n例句：Aerobic exercise helps improve heart and lung health.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "non-fermentative",
+    "aliases": [],
+    "phonetic": "/ˌnɒn fəˈmentətɪv/",
+    "definition": "**non-fermentative** /ˌnɒn fəˈmentətɪv/\n\n不发酵的；非发酵性的。指不具备发酵能力，或不以发酵方式进行的（常用于微生物学中描述某些细菌，如非发酵菌）。\n\n例句：Non-fermentative bacteria do not produce acid from glucose.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "non-motile",
+    "aliases": [],
+    "phonetic": "/ˌnɒnˈməʊtaɪl/",
+    "definition": "**non-motile** /ˌnɒnˈməʊtaɪl/\n\n指生物体或细胞缺乏自主运动能力的，不能自行移动的。\n\n例句：Unlike most bacteria, these non-motile strains cannot swim through liquid.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "substantial",
+    "aliases": [],
+    "phonetic": "/səbˈstænʃl/",
+    "definition": "**substantial** /səbˈstænʃl/\n\n1. 大量的；可观的：The company made a substantial profit this year.\n2. 实质的；重大的：There has been substantial progress in the peace talks.\n3. 坚固的；结实的：The house is built of substantial stone walls.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "repercussions",
+    "aliases": [],
+    "phonetic": "us /ˌriːpəˈkʌʃənz/",
+    "definition": "**repercussions** /ˌriːpəˈkʌʃənz/\n\n（通常指不良的）影响、后果、反响\n\n例句：The decision had serious repercussions for the entire community.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "culturing",
+    "aliases": [],
+    "phonetic": "/动名词形式。\n\n- **音标**：/",
+    "definition": "“culturing” 是动词 **culture** 的现在分词/动名词形式。\n\n- **音标**：/ˈkʌltʃərɪŋ/\n- **中文释义**：培养；培育；（在培养基上）培养（细胞、细菌等）\n- **例句**：The scientists are culturing bacteria in the laboratory.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "fastidious",
+    "aliases": [],
+    "phonetic": "us /fæˈstɪdiəs/",
+    "definition": "**fastidious** /fæˈstɪdiəs/\n\n中文释义：过分讲究的；一丝不苟的；挑剔的\n\n例句：She is very fastidious about her food and will not eat anything that is not perfectly fresh.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "phenotypic",
+    "aliases": [],
+    "phonetic": "/ˌfiːnəˈtɪpɪk/",
+    "definition": "**phenotypic** /ˌfiːnəˈtɪpɪk/\n\n形容词，意为“表型的”，指与生物体可观察到的性状特征（如形态、生理、行为等）相关的，这些特征由基因与环境共同作用形成。\n\n例句：The phenotypic differences between the two plant varieties were evident in their leaf shape and color.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "diagnoses",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "“diagnoses” 是 “diagnosis” 的复数形式，也可作动词 “diagnose” 的第三人称单数。  \n含义：诊断；判断病因或问题所在。  \n例句：The doctor diagnoses the illness quickly.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "specimen",
+    "aliases": [],
+    "phonetic": "/ˈspesɪmən/",
+    "definition": "**specimen** /ˈspesɪmən/\n\n**释义：** 样品；标本；试样\n\n**例句：** The doctor collected a blood specimen for testing. （医生采集了血液样本用于检测。）",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "inaccurate diagnosis.",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "“不准确诊断”指医生对患者病情的判断与实际情况不符，包括误诊、漏诊或延迟诊断。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "characterization",
+    "aliases": [],
+    "phonetic": "/ˌkærəktəraɪˈzeɪʃn/",
+    "definition": "**characterization** /ˌkærəktəraɪˈzeɪʃn/\n\n中文释义：人物塑造；性格刻画——指作者通过描写、对话、行为等方式展现人物性格特征的写作手法。\n\n例句：The author's skillful characterization makes the protagonist feel vividly real.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "drawbacks",
+    "aliases": [],
+    "phonetic": "/ˈdrɔːbæks/",
+    "definition": "“drawbacks” 意思是“缺点、不利条件、障碍”。\n\n- 音标：/ˈdrɔːbæks/\n- 例句：One of the drawbacks of this plan is its high cost.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "genomics",
+    "aliases": [],
+    "phonetic": "/dʒəˈnoʊmɪks/",
+    "definition": "**genomics** /dʒəˈnoʊmɪks/\n\n基因组学，研究生物体完整基因组（全部DNA序列）的结构、功能、进化及相互作用的学科。\n\n例句：Genomics has revolutionized our understanding of inherited diseases.\n基因组学彻底改变了我们对遗传性疾病的理解。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "genotypic",
+    "aliases": [],
+    "phonetic": "/ˌdʒenəˈtɪpɪk/",
+    "definition": "**genotypic** /ˌdʒenəˈtɪpɪk/\n\n形容词，意为“基因型的”，指与生物体基因组成（genotype）相关的。\n\n例句：The genotypic differences among these strains explain their varying resistance to the drug.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "facilitating",
+    "aliases": [],
+    "phonetic": "/fəˈsɪlɪteɪtɪŋ/",
+    "definition": "**facilitating** /fəˈsɪlɪteɪtɪŋ/\n\n促进的；使便利的\n\n例句：The new software is facilitating communication between teams.\n（这款新软件正在促进团队之间的沟通。）",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "entails",
+    "aliases": [],
+    "phonetic": "/ɪnˈteɪlz/",
+    "definition": "**entails** /ɪnˈteɪlz/\n\n**释义：** 必然涉及，需要，意味着（作为必然结果）\n\n**例句：** This job entails a lot of responsibility.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "entire genome",
+    "aliases": [],
+    "phonetic": "/quán jī yīn zǔ/",
+    "definition": "**全基因组** /quán jī yīn zǔ/\n\n指一个生物体细胞或病毒中所包含的**全部遗传物质（DNA或RNA）的总和**，包括所有基因以及非编码序列。\n\n例句：科学家首次完成了对人类**全基因组**的测序。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "derived",
+    "aliases": [],
+    "phonetic": "/dɪˈraɪvd/",
+    "definition": "**derived** /dɪˈraɪvd/\n\n**中文解释：** “derived” 是动词 “derive” 的过去式和过去分词，意思是“源自、得自、派生而来”，表示某事物从另一事物中产生、获得或发展而来。\n\n**例句：** This word is derived from Latin.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Global landscape and temporal trends",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "“全球格局与时间趋势”指对某一现象在世界范围内的整体分布状况及其随时间变化的方向进行描述与分析。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "The diversity and evolutionary history of bacterial fish pathogens can be better comprehended with the use of this data.",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "细菌鱼类病原体的多样性和进化历史，可以通过使用这些数据得到更好的理解。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Comparative",
+    "aliases": [],
+    "phonetic": "/kəmˈpærətɪv/",
+    "definition": "**Comparative**\n\n- **音标**：/kəmˈpærətɪv/\n- **例句**：This course offers a comparative study of Eastern and Western literature.\n\n**释义**：形容词，意为“比较的、相对的”，指通过对比两个或多个事物来分析其异同。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "pathogenomics",
+    "aliases": [],
+    "phonetic": "/ˌpæθəˈnoʊmɪks/",
+    "definition": "**pathogenomics** /ˌpæθəˈnoʊmɪks/\n\n病原基因组学：研究病原体基因组及其与宿主相互作用、致病机制和进化关系的学科。\n\n例句：Pathogenomics has accelerated our understanding of how bacteria develop antibiotic resistance.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "documented",
+    "aliases": [],
+    "phonetic": "/ˈdɒkjumentɪd/",
+    "definition": "**documented** /ˈdɒkjumentɪd/\n\n有文件记录的；有证据支持的。\n\n例句：The incident is well documented in official reports.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "epidemiological",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "流行病学的（epidemiological）：形容词，指与流行病学相关的，即研究疾病在人群中的分布、成因及控制方法的学科。\n\n例句：Epidemiological studies are essential for understanding how infectious diseases spread through populations.\n（流行病学研究对于理解传染病如何在人群中传播至关重要。）",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Population‑level trends and biogeography",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "“种群水平趋势与生物地理学”指在种群尺度上研究物种数量、分布范围及其随时间的变化，并结合地理因素解释这些分布格局。简言之，它关注“种群在哪里、数量如何变化、为什么这样分布”。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "immunological",
+    "aliases": [],
+    "phonetic": "/ˌɪmjʊnəˈlɒdʒɪkl/",
+    "definition": "**immunological** /ˌɪmjʊnəˈlɒdʒɪkl/\n\n免疫学的；与免疫系统相关的。\n\n例句：The vaccine triggers a strong immunological response in the body.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "maleylpyruvate",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "马来酰丙酮酸（maleylpyruvate）：一种有机化合物，是芳香族化合物降解途径中的代谢中间体。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Spermidine N (1)-acetyltransferase",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "亚精胺N(1)-乙酰转移酶（Spermidine N(1)-acetyltransferase）是一种催化亚精胺N(1)位乙酰化的酶，参与多胺代谢与分解。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Multi Locus Sequence Typing",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "多位点序列分型（Multi Locus Sequence Typing，MLST）是一种基于DNA序列分析的微生物分子分型方法。它通过测定多个管家基因（通常为6至7个）内部片段的核苷酸序列，对每个基因分配等位基因编号，再组合成序列型（Sequence Type，ST），从而实现对细菌等微生物菌株的高分辨率分型、克隆群划分及流行病学溯源。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "recreate pathogen evolution",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "“重现病原体进化”指通过实验或计算手段，重建病原体（如病毒、细菌）在自然条件下的演化过程。常见方法包括：从历史样本中提取基因组序列、构建系统发育树、模拟突变与选择压力，或在受控实验中让病原体连续传代以观察适应性变化。其目的通常是理解致病性、传播力或免疫逃逸等性状如何演化，并预测未来变异趋势。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Phylogeographic",
+    "aliases": [],
+    "phonetic": "/ˌfaɪloʊdʒiəˈɡræfɪk/",
+    "definition": "“Phylogeographic” 指**系统地理学的**，即与“系统地理学”（phylogeography）相关的。\n\n- **音标**：/ˌfaɪloʊdʒiəˈɡræfɪk/\n- **例句**：Researchers used phylogeographic methods to trace how ancient climate changes shaped the migration of these bird populations.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "trout",
+    "aliases": [],
+    "phonetic": "/traʊt/",
+    "definition": "**trout** /traʊt/\n\n**中文释义：** 鳟鱼（一种淡水鱼，属鲑科，常栖息于清澈冷水中，是常见的食用鱼和游钓鱼）\n\n**例句：** We caught a large trout in the river yesterday.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "biofilm",
+    "aliases": [],
+    "phonetic": "",
+    "definition": "生物膜（biofilm）：附着在物体表面的微生物群落，由微生物分泌的胞外聚合物包裹，常见于水管、牙齿表面等。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "coastal pond",
+    "aliases": [],
+    "phonetic": "/ˈkoʊstl pɑːnd/",
+    "definition": "**coastal pond** /ˈkoʊstl pɑːnd/\n\n海滨池塘；沿海池塘——指位于海岸附近或沿海地区的静水小水体，通常为浅水、水流缓慢或封闭的水塘。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "genome",
+    "aliases": [],
+    "phonetic": "/ˈdʒiːnoʊm/",
+    "definition": "**genome** /ˈdʒiːnoʊm/  \n基因组：一个生物体所包含的全部遗传物质（DNA或RNA）的总和，包括所有基因和非编码序列。  \n例句：The human genome contains approximately 20,000 protein-coding genes.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "genera",
+    "aliases": [],
+    "phonetic": "/ˈdʒɛnərə/",
+    "definition": "**genera** /ˈdʒɛnərə/  \n这是 **genus** 的复数形式，意为“属”（生物分类学中位于科和种之间的层级）。  \n例句：The biologist compared several **genera** within the same family.",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "Pseudomonadota",
+    "aliases": [],
+    "phonetic": "/ˌsjuːdəʊməˈnædətə/",
+    "definition": "**Pseudomonadota**（假单胞菌门），原称 **Proteobacteria**（变形菌门），是细菌中最大的一个门。\n\n- 音标：/ˌsjuːdəʊməˈnædətə/\n- 例句：Pseudomonadota includes many medically and environmentally important bacteria, such as *Escherichia coli* and *Pseudomonas aeruginosa*.\n\n该门包含大量革兰氏阴性菌，涵盖大肠杆菌、沙门氏菌、根瘤菌等，代谢多样，在医学、工业和生态中意义重大。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  },
+  {
+    "word": "phylum",
+    "aliases": [],
+    "phonetic": "/ˈfaɪləm/",
+    "definition": "**phylum** /ˈfaɪləm/  \n例句：Arthropods belong to the phylum Arthropoda, the largest phylum in the animal kingdom.  \n\n“phylum”是生物分类学中的一个层级，位于“界”（kingdom）之下、“纲”（class）之上，中文通常译为“门”。它用于把具有共同基本体制结构的一群生物归为一类，例如节肢动物门、脊索动物门。",
+    "color": "yellow",
+    "lang": "",
+    "sourceFile": "分子生物学期刊(学术英文积累)/bacterialWordBook.json"
+  }
+]

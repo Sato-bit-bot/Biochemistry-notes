@@ -1,0 +1,984 @@
+--- Page 1 ---
+Molecular Biology Reports (2024) 51:364
+https://doi.org/10.1007/s11033-024-09331-w
+REVIEW
+Unravelling the genomic secrets of bacterial fish pathogens:
+a roadmap to aquaculture sustainability
+Kaushika Olymon1 · Mohit Yadav1 · Valentina Teronpi2 · Aditya Kumar1
+Received: 24 October 2023 / Accepted: 7 February 2024 / Published online: 26 February 2024
+© The Author(s), under exclusive licence to Springer Nature B.V. 2024
+Abstract
+In the field of aquaculture, bacterial pathogens pose significant challenges to fish health and production. Advancements in
+genomic technologies have revolutionized our understanding of bacterial fish pathogens and their interactions with their host
+species. This review explores the application of genomic approaches in the identification, classification, and characterization
+of bacterial fish pathogens. Through an extensive analysis of the literature, we have compiled valuable data on 79 bacterial
+fish pathogens spanning 13 different phyla, encompassing their whole genome sequences. By leveraging high-throughput
+sequencing techniques, researchers have gained valuable insights into the genomic makeup of these pathogens, enabling a
+deeper understanding of their virulence factors and mechanisms of host interaction. Furthermore, genomic approaches have
+facilitated the discovery of potential vaccine and drug targets, opening up new avenues for the development of effective
+interventions against fish pathogens. Additionally, the utilization of genomics in fish disease resistance and control in
+aquaculture has shown promising results, enabling the identification of genetic markers associated with disease resistance
+traits. This review highlights the significant contributions of genomics to the field of fish pathogen research and underscores
+its potential for improving disease management strategies and enhancing the sustainability of aquaculture practices.
+*
+Valentina Teronpi
+teronpivalentina@gmail.com
+*
+Aditya Kumar
+aditya@tezu.ernet.in
+1 Department of Molecular Biology and Biotechnology,
+Tezpur University, Tezpur, Assam 784028, India
+2 Department, of Zoology, Pandit Deendayal Upadhyaya
+Adarsha Mahavidyalaya, Behali, Biswanath, Assam 784184,
+India
+Vol.:(0123456789)
+
+--- Page 2 ---
+364 Page 2 of 19 Molecular Biology Reports (2024) 51:364
+Graphical abstract
+Keywords Genomics · Whole genome sequencing · Bacterial fish pathogens · Fish disease · Vaccine
+Introduction Overview of bacterial fish pathogens
+The culture of fish has become a vital component of Extensive research has revealed a broad spectrum of
+global aquaculture, providing a significant source of pathogens responsible for fish diseases worldwide. These
+protein for human consumption. However, the sustainable include viral, bacterial, fungal, and parasitic agents.
+production of healthy fish populations faces numerous This review focuses on the fish bacterial pathogens that
+challenges, with pathogens representing a major concern. have garnered significant scientific attention due to their
+Pathogens, including bacteria, viruses, fungi, and prevalence and impact on fish health.
+parasites, can cause devastating diseases in fish, leading Bacterial infections pose significant challenges to the
+to significant economic losses and environmental impacts. aquaculture industry, affecting fish health, production, and
+Understanding the impact of pathogens on fish culture is profitability. They are a diverse group of microorganisms
+essential for implementing effective disease management that cause various diseases in fish, posing significant
+strategies, promoting the health and welfare of farmed fish, challenges to the aquaculture industry. These pathogens can
+and ensuring the sustainability of aquaculture operations. lead to severe economic losses, affecting fish health, growth,
+Disease prevention through better fish health management and overall production [2]. Understanding the biology,
+is essential for increased yields and long-term success in pathogenicity, and management strategies associated
+aquaculture [1]. with bacterial fish pathogens is crucial for maintaining
+sustainable aquaculture practices.
+In the course of this review, we have undertaken an
+exhaustive examination of the scientific literature about
+bacterial fish pathogens and their impact on aquaculture.
+
+--- Page 3 ---
+Molecular Biology Reports (2024) 51:364 Page 3 of 19 364
+Fig. 1 Hierarchical Classification of 79 bacterial fish pathogens (Phy- Aeromonadaceae, Hafniaceae, Yersiniaceae, Moritellaceae, She-
+lum to Genus): Phylum (innermost Ring)—Actinomycetota (grey), wanellaceae, Streptococcaceae, Enterococcaceae, Mycobacteriaceae,
+Bacillota (orange), Bacteroidota (yellow) and Pseudomonadota Nocardiaceae and Flavobacteriaceae. Genus (ring outside Fam-
+(blue). Class (ring outside Phylum)- Actinomycetes, Bacilli, Fla- ily)- Vibrio, Photobacterium, Pseudomonas, Acinetobacter, Franci-
+vobacteriia, and Gammaproteobacteria. Order (ring outside Class)- sella, Piscirickettsia, Aeromonas, Edwardsiella, Yersinia, Moritella,
+Vibrionales, Pseudomonadales, Thiotrichales, Aeromonadales, Alte- Shewanella, Streptococcus, Enterococcus, Mycobacterium, Nocardia,
+romonadales, Lactobacillales, Mycobacteriales, Micrococcales and Renibacterium, Flavobacterium and Tenacibaculum. All the 79 Spe-
+Flavobacteriales. Family (ring outside Order)—Vibrionaceae, Pseu- cies (outermost ring)
+domonadaceae, Moraxellaceae, Francisellaceae, Piscirickettsiaceae,
+
+--- Page 4 ---
+364 Page 4 of 19 Molecular Biology Reports (2024) 51:364
+This exploration has yielded a curated dataset comprising non-motile with no spore formation. Several species of
+whole genome sequences (WGS) data from a cohort of 79 the genus Vibrio such as V. harveyi, V. anguillarum, V.
+important bacterial fish pathogens, belonging to 4 different vulnificus, V. alginolyticus, V. parahaemolyticus, V. euro-
+bacterial phyla and 13 genera as shown in (Fig. 1). paeus, V. campbellii, V. owensii, V. ordalii, V. tubiashii
+and V. splendidus have been associated with Vibriosis in
+The important genus of bacterial fish pathogens
+aquaculture. A study, reported a non-O1, non-O139 sero-
+type (EMM1) of V. cholerae exhibiting high mortality in
+Bacterial fish pathogens belong to different taxonomic the freshwater species Labeo rohita, suggesting that strains
+groups, including various genera and species. The major of V. cholerae, which do not fit the conventional classi-
+bacterial genera associated with fish diseases include Vibrio, fication of human pathogens, should also be acknowl-
+Aeromonas, Francisella, Edwardsiella, Streptococcus, edged as significant bacterial fish pathogens[3]. Another
+Pseudomonas, Flavobacterium, Tenacibaculum, study reported, the draft genome sequence of V. chagasii
+Lactococcus, Acinetobacter, Nocardia, Mycobacteria strain 18LP [16] and V. jasicida 20LP [17] that has been
+and Shewanella among others, (Table 1). Each genus recently isolated from gilthead seabream larvae (Sparus
+comprises multiple species that exhibit varying degrees aurata), highlighting various characteristics associated
+of pathogenicity and host specificity. Understanding the with opportunistic behavior, such as invasion of host cells,
+taxonomy and classification of these bacterial fish pathogens genes responsible for toxin biosynthesis and tolerance, and
+is important for accurate diagnosis and management resistance to heavy metals[18]. Vibrio bacteria exhibits
+strategies. rod-shaped, Gram-negative morphology with polar flagella
+Streptococcosis, a systemic infection caused by dif- that can thrive in marine and estuarine environments. They
+ferent species of Streptococcus including S. agalactiae, prefer warmer water temperatures, which enable their sur-
+S. dysgalactiae, S. iniae, S. parauberis, S. suis [7], and vival, reproduction, and rapid transmission among fish.
+S. phocae has been reported in various fishes worldwide. Consequently, vibriosis poses a significant threat to tropi-
+These bacteria, which are Gram-positive and facultatively cal aquaculture, especially in the summer [3].
+anaerobic, exhibit different levels of hemolysis and are
+Table 1 Genus of Bacterial Fish pathogen, associated diseases, Gram stain properties and their respective hosts: a comprehensive overview
+Genus Disease Gram stain Host References
+Vibrio Vibriosis Gram-negative Salmon, trout, tilapia, catfish, seabream, bass, halibut, wrasses, mullet, [3]
+goby, flounder, European eels
+Aeromonas Aeromoniasis Gram-negative Tilapia, catfish, rainbow trout, carp, and salmon [4]
+Francisella Francisellosis Gram-negative Atlantic cod, tilapia, Atlantic salmon, three-line grunt, ornamental [5]
+cichlid species, hybrid striped bass
+Edwardsiella Edwardsiellosis Gram-negative Japanese eel, yellowtail, red sea bream, turbot and channel catfish [6]
+Streptococcus Streptococcosis Gram-positive Salmon, golden shiner, mullet, pinfish, sea trout, eel, tilapia, striped [7]
+bass, sturgeon, snakeskin gourami
+Pseudomonas Pseudomonasis Gram-negative European and Japanese eel, tilapia, ayu, black sea bream, sea trout, [8]
+Atlantic salmon, rainbow trout, baltic herring, whitefish, orange-
+spotted grouper, striped jack
+Flavobacterium Flavobacteriosis Gram-negative Carp, tilapia, catfish, and various freshwater fish [9]
+Tenacibaculum Tenacibaculosis Gram-negative Farmed red and blackhead seabream, Atlantic halibut, European and [10]
+Asian sea bass, Senegalese sole, Atlantic salmon, rainbow trout,
+corkwing wrasse
+Lactococcus Lactococcosis Gram-positive Rainbow trout, yellowtail, Nile tilapia, cobia [11]
+Acinetobacter Acinetobacter infection Gram-negative Channel catfish, common carp, rainbow trout, righteye flounder, [12]
+zebrafish, blunt snout bream, south Asian carp
+Nocardia Nocardiosis Gram-positive Thunder fish, trout, pompano, Largemouth Bass, tiger perch, yellow [13]
+croaker, chinook salmon
+Mycobacteria Mycobacteriosis Gram-positive Atlantic mackerel, guppies, yellowtail, koi carp, Sakai, Japanese [14]
+pufferfish, gilthead sea bream, Atlantic salmon, European seabass
+red drum, European seabass, thread-sail filefish, salmonid and
+syngnathids fish
+Shewanella Shewanellosis Gram-negative Zebrafish, rabbitfish, koi, rainbow trout, wild eel, and other freshwater- [15]
+farmed fish
+
+--- Page 5 ---
+Molecular Biology Reports (2024) 51:364 Page 5 of 19 364
+Important Aeromonas spp. including A. salmonicida, A. has been associated with mortality of numerous marine
+hydrophila, A. dhakensis, A. schubertii, A. jandaei, A. vero- and anadromous fish species, both in their natural habitats
+nii, and A. sobria are classified as infectious and opportunis- and in captivity [10]. Fish Lactococcosis caused by Gram-
+tic organisms; they are widespread in freshwater habitats and positive Lactococcus garvieae [21] and the more recently
+a wide array of aquaculture settings. Aeromonas can cause identified L. petauri [22] is an emerging bacterial infection
+both chronic and acute diseases in aquatic animals, with a characterized by hemorrhagic septicemia. Isolation of L.
+death rate of around 30 percent. Acute disorders include piscium from diseased rainbow, trout was the first and sole
+hemorrhagic septicemia, skin ulcers, and enteritis [4]. report of it as a fish pathogen [23].
+Francisellosis infection in fish is caused by Francisella These ovoid cocci bacteria are facultatively anaerobic,
+spp., including F. noatunensis, F. orientalis, and F. Gram-positive, non-motile, and non-spore-forming in
+philomiragia, which are non-motile, Gram-negative, nature. Rainbow trout (Oncorhynchus mykiss), Nile
+pleomorphic spherical bacteria that adhere to an aerobic, tilapia (Oreochromis niloticus), amberjack (Seriola
+facultative, and a sedentary lifestyle. Among these, the dumerili), yellowtail (Seriola quinqueradiata), and
+pathogenic F. philomiragia can infect both fish and humans, cobia (Rachycentron canadum) are some of the notable
+resulting in fatal systemic infections, skin ulcers, and gill aquaculture species susceptible to lactococcosis [24].
+lesions [5]. Important fish pathogenic Bacteria from the genus
+While most Pseudomonas species are harmless, those Acinetobacter such as A. baumannii, A. johnsonii, A. pittii,
+that are pathogenic to fish include P. anguilliseptica, A. lwoffii, and A. junii are Gram-negative, strictly aerobic,
+P. fluorescens, P. aeruginosa, P. alcaligenes, and P. non-fermentative, and non-motile rods. Symptoms such
+plecoglossicida. They are aerobic, motile Gram-negative as exophthalmia, dark color of the body, and occasional
+rods. The red spot illness known as “Sekiten byo” is caused ulcers on the external part of the body of the infected fish
+by the pathogenic P. anguilliseptica and is highly dangerous are commonly observed. They are ubiquitously distributed
+to Japanese and European eels [8]. Several species within in natural environments and frequently encountered in
+the Edwardsiella genus, including E. tarda, E. ictaluri, E. both marine and freshwater fish populations such as
+anguillarum, and E. piscicida are recognised to be harmful diseased common carp (Cyprinus carpio), channel catfish
+to fish. This genus contains rod-shaped, Gram-negative (Ictalurus punctatus), righteye flounder (Poecilopsetta
+bacteria. It has been found that widespread infections of E. plinthus), rainbow trout (Oncorhynchus mykiss), zebrafish
+tarda have devastating effects on both fresh and saltwater (Barchydanio rerio), blunt snout bream (Megalobrama
+fish populations. E. ictaluri, another important species, amblycephala), south Asian carp (Labeo catla) [12].
+causes intestinal septicemia in a wide variety of fish, Three important fish pathogens, of the genus Nocardia
+including zebrafish and wild ayu in Japan, in addition to the namely N. seriolae, N. asteroids, and N. salmonicida are
+freshwater and channel catfish species [6] responsible for fish nocardiosis which is a granulomatous,
+Members of the genus Flavobacterium such as F. chronic bacterial disease. Bacteria in this genus are non-
+columnare, F. psychrophilum, F. collinsii, F. tructae, F. motile, Gram-positive, and aerobic. Common clinical
+branchiophilum, F. hydatis, F. succinicans, F. flevense, F. indicators of infection in fish include skin ulcers along with
+chilense and F. aquatile are Gram-negative aerobic rods, that several white nodule-like structures on gills, as well as in
+demonstrates a widespread distribution in different habitats the kidney, liver, spleen, head, and several other parts of
+including diseased fish [9]. Of these, F. columnare which the body. Nocardiosis infection is reported both in marine
+causes columnaris disease, is one of the first documented as well as freshwater fish species which includes northern
+fish diseases known worldwide. Discoloration, gill snakehead (Channa argus) in Korea, yellow tail (Seriola
+necrosis, and fin and skin erosion were the most noticeable quinqueradiata) in Japan, pompano (Trachinotus ovatus),
+external symptoms of disease in fish. Recently, the strain largemouth bass (Micropterus salmoides), tiger perch
+of F. columnare affecting tilapia was reclassified as F. (Terapon jarbua) and large yellow croaker (Larimichthys
+oreochromis [19]. crocea) in China and chinook salmon (Oncorhynchus
+Fish tenacibaculosis is caused by several different tshawytscha) in Europe and USA [13].
+members of the Tenacibaculum genus, including T. Shewanella spp. is recognized as an opportunistic
+maritimum, T. piscium, T. dicentrarchi, T. gallaicum, T. pathogen affecting both humans and fish, exhibiting a
+discolor, T. finnmarkense, T. soleae and very recently broad spectrum of clinical manifestations. Among the
+isolated T. ovolyticum [20]. These are Gram-negative, noteworthy members of the genus reported in fish include
+marine, filamentous bacteria that cause fish diseases S. putrefaciens, S. xiamenensis S. oncorhynchi, S. baltica,
+characterized by symptoms such as necrosis, erosion S. morhuae, and S. algae. Shewanella spp. are saprophytic,
+of the mouth, superficial skin lesions, and a lack of rod-shaped, Gram-negative bacteria causing gill and skin
+coloration in internal organs. Among these T. maritimum necrosis, along with ulcerative lesions in the infected fish
+
+--- Page 6 ---
+364 Page 6 of 19 Molecular Biology Reports (2024) 51:364
+[15]. The genus Mycobacteria, causing mycobacteriosis septicemic condition observed in various warm water
+in fish and other animals are Gram-positive, aerobic, and marine fish species globally. It has been isolated from
+non-motile bacilli. Over fifteen mycobacterial species have economically important fish species, such as white perch
+been obtained from ornamental, cultivated, and wild fish (Morone americanus), striped bass (Morone saxatilis),
+species. Researchers have isolated more than fifteen different sea bream (Sparus aurata), sole (Solea senegalensis and
+mycobacterial species from cultured, ornamental, and Solea solea), cobia (Rachycentron canadum) and yellowtail
+wild fish species. Among them, Mycobacterium chelonae, (Seriola quinqueradiata) primarily produced in China and
+M. marinum, and M. fortuitum are the prominent ones Japan, respectively and European sea bass (Dicentrarchus
+reported in several diseased fish species such as guppies labrax) cultured in Mediterranean countries [29]. Salmonids
+(Poecilia reticulata), yellowtail (Seriola quinqueradiata), (trout and salmon) and other cold-water fish are susceptible
+koi carp (Cyprinus rubrofuscus), Japanese pufferfish to a bacterial infection called enteric redmouth disease
+(Takifugu rubripes), gilthead sea bream (Sparus aurata), (ERM), also known as yersiniosis [30]. Additionally, it
+Atlantic salmon (Salmo salar), red drum (Sciaenops has been found in other farmed fish hosts such as channel
+ocellatus) and European seabass (Dicentrarchus labrax). catfish (Ictalurus punctatus), Atlantic cod (Gadus morhua
+Recently, several novel mycobacterial species such as M. L.) as well as wild fish species [31]. The Gram-negative
+stephanolepidis, M. salmoniphilum, and M. sygnathidarum bacterium, Moritella viscosa, causes winter ulcer disease,
+have been isolated from diseased thread-sail filefish, which is characterised by massive, chronic ulcers in the skin
+salmonid and sygnathid fish respectively [14]. of different number of fish species. It is linked to cold marine
+water conditions (i.e., below 10 °C) and results in significant,
+Other important bacterial fish pathogens persistent ulcers in rainbow trout (Oncorhynchus mykiss),
+halibut (Hippoglossus hippoglossus), Atlantic salmon
+In recent times, certain bacteria with opportunistic (Salmo salar), lumpfish (Cyclopterus lumpus), rainbow
+tendencies have been recognized as the primary factors trout (Oncorhynchus mykiss), Halibut (Hippoglossus
+behind significant disease outbreaks in aquaculture settings hippoglossus), Atlantic cod (Gadus morhua), turbot
+[25]. Some of the most notable fish pathogens among them (Scophthalmus maximus) and Atlantic cod (Gadus morhua)
+include Enterococcus faecalis, Piscirickettsia salmonis, [32].
+Renibacterium salmoninarum, Photobacterium damselae
+subsp. Piscicida, Yersinia ruckeri, and Moritella viscosa,
+which severely impact the aquaculture industry worldwide.
+First observed in the yellow tail (Seriola quinqueradiata) The inadequacies of conventional methods
+in Japan, Enterococcus spp. has been isolated from different for identifying bacterial fish pathogens
+fishes such as tilapia (Oreochromis niloticus) and turbot
+(Scophthalmus maximus). Streptococcal infections in tilapia Bacterial infections present substantial challenges to the
+caused by E. faecalis have been documented in Egyptian aquaculture sector, resulting in financial repercussions
+and Thai lakes as well as from healthy and infected fish and potential public health concerns. Accurate and
+from Bangladesh [26]. Piscirickettsiosis/Salmonid rickettsial timely identification of fish pathogens is crucial for
+disease (SRS) attributed to Piscirickettsia salmonis stands effective disease management. Traditional techniques for
+as a serious disease leading to huge economic setbacks bacterial identification, such as culture-based methods
+for the aquaculture sector. Initially isolated from infected and biochemical tests, have traditionally found extensive
+coho salmon, piscirickettsiosis has since then been found in application in bacterial fish disease diagnosis in the past.
+rainbow trout (Oncorhynchus mykiss) and Atlantic salmon However, these techniques have several limitations that
+(Salmo salar). It has predominantly been documented in hinder their effectiveness in providing accurate and timely
+marine and brackish ecosystems, with minimal occurrences identification. The following are some of the key limitations
+reported in freshwater environments [27]. Salmonid fish of traditional techniques:
+are notably prone to an ailment referred to as bacterial
+kidney disease (BKD), attributed to the fish pathogen • Slow and Time-Consuming: Traditional bacterial
+Renibacterium salmoninarum. Reported mortality rates identification methods often involve culturing the
+of approximately 80% and 40% have been documented in pathogen on specific media and performing biochemical
+pacific salmon (Oncorhynchus spp.) and Atlantic salmon tests, which can be time-consuming. It may take several
+(Salmo salar), respectively [28]. days or even weeks to obtain conclusive results, which
+Photobacteriosis disease, caused by the Gram-negative delays the diagnosis and subsequent implementation of
+bacterium Photobacterium damselae subsp. piscicida, control measures [33].
+afflicts a multitude of fish species, inducing a severe
+
+--- Page 7 ---
+Molecular Biology Reports (2024) 51:364 Page 7 of 19 364
+• Limited Sensitivity: Some fish pathogens are fastidious Genomic approaches for bacterial fish
+and require specific growth conditions, that pose chal- pathogen identification and classification
+lenges when attempting their isolation and identification
+through conventional techniques. These methods might High‑throughput sequencing in understanding
+fail to detect low levels of bacterial pathogens or identify bacterial fish pathogen genomics
+slow-growing or non-culturable strains [34], leading to
+false-negative results. Genomic approaches have revolutionized the process of
+• Limited Specificity: Traditional techniques rely on identifying and categorizing bacterial fish pathogens by
+phenotypic characteristics and biochemical reactions to providing comprehensive and accurate insights into their
+identify bacterial pathogens. However, some bacteria genetic makeup. These approaches leverage high-throughput
+may exhibit similar phenotypic features, leading to sequencing technologies and advanced bioinformatics tools
+misidentification or confusion between closely related to analyze the genomic data of pathogens, enabling rapid
+species. This can result in incorrect diagnoses and and precise identification at various taxonomic levels [39]. A
+inappropriate treatment strategies. very recent study employed the Illumina platform (MiSeq) to
+• Inability to Detect Mixed Infections: Bacterial fish ascertain the evolutionary relationships among the Shewanella
+diseases can involve multiple pathogens, and traditional species obtained from fish specimens. The results of the
+techniques may fail to detect multiple bacterial species study indicate that, in contrast to the standard method of 16S
+in a single specimen [35]. This limitation hinders the rRNA amplicon sequencing, which is considered the standard
+understanding of complex disease dynamics and may approach, the use of whole-genome sequence (WGS) analysis
+lead to incomplete or inaccurate diagnosis. allowed for the taxonomic categorization and evaluation of the
+• Lack of Genetic Information: Traditional techniques do diversity of the Shewanella spp. strains. This study indicates
+not provide comprehensive genetic information about that the species S. oncorhynchi, which was newly identified, is
+bacterial pathogens. This information is crucial for the most commonly observed Shewanella species in freshwater
+understanding the virulence factors, genetic diversity, fishes [40].
+and antimicrobial resistance profiles of bacterial fish
+pathogens [36]. Without genetic data, it becomes Whole‑genome sequencing (WGS) in bacterial fish
+challenging to develop targeted control strategies and pathogen identification
+monitor the emergence of new strains.
+• Requirement for Culturable Organisms: Traditional Whole-genome sequencing (WGS) entails sequencing the
+techniques heavily rely on the ability to culture the entire genome of a bacterial pathogen to reveal all its genetic
+bacteria in the laboratory [37]. However, some bacterial information. Researchers can correctly identify the pathogen
+species, especially unculturable or difficult-to-culture down to the species or strain level by comparing the derived
+strains, cannot be identified using these methods. This genomic sequence with reference databases. The discov-
+limitation restricts the identification and characterization ery of virulence genes and other genomic factors linked to
+of certain fish pathogens. pathogenicity is another benefit of WGS. The diversity and
+evolutionary history of bacterial fish pathogens can be better
+These drawbacks have prompted the exploration of comprehended with the use of this data. Disease emergence
+genomics as an alternative approach for bacterial fish and spread can be monitored in both individual fish farms and
+pathogen study. These methods offer higher sensitivity, between farms using WGS, just as it can be done in hospitals
+specificity, and the ability to detect and characterize [41]. Many different bacterial pathogens found in aquaculture
+pathogens directly from clinical samples, bypassing the have already had their complete reference genomes sequenced
+need for culture. They also provide valuable genotypic which have been deposited by different regions around the
+information, enabling comprehensive analysis of bacterial globe since 2004 (Fig. 2A). The data in (Fig. 2B) provides
+populations and facilitating the development of targeted insight into the temporal trends in the deposition of WGS of
+control measures [38]. bacterial fish pathogens, spanning from 2004 to July 2023,
+showcasing the evolution of genomic research and data avail-
+ability over the years.
+
+--- Page 8 ---
+364 Page 8 of 19 Molecular Biology Reports (2024) 51:364
+Fig. 2 Global landscape and temporal trends in WGS of bacterial fish deposits. The regions shaded grey have 0 submissions as per NCBI
+pathogens: (A) Countries contributing WGS of bacterial fish patho- data. (B) Timeline of WGS deposited in NCBI (2004–2023 July).
+gens to NCBI. Color-coded according to the number of sequences From the line plot, it can be observed that the highest deposition of
+submitted by the countries ranging from 35 to 1. The country with WGS in NCBI is between the years 2015–2020
+the highest deposit is color-coded in dark blue, intermediary is coded
+orange followed by light blue for countries with the lowest number of
+Comparative pathogenomics and its role Phylogeographic analysis and transmission patterns
+in understanding bacterial pathogen evolution
+The accessibility of several whole genome sequences has
+The availability of an increasing number of genome aided research on the evolutionary journey of organisms.
+sequences has made it feasible to compare the genomes of This has allowed for more precise re-creations of the
+several closely related bacterial species. Pathogenomics is evolutionary relationships among various bacterial species.
+a subdiscipline of genomics that evaluates the possibility Phylogeographic analysis, which involves studying the
+of disease caused by microorganisms. Nevertheless, the geographic distribution and transmission patterns of
+majority of documented epidemiological research only pathogens using genetic data, plays a crucial role in
+takes into account a small number of genes. The comparative understanding and managing aquaculture diseases. It often
+pathogenomics approach provides valuable insights into relies on genomic data, such as whole genome sequencing,
+the evolutionary dynamics and adaptation of bacterial to reveal the genetic relationships between pathogenic strains
+pathogens, contributing to our understanding of disease and their geographic distribution.
+outbreaks and potentially informing strategies for disease Researchers can recreate pathogen evolution and
+prevention and control. Pathogenomics aids in studying transmission patterns by analyzing genomic variations across
+bacterial infectious diseases in fish. By employing genomic strains from different geographic areas. Phylogeographic
+sequencing and bioinformatics analysis, researchers have analysis was used to study the transmission dynamics of
+compared the genomes of fish pathogens like Vibrio, bacterial fish pathogens like V. parahaemolyticus, which
+Edwardsiella, Aeromonas, and others, identifying shared showed distinct outbreak clusters at different time points,
+genetic features and virulence factors [42]. A recent indicating episodic infections [44].
+comparative pathogenomics analysis revealed 18,306 total
+genes and 1620 genes in A. hydrophila’s core genome, Population‑level trends and biogeography
+including 312 virulence genes [43]. The effector delivery
+system category had 87 virulence genes, subsequently Multi Locus Sequence Typing (MLST) and eBURST
+followed by immunological regulation (69) and motility analysis may not accurately determine relationships between
+(46). Additionally, four genes including —maleylpyruvate individual isolates, but large MLST data sets provide
+isomerase, Spermidine N (1)-acetyltransferase, D-glycero- valuable insights into population-level trends. Bastardo,
+beta-D-manno-heptose-1,7-bisphosphate 7-phosphatase, et al., studied Y. ruckeri populations worldwide using multi-
+and chemoreceptor glutamine deamidase had unique SNPs sequence data to understand biogeography and dispersal
+present across all the A. hydrophila genome. trends. They reconstructed evolutionary relationships and
+
+--- Page 9 ---
+Molecular Biology Reports (2024) 51:364 Page 9 of 19 364
+inferred global transmission patterns, finding a correlation Aeromonas salmonicida is commonly considered a
+between genetic distance and geographic separation. The psychrophile from cold-water fish but recent reports
+study inferred population of Y. ruckeri has undergone have identified mesophilic strains from warmer sources
+changes influenced by past biogeographic events and current as well [50]. Genome sequencing was performed on 6 A.
+aquaculture growth [45]. salmonicida strains (4 psychrophilic and 2 mesophilic)
+and comparative analyses were performed on 25 A.
+salmonicida whole genomes. Comparative genomics
+Case studies of bacterial fish pathogens revealed that mesophilic A. salmonicida had complete
+mannose-sensitive hemagglutinin (MSH) type IV pili, while
+Streptococcus agalactiae stands as a significant bacterial psychrophilic strains exhibited gene clusters associated
+pathogen in the context of fish, exhibiting adaptability with lateral flagella, insertion sequences (ISAs7, ISAs4,
+across a diverse host range but only strains linked to CC7 and ISAs29) and outer membrane proteins (OMPs such
+and CC552 have been identified to cause fish diseases. as T2SS proteins and A-layer) [51]. The discovery of new
+The identification of fish-specific and fish-associated gene mesophilic strains in unanticipated habitats and hosts
+content in CC552 was accomplished through the utilization would deepen our knowledge of this pathogen. Genomic
+of whole-genome comparison, and BLAST score ratios, and phenotypic characterizations of two new mesophilic
+along with aggregation and correlation toolbox (ACT) A. salmonicida isolates (19-K304, 19-K308, and 19-K304)
+analysis. This provided insights into the presence of isolated in Quebec (Canada), suggest the existence of two
+fish-associated genes that have the potential to serve as distinct clades of mesophilic strains, wherein psychrophiles
+diagnostic indicators for S. agalactiae strains responsible are related with one of these clades [52]. Precise genomic
+for fish diseases [46]. studies thus can now be performed from investigations of
+Aeromonas veronii is a mesophilic bacterium that is whole genome sequences, allowing for the identification of
+the causative organism for motile Aeromonas septicemia so far hidden subgroups.
+(MAS) and furunculosis in fish. Whole genome sequencing Advancements in whole-genome sequencing are
+was employed to detect and analyze a mobile gene cassette producing a wealth of data that can assist in understanding
+harbouring tetracycline resistance genes in the A. veronii the disease-causing abilities of bacteria and identifying
+strain Ah5S-24, which was isolated from sediments of ecological habitats. It also enhances details about the
+a catfish pond. The mobile gene cassette facilitates the relationships between organisms and gives us access to
+transmission of genes responsible for tetracycline resistance the entire set of genes accountable for various traits and
+between different bacterial strains or species. This gene phenotypes. F. collinsii (TRV642), isolated from rainbow
+cassette was discovered to be related to other environmental trout spleen, provided insight into the evolutionary
+and foodborne bacteria, which implies that environmental relationships between Flavobacterium species and their
+bacterial species may horizontally transfer tetracycline ecological niches through its identification and genomic
+resistance genes [47]. characterization. The results of the study raise the possibility
+Genes encoding for various virulence factors were that some members of a taxonomic cluster of Flavobacterium
+identified through whole genome sequencing of the species commonly found in fish may be opportunistic fish
+pathogenic A8-AHP strain of A. veronii isolated from infections [53].
+diseased Labeo rohita in India. This included type III and Tenacibaculum piscium, was only reported in Norway
+II secretion systems, pili, fimbriae, etc. The study presents until recently where its presence was confirmed in Chile
+the first whole genome sequence of this pathogenic as well. With the application of in-silico whole-genome
+strain isolated from India [48] and thus contributes to the analysis, genes associated with type IX secretion system,
+elucidation of the molecular mechanisms underlying the iron acquisition, drug resistance, and stress responses
+pathogenicity of A. veronii in Labeo rohita. were observed in T. piscium from diseased salmonids in
+Vibrio harveyi PH1009 is a newly isolated bacterial Chilean fish farms [54]. Acinetobacter spp. are ubiquitous
+strain from the black tiger prawn, Penaeus monodon, with microorganisms that can infect a diverse range of host
+antibiotic and metal resistance determinants revealed from organisms. Infecting both fresh and marine fish, they
+recent genomic studies Its genome contains numerous annually inflict devastation on the salmon and trout fishing
+uncharacterized proteins, including phage transposases, sectors. Through genomic analysis and phylogenetic
+integrases, and transcription regulators, indicating the studies, A. johnsonii was recently determined to be a highly
+involvement of bacteriophages [49] in its unique genomic pathogenic organism affecting rainbow trout in freshwater
+features. Further, it may also horizontally transfer its genetic fisheries located in Yunnan [55]. The findings of this study
+elements to other bacteria, potentially spreading antibiotic highlight the emergence of A. johnsonii as a fish pathogen
+resistance genes in the environment. and its potential to infect rainbow trout. This highlights the
+
+--- Page 10 ---
+364 Page 10 of 19 Molecular Biology Reports (2024) 51:364
+importance of managing infections caused by Acinetobacter 4 phyla. Notably, our study unveiled that the increase in the
+spp. in rainbow trout and assessing the dangers posed by GC content to the genome size is more prominent in Bacil-
+these microbes in aquaculture settings. lota and Pseudomonadota than in the other two phyla. It was
+Flavobacterium tructae, is another important interesting to observe that the GC content in the phylum
+opportunistic pathogen of the genus Flavobacterium, first Bacteroidota is almost near constant despite the variation
+isolated from diseased rainbow trout. Recent genomic in the genome size. Among these 4 phyla, the Actinomy-
+studies revealed the RTFCPB 279 strain of F. tructae cetota exhibited the highest GC content and Genome size
+isolated from rainbow trout farms in the Indian Himalayan (Fig. 3A).
+region as a pathogenic one that demonstrated hemolytic
+activity and biofilm development in vitro [56]. However,
+Genomic insights into pathogen virulence
+additional study is needed to determine its actual threat to
+and host interactions
+aquaculture.
+Thus, in the context of aquaculture, the recent devel-
+Mechanisms of pathogenicity in bacterial fish
+opments in whole-genome sequencing have substantially
+pathogens
+improved our understanding of disease-causing capabilities,
+ecological niches, and interactions between bacterial fish
+pathogens. Through the extensive examination of the litera- Bacterial fish pathogens demonstrate several modes of
+ture, we have meticulously assessed the whole genome avail- pathogenicity, enabling them to successfully infect and cause
+ability of 79 pathogens. These belonged to 4 important bac- disease in their hosts. As Gram-staining is an important
+terial phyla namely Actinomycetota, Bacillota, Bacteroidota, step in the classification of bacteria determining their
+and Pseudomonadota. It was observed that the majority of characteristic pathogenicity, we categorized the pathogens
+the pathogens were from the phylum Pseudomonadota which across the 13 different bacterial genera, based on their
+includes a wide variety of pathogenic genera such as Vibrio, Gram-stain characteristics, which revealed that Gram-
+Yersinia, and many others. Since genome size and GC con- negative organisms were the predominant among the studied
+tent are important attributes of an organism, hence here we strains (Fig. 3B). This highlights the diversity of gram stain
+tried to investigate the relationship between the genome size characteristics across these bacterial genera, shedding light
+and GC content of the bacterial fish pathogens across these on their taxonomic and microbiological distinctions.
+Fig. 3 Comparative Genomic Features of Bacterial Fish Pathogens: terial genera. The figure provides an overview of the distribution of
+(A) Relationship between Genome Size (MB) and GC content (%) in Gram-stain categories i.e., Gram-positive and Gram-negative within
+bacterial fish pathogens across four phyla. This figure illustrates the the thirteen diverse bacterial genera of the fish pathogens namely
+relationship between genome size (x-axis) and GC content (y-axis) Vibrio, Aeromonas, Francisella, Edwardsiella, Pseudomonas, Fla-
+for bacterial fish pathogens belonging to four distinct phyla: Actino- vobacterium, Tenacibaculum, Acinetobacter, Shewanella, Nocardia,
+mycetota (red), Bacillota (green), Bacteroidota (yellow) and Pseu- Mycobacteria, Streptococcus, and Lactococcus
+domonadota (blue). (B) Gram-stain distribution across the 13 bac-
+
+--- Page 11 ---
+Molecular Biology Reports (2024) 51:364 Page 11 of 19 364
+Fig. 4 Illustration of a bacterial
+fish pathogen with some of the
+important virulence factors and
+components of pathogenicity.
+Siderophore (green), Capsid
+(golden yellow), Aerolysin
+(yellow), LPS (light blue),
+Exoenzymes (star shape), hemo-
+lysin (spiral), extracellular iron
+(triangle), Protease (explosion
+shape), bacterial chromosome
+(thread-like), Plasmid (dough-
+nut shape), secretion system
+(red), pilli (white) and flagella
+(black single thread)
+These pathogens possess a range of virulence factors and wild-type strain B11. In contrast to the wild-type strain
+strategies to colonize fish tissues, evade the host immune B11, rstA-RNAi drastically decreased the degree of gene
+response, and cause damage to host tissues [57]. The evo- expression levels involved in the type VI secretion system
+lution and virulence of bacterial diseases are significantly and iron acquisition [59].
+influenced by mobile genetic elements like transposons, The type IX secretion system (T9SS) is exploited by
+plasmids, and bacteriophages. These elements can carry numerous bacterial fish pathogens to secrete proteins that
+genes encoding virulence factors, antibiotic resistance, and may serve as potential virulence factors [60]. Numerous
+other adaptive traits, facilitating their transfer between bac- peptidase-encoding genes have been found in the F.
+terial strains and species. Some of the significant virulence columnare genome, some of which may play a role in
+factors observed in bacterial fish pathogens include capsular nutrition acquisition and/or pathogenicity. Genomic
+polysaccharides, flagellum, lipo-polysaccharide, pili, sidero- analyses of F. columnare showed that a mutant lacking the
+phores, extracellular iron, aerolysin, hemolysin, proteases, sole peptidase TspA was less virulent in rainbow trout fry,
+exoenzymes, extracellular proteases, siderophore, and the indicating that peptidases play a role in the pathogenicity of
+secretion systems as shown in (Fig. 4). Plasmids carrying this organism [61].
+genes for type III secretion systems have been identified in
+A global regulator for Vibrio harveyi
+various fish pathogenic bacteria, allowing them to deliver
+effector proteins into the cells of the host organism, thereby
+exerting control over the immunological responses of the Qrr1 is a small RNA that is a key component of the quorum
+host [58] sensing cascade. A recent study revealed that LuxT, a
+member of the TetR family of transcriptional regulators,
+Secretion systems in fish pathogenic bacteria acts as the global regulator of 414 genes in V. harveyi qrr1
+beyond the regulation of qrr1, as shown by recent RNA
+Many pathogenic bacteria use the two-component sequencing and phylogenetic analyses.
+signaling system (TTSS), a specialized method of protein Unlike in V. parahaemolyticus, where the transcriptional
+secretion, to deliver effector proteins directly into the host regulator of the GntR family, swrZ, is directly repressed by
+cells, accelerating the spread of infection and disease. A LuxT, in V. harveyi, LuxT triggers siderophore production,
+comparative genomic analysis on recently sequenced A. aerolysin production genes, and type III secretion via both
+veronii isolates from humans, fish, and ecosystems, in the SwrZ-independent mechanisms and SwrZ-dependent
+São Francisco Valley revealed 239 virulence genes with the mechanisms [62].
+majority of them encoding secretion systems, motility, and
+adhesion proteins. The genes rstA and rstB comprise a TTSS Comparative genomics and pan‑genome analysis
+in virulence study of fish pathogens
+that gets triggered upon encountering alterations in the
+surrounding environment. These signaling components are
+recognized as critical components for pathogenicity found Understanding the prevalence of commercially significant
+in several bacterial fish pathogens. The intracellular viability aquaculture diseases requires identifying crucial genetic
+of A. hydrophila was drastically reduced when the rstA gene variation. In a pan-genome study on 18 Y. ruckeri strains,
+was silenced using RNAi technology in comparison to the both reported avirulent and virulent lineages were found
+
+--- Page 12 ---
+364 Page 12 of 19 Molecular Biology Reports (2024) 51:364
+to have distinct genetic markers. Only the virulent strains Notably, bacteriocin production genes were observed in
+shared the same gene, yrIlm, derived from the inverse- both the BFFF11 and BFPS6 strains, however, tetracycline
+autotransporter invasin locus [63]. The identification of resistance genes were exclusively discovered in the BFPS6
+specific genes associated with virulence provides potential strain. Furthermore, the results of phylogenetic analysis
+targets for further research and the development of novel indicate that the BF1B1 and BFFF1 strains exhibit distinct
+preventive and therapeutic strategies against enteric clustering when compared to the BFPS6 strain [66].
+redmouth disease. Recent isolation and characterization of A. salmonicida
+Comparative genomic research employing a novel subspecies salmonicida COFCAU_AS from an aquaculture
+Nanopore MinION MK1C platform demonstrated distinct system in India revealed pathogenic properties such as
+traits and putative virulence factors linked with two fish hemolysis, lipid, casein, starch, and gelatin hydrolysis
+pathogens, E. piscicida and E. anguillarum, shedding activity. Not only did it have an A-layer surface protein,
+light on their differences. A total of 103 genes associated but it also demonstrated the capacity to form biofilm and
+with virulence, defense, and disease were identified in E. slime. Labeo rohita fingerlings with bacterial infections
+anguillarum, while E. piscicida exhibited 60 such genes. had skin lesions, dropsy, erythema at the base of the fins,
+Additionally, 498 and 225, pathogenic islands (PI) were and ulcers; these symptoms were similarly seen in two
+identified for each respectively, indicating that different other prominent Indian carp species, Cirrhinus mrigala
+preventative measures must be taken for each of these and L. catla. Further, only 9 out of the 12 potentially
+pathogens [64]. virulent genes (act, aerA, alt, ast, vapA, hlyA, exsA, lip,
+Another recent comparative genomic study of 25 T. and fstA) were discovered, whereas the ascC, ascV, and
+maritimum (formerly known as Flexibacter maritimus) ela genes were not found. Additionally, antibiotics like
+isolates by Bridel, et al., revealed a similar genome size penicillin G, ampicillin, rifampicin, and vancomycin did
+of ~ 3.356 Mb for the 25 strains on average as well as 2116 not work well against the COFCAU_AS strain, while
+protein-coding genes in the core genomes. Furthermore, amoxiclav, ciprofloxacin, chloramphenicol, nalidixic acid,
+Several mass peaks were identified using genome-based and tetracycline were quite effective [67].
+matrix-assisted laser desorption ionization-time of flight Genomic analysis of N. seriolae UTF1, which was
+mass spectrometry (MALDI-TOF MS) that exhibited obtained from cultured yellowtail, uncovered orthologs of
+similarity to ribosomal proteins. The genotypes specified virulence factors found in human clinical Nocardia strains
+by MLSA were found to correlate with these peaks and pathogenic mycobacteria. These factors are associated
+[65]. In aquaculture facilities or among cultured fish, with the manipulation of phagocyte activity, invasion of
+rapid identification of bacterial pathogens using mass host cells, and survival within macrophages. The N. seriolae
+spectrometry protocols, have gained increasing popularity UTF1 chromosome also contained many putative antibiotic
+in recent times. MALDI-TOF MS is characterized by, lack resistance genes. When compared to other Nocardia
+of necessity for highly skilled operators and its low labor species, the N. seriolae UTF1 genome exhibits notable
+intensity, which makes it suitable for efficiently processing variations in structure and gene content, characterized by
+numerous samples in an automated, swift, and cost-effective an increased presence of mobile elements and genes with
+manner. However, accurate identification of closely related unknown functions [68]. The most extensively studied
+species through MALDI-TOF MS relies significantly on the virulence component of R. salmoninarum is p57, a protein
+selection of an appropriate database; otherwise, there is a with a molecular weight of 57 kDa. This protein is found
+risk of misidentification[3]. on the surface of the bacterial cell and gets secreted into the
+host fish tissue. It is the primary mediator involved in the
+Whole genome studies in isolation and virulence
+reduction of antibody formation, suppression of the immune
+characterization of fish pathogens
+system, and modulation of cytokine activity. A recent pan-
+genome analysis indicated that the p57 was recognized as
+A comprehensive analysis of the whole-genome sequences being transported by the Sec-dependent pathway (Sec/SPI)
+of fish pathogenic strains of E. faecalis (BF1B1, BFFF11, and undergoes cleavage by signal peptidase I [69].
+and BFPS6) obtained from infected Nile tilapia and Thai The advent of advanced genomic technologies, such as
+sarpunti respectively in Bangladesh, has shown a total whole-genome sequencing has provided unprecedented
+of 69 conserved virulence factors across these strains. opportunities to unravel the genetic determinants of
+These factors include genes related to bacterial cell wall pathogen virulence and host immune responses. By
+synthesis, oxidative stress defense, biofilm formation, deciphering the genetic blueprints of pathogens and their
+gelatinase toxin, and capsule production. Within the three hosts, researchers have identified key virulence factors,
+strains examined, a total of 39 antibiotic-resistance genes regulatory mechanisms, and host defense strategies,
+targeting 16 prominent antibiotic families were identified. shedding light on the molecular basis of pathogenesis.
+
+--- Page 13 ---
+Molecular Biology Reports (2024) 51:364 Page 13 of 19 364
+Genomic approaches to discover potential for additional agents to provide efficient safeguarding
+vaccine and drug targets in bacterial fish against specific infections. Recent research has indicated
+pathogens the use of the OmpA protein of A. johnsonii, as a subunit
+vaccine candidate molecule. A. johnsonii is a newly
+Advancements in genomics, biotechnology, and recognised opportunistic pathogen of farmed rainbow
+immunology have led to reliable diagnostics for the trout [55]. To rapidly determine the complete repertoire
+swift identification of bacterial fish pathogens and the of genes potentially associated with the acquisition of
+development of effective vaccines to safeguard fish virulence, it is necessary to compare pathogens to closely
+health. These breakthroughs have significantly reduced related nonpathogenic bacteria and analyze the genetic
+mortality rates caused by infectious diseases in fish and differences between them. This provides a helpful roadmap
+aquaculture. Vaccines offer a proactive and economically for identifying promising purified antigens for use in
+efficient strategy for disease control and prevention within subunit-based vaccinations. Additionally, it can serve as
+the aquaculture industry by stimulating the fish’s immune the theoretical underpinning for the secure and sustained
+system to recognize and respond to specific pathogens. attenuation of live vaccination candidates or vectors.
+Over the past 20 years, over 100,000 research reports have Live-attenuated vaccines against fish pathogenic
+explored fish vaccine production, including analyses of bacteria such as S. iniae, F. columnare, V. anguillarum,
+history, advances, types, and administration routes [70]. In E. ictaluri, E. tarda, A. hydrophila [73] and more recently
+the pre-genomic era, gene knockout studies and virulence for V. alginolyticus [74] have been developed with the aid
+attenuation were used to identify vaccine candidate genes, of genetic engineering. These vaccines transform harmful
+but currently, whole-genome sequencing plays a crucial microbes into immune-stimulating agents, protecting against
+role in the acquisition of vital data about virulence genes future infections. However, because of some safety issues,
+and the identification of promising vaccine candidates, these vaccines are currently not utilized in aquaculture
+thereby advancing fish vaccinology and medication settings. Recombinant protein vaccines against bacterial
+development. This review examines the significance of infections rely heavily on genomics for their development
+genomics in the discovery of new medicines and vaccines. as it aids in target identification, antigen selection, vaccine
+Genomic research in vaccine development serves two design, adjuvant selection, and monitoring of vaccine
+main objectives: identifying potential protective antigens effectiveness [75]. It can successfully induce a robust
+and understanding the mechanisms of immune response immune response, reducing the incidence and severity of
+elicitation. Emphasis is placed on antigens that protect infection, and thus offer promising possibilities for the
+various serotypes of the same bacterial species, making advancement of efficacious vaccination techniques in the
+them crucial targets for immunogenic bacterial proteins. field of aquaculture. In recent studies, the utilization of
+The application of whole-genome sequencing has recombinant flagellin derived from the salmonid pathogen
+facilitated the exploration of the genetics of bacterial fish Y. ruckeri has shown superior inflammatory stimulation
+pathogens, revealing insights into their virulence factors, compared to other bacterial PAMPs (such as LPS and
+immune evasion tactics, and potential vulnerabilities. peptidoglycan) in vitro [76]. Advancements in recombinant
+By comparing pathogenic and non-pathogenic strains, DNA and sequencing technologies have led to a novel
+specific genetic signatures linked to pathogenicity can be vaccination approach aimed at enhancing effectiveness
+identified, leading to the development of targeted vaccines by isolating specific epitopes that can elicit an immune
+and drugs [71]. response. A recent study demonstrates the computer-
+Different vaccine types, such as inactivated pathogens, aided selection and analysis of antigenic epitopes from A.
+live attenuated strains, subunit antigens, or DNA hydrophila’s outer membrane proteins (OMPs), enhancing
+constructs, can be administered through various routes our knowledge of the pathogen’s immunogenicity and
+based on the fish species and disease target. Each type facilitating the development of precise interventions to
+has specific considerations regarding efficacy, safety, control aquaculture infections [77].
+production, and administration. Currently, the popular Genomic techniques, such as reverse vaccinology, are
+ones are live attenuated vaccines, inactivated vaccines, anticipatory bioinformatics techniques to predict potential
+DNA vaccines, subunit vaccines, recombinant live vector protective antigens and epitopes. The utilization of this
+vaccines, and recombinant protein vaccines [72]. alternative methodology was initially implemented two
+Subunit vaccines provide targeted immunization while decades ago, after multiple unsuccessful attempts with
+minimizing the potential for pathogenicity to both the traditional methods in the development of a vaccine
+host and non-target species. However, their application in targetting Neisseria meningitidis serogroup B [78]. Novel
+aquaculture has been limited as a result of the requirement antigens using the reverse vaccinology approach have been
+successfully identified against infections caused by bacterial
+
+--- Page 14 ---
+364 Page 14 of 19 Molecular Biology Reports (2024) 51:364
+fish pathogens such as P. damselae subsp. Piscicida, A. The in vivo induced antigen technology (IVIAT), which
+baumannii and V. anguillarum [79]. Recently, a multi- involves selecting microbial antigen-encoding genes
+epitope vaccine was developed using immunoinformatics induced during infection, is another approach that has
+and reverse vaccinology to protect against humans infecting been used in several fish bacterial vaccine development
+Nocardia species [80]. The findings from this study may such as A. salmonicida, E. tarda, S. iniae and thus can
+also help in the quest to create vaccinations against the fish be targeted for the development of therapeutic drugs and
+pathogenic Nocardia strains as well. vaccines [88]. The nonhost key core genes found in all E.
+Owing to the advancements in the field of genomics, DNA ictaluri isolates have led to the identification of thirteen
+vaccines also provide several advantages over conventional vaccine candidates through recent comparative genomics
+vaccines, such as reduced potential for adverse effects, and pan-genomics analysis. The study identified LptD,
+accelerated and simplified research, and cheaper production an LPS-assembly protein, as a potential vaccine antigen
+costs [81]. Since the cells themselves manufacture these against Vibrio species infections. Additionally, both
+vaccines, they are extremely effective. LptD and BamA demonstrated antigenicity towards N.
+So far, multiple studies have demonstrated that OMPs gonorrhoeae. These identified proteins thus have the
+from bacteria could be exploited as vaccine candidates potential to be utilized in the development of recombinant
+for protecting fish from bacterial diseases [82]. The subunit vaccines offering a safer option that can tackle
+administration of 9 DNA vaccines (pcDNA3.1 ( +) plasmid the issue of antigenic heterogeneity reported in E. ictaluri
+carrying recombinant rAHA_1130, rAHA_2145 rpilQ, [89]. Similar in silico studies on multiple strains of E.
+rhgpB, rtamA, rAHA_2144, rAHA_2785, rAHA_3766 and piscicida and E. anguillarum isolated from Taiwan
+rgspD genes) boosted zebrafish survival rates to greater than identified potential vaccine candidates based on their high
+50% after being infected with virulent A. hydrophila. The antigenicity, solubility, and secretion probabilities [64].
+survival rates of zebrafish following prime-boost vaccination As vaccine development has progressed, many different
+were recorded as 82.4% and 70.2%, respectively, in terms of immunogenic proteins have been identified as crucial to
+relative percentage survival rates (RPSs) [83]. vaccine effectiveness, and now genome analysis is being
+Similarly, it was shown that the SagH-based DNA vaccine employed to optimize vaccine efficacy by attempting
+demonstrated efficacy in safeguarding against S. iniae. The to uncover genetic signatures that are associated with
+vaccine exhibited a relative protection level (RPS) of 92.62% defensive immunity. The paradigm shift in vaccine
+after a month and 90.58% after two months specifically development is brought about by genomics and the ability
+targeting S. iniae serotype I. The study highlights the to sequence and analyze the genomes of pathogenic
+potential of DNA vaccines for combating bacterial pathogens microorganisms.
+in aquaculture [84]. Molecular biology has given way to the The demand for novel vaccinations will persist for
+emerging discipline of functional genomics [85] which aids decades to come as aquaculture expands around the
+in vaccinology by studying transcription and expression world, making genomics and other omics technology
+profiles rather than the genome to determine suitable indispensable for addressing new disease threats [70].
+vaccine candidates. The functional genomics approach
+has been an important strategy in identifying virulence
+genes and unraveling the pathogenic mechanisms of
+Genomics in bacterial fish disease resistance
+different fish pathogenic bacteria [86]. Lipopolysaccharide
+and control in aquaculture
+(LPS), A-layer, and O-antigen are crucial components
+of the bacterial cell surface and play important roles in
+Genomic approaches for understanding the genetic
+virulence and host interactions. Functional genomic studies
+basis of disease resistance
+have provided insights into the regulatory mechanisms
+governing the O-antigen of the lipopolysaccharide (LPS)
+in A. salmonicida subsp. salmonicida strain A450. This Disease resistance and susceptibility in fish is determined
+research has identified a gene cluster known as “wbsalmo” by multiple genetic as well as environmental and host-
+that plays a crucial role in the biosynthesis of O-antigen and related factors. To unravel the genetic components involved
+A-layer. The comparative genomic analysis demonstrated in resistance, genomic approaches like Quantitative Trait
+that the wbsalmo gene cluster and A-layer, both recognized Locus (QTL) mapping, Genome-Wide Association Studies
+as significant virulence factors, are present in all strains of A. (GWAS), and gene expression profiling contribute to
+salmonicida, except for A. salmonicida subsp. pectinolytica. understanding the genetic basis of traits, including disease
+The absence of these factors in A. salmonicida subsp. resistance, by analyzing variations in the genome and their
+pectinolytica may explain why they are not commonly associations with phenotypic traits [90].
+associated with fish pathogens [87].
+
+--- Page 15 ---
+Molecular Biology Reports (2024) 51:364 Page 15 of 19 364
+QTL mapping finds resistance trait‑associated significant QTL provides valuable insights into the genetic
+genomic regions architecture underlying disease resistance in Nile tilapia. The
+findings can be used to develop genetic markers for selective
+Through QTL mapping, specific genomic regions associated breeding programs aimed at enhancing disease resistance in
+with resistance traits can be identified. Variations in DNA commercial tilapia strains.
+markers across the genome can be analyzed and can be
+Gene expression profiling and sib challenge testing
+correlated with disease resistance phenotypes. This helps
+improve disease resistance selection
+to identify candidate genes or genomic regions that play a
+significant role in conferring disease resistance [91]. Finding
+QTLs for economically important features in aquaculture Gene expression profiles have been recommended for use
+can speed up marker-assisted selection. Several QTLs for in passive selection for disease resistance in addition to
+disease resistance were discovered, including those related their application in understanding the function as well as
+to pasteurellosis in gilthead sea bream (Sparus aurata), regulation of genes. This hypothesis proposes that some cells
+enteric septicemia and columnaris disease in channel (such as macrophages or leucocytes) would respond to the
+catfish, A. salmonicida and V. anguillarum infection in infectious agent and that the subsequent pathways of gene
+turbot (Scophthalmus maximus), and Japanese flounder expression alterations in these cells may distinguish amongst
+(Paralichthys olivaceus) respectively, along with bacterial organisms that are resistant to the infection as opposed to
+cold water disease and whirling in rainbow trout [92]. those that are more vulnerable to it [96]. The application of
+gene expression data coupled with sib challenge testing has
+Application of genomic selection and GWAS analysis been demonstrated to boost the precision and strength of
+in disease resistance and susceptibility studies selection, speeding up genetic gain for disease resistance,
+following simulations.
+Additionally, Genome-Wide Association Studies (GWAS) Furthermore, gene expression profiling is used in many
+are employed to identify specific genetic variants associated studies to understand the differential expression of genes
+with resistance. By examining the entire genome of a large in response to infections in fish [97]. This helps identify
+population of fish, (SNPs) or other genetic markers can key molecular pathways and immune-related genes that are
+be identified that are significantly associated with disease activated or suppressed during infection, shedding light on
+resistance. GWAS analysis revealed a significant association the underlying mechanisms of resistance. By comparing
+between Motile Aeromonas septicemia MAS resistance and the gene expression profiles of fish with varying levels of
+the NF-κB signaling pathway, which is known to play a resistance to a particular pathogen, differentially expressed
+crucial role in immune responses and inflammation [93]. genes can be identified that may be associated with
+Genomic selection is a method that uses genomic data to resistance. These genes can serve as potential markers or
+estimate the genetic value of individuals and predict their targets for selective breeding programs or the development
+performance in traits of interest. With the application of of vaccines and therapeutics.
+genomic selection and GWAS analysis, it becomes feasible
+Genetic indicators for susceptibility
+to identify genetic markers linked to stress response, body
+weight, and disease resistance of important commercial
+fish like the European seabass [94]. These studies have In addition to the added advantages brought to disease
+important implications for breeding programs, facilitating management in aquaculture by disease resistance
+the development of improved strains with enhanced attributes, genetic indicators for susceptibility have also
+performance and disease resistance. been beneficial. By screening individuals or populations
+Over the past two decades, tilapia farming has expanded for specific genetic markers associated with disease
+at a faster pace in comparison to global aquaculture, susceptibility, aqua culturists can identify individuals at
+resulting in higher output levels but also a spike in higher risk and implement targeted disease prevention
+outbreaks of diseases. The global tilapia sector suffers a measures [98]. An effective immune response against
+significant economic hit (estimated at US$ 1 billion) due harmful microorganisms depends heavily on the genetic
+to streptococcosis caused by S. dysgalactiae, S. iniae, and makeup of the host fish. A recent study investigates the
+S. agalactiae. In a recent study, GWAS analysis revealed immunological response exhibited by rainbow trout
+a significant quantitative trait locus (QTL) associated with (Oncorhynchus mykiss) lines with different levels of
+disease resistance against S. iniae. A specific genomic resistance to the fish pathogen, L. garviea. The main
+region was identified as being strongly associated with the findings of the study indicate that resistant and susceptible
+trait, indicating the presence of genetic variants that confer trout lines exhibit distinct immune responses when
+resistance to the disease [95]. The identification of this exposed to the pathogen. Resistant trout lines show a
+
+--- Page 16 ---
+364 Page 16 of 19 Molecular Biology Reports (2024) 51:364
+more robust and rapid immune response, characterized by performed by KO, MY, VT and AK. The first draft of the manuscript
+increased expression of immune-related genes, production was written by KO and all authors commented on previous versions
+of the manuscript. All authors read and approved the final manuscript.
+of antimicrobial peptides, and activation of immune cells
+[99]. This proactive approach can include enhanced Funding The authors declare that no funds, grants, or other support
+biosecurity protocols, tailored vaccination strategies, were received during the preparation of this manuscript.
+and specific management practices to minimize the
+Data availability The whole genome sequence data for the 79 bacterial
+risk of disease spread. Future progress toward a deeper
+fish pathogens analyzed in this study have been retrieved from the
+comprehension of pathogen-host interaction dynamics National Center for Biotechnology Information (NCBI) database.
+and the identification of possible sites of selection for
+Declarations
+enhanced resistance will necessitate the integration of
+diverse techniques.
+Competing interests The authors declare that they have no conflicts
+of interest.
+Ethical approval Not applicable.
+Conclusion and future perspective
+Consent to participate Not applicable.
+This review paper aims to present a comprehensive Consent for publication Not applicable.
+overview of the genomics of bacterial fish pathogens,
+encompassing WGS available in NCBI (till July 2023),
+shedding light on the intricate relationship between these
+References
+pathogens, their hosts, and the global efforts to combat
+fish diseases.
+1. Bondad-Reantaso MG et al (2005) Disease and health manage-
+Furthermore, we have also discussed how genomics has
+ment in Asian aquaculture. Vet Parasitol 132:249–272. https://d oi.
+been instrumental in the field of vaccine development and
+org/1 0.1 016/j.v etpar.2 005.0 7.0 05
+in formulating novel strategies to combat these pathogens, 2. Bentzon-Tilia M, Sonnenschein EC, Gram L (2016) Monitoring
+offering hope for more effective disease management and managing microbes in aquaculture – towards a sustainable
+industry. Microb Biotechnol 9:576–584. https://d oi.o rg/1 0.1 111/
+in aquatic ecosystems. We also have highlighted
+1751-7 915.1 2392
+disease resistance mechanisms in fishes, and how the
+3. Sanches-Fernandes GMM, Sa-Correia I, Costa R (2022) Vibriosis
+field of genomics continues to illuminate the genetic outbreaks in aquaculture: addressing environmental and public
+underpinnings of host defenses. health concerns and preventive therapies using gilthead seabream
+farming as a model system. Front Microbiol 13:904815. https://
+Intriguingly, the utilization of WGS on a global scale
+doi.o rg/1 0.3 389/f micb.2 022.9 04815
+has unveiled the diversity and adaptability of these
+4. Fernandez-Bravo A, Figueras MJ (2020) An update on the genus
+pathogens, providing critical insights into their evolution aeromonas: taxonomy, epidemiology, and pathogenicity. Micro-
+and epidemiology. Simultaneously, studies probing organisms 8. https://d oi.o rg/1 0.3 390/m icroo rgani sms80 10129
+5. Varalakshmi B et al (2022) Aquaculture science and engineering.
+the virulence factors of these bacterial pathogens have
+In: Balasubramanian B, Liu W-C, Sattanathan G (eds) Springer
+elucidated the mechanisms by which they interact with
+Nature Singapore, Singapore, p 517–572
+their hosts, paving the way for targeted interventions and 6. Haenen OLM et al (2023) Bacterial diseases of tilapia, their
+enhanced understanding of pathogenesis. zoonotic potential and risk of antimicrobial resistance. Rev Aquac
+15:154–185. https://d oi.o rg/1 0.1 111/r aq.1 2743
+As we peer into the future, it is abundantly clear that
+7. Dinh-Hung N et al (2023) Streptococcus suis is a lethal patho-
+genomics remains an indispensable tool in unraveling
+gen in snakeskin gourami. Trichopodus pectoralis Aquaculture
+the complexities of bacterial fish pathogens. The 566:739173. https://d oi.o rg/1 0.1 016/j.a quacu lture.2 022.7 39173
+integration of genomic data, vaccine development, disease 8. Austin B, Austin DA (2016) Bacterial fish pathogens: disease of
+farmed and wild fish. In: Austin B, Austin DA (eds) Springer
+resistance mechanisms, global pathogen genomics, and
+International Publishing, Cham, pp 475–498
+host–pathogen interactions marks a holistic approach to
+9. Kondo Y et al (2023) Transposon mutagenesis and genome
+comprehending this multifaceted field. The collective sequencing identify two novel, tandem genes involved in the
+information presented in this review serves as a testament colony spreading of Flavobacterium collinsii, isolated from
+an ayu fish. Plecoglossus altivelis Front Cell Infect Microbiol
+to the progress made so far and also underscores the
+13:1095919. https://d oi.o rg/1 0.3 389/f cimb.2 023.1 09591 9
+immense potential for future research and continued
+10. Escribano MP et al (2023) The secretome of the fish pathogen
+advancement in the field of fish biology. Tenacibaculum maritimum includes soluble virulence-related pro-
+teins and outer membrane vesicles. Front Cell Infect Microbiol
+13:1197290. https://d oi.o rg/1 0.3 389/f cimb.2 023.1 19729 0
+Author contributions All authors contributed to the study’s conception 11. Khalil SMI et al (2023) In field study on immune-genes expression
+and design. Material preparation, data collection, and analysis were during a lactococcosis outbreak in rainbow trout (Oncorhynchus
+
+--- Page 17 ---
+Molecular Biology Reports (2024) 51:364 Page 17 of 19 364
+mykiss). Aquaculture 574:739633. https://d oi.o rg/1 0.1 016/j.a quac the Chilean salmon industry. Microbial Genomics 4. https://d oi.
+ulture.2 023.7 39633 org/1 0.1 099/m gen.0.0 00201
+12. Malick RC et al (2020) Identification and pathogenicity study of 29. Rivas A, Lemos M, Osorio C (2013) Photobacterium damselae
+emerging fish pathogens Acinetobacter junii and Acinetobacter subsp. damselae, a bacterium pathogenic for marine animals and
+pittii recovered from a disease outbreak in Labeo catla (Hamilton, humans. Front Microbiol 4. https://d oi.o rg/1 0.3 389/f micb.2 013.
+1822) and Hypophthalmichthys molitrix (Valenciennes, 1844) of 00283
+freshwater wetland in West Bengal, India. Aquac Res 51:2410– 30. Banihashemi EA et al (2022) Effect of microplastics on Yers-
+2420. https://d oi.o rg/1 0.1 111/a re.1 4584 inia ruckeri infection in rainbow trout (Oncorhynchus mykiss).
+13. Li B et al (2022) Induction of attenuated Nocardia seriolae and Environ Sci Pollut Res 29:11939–11950. https://d oi.o rg/1 0.1 007/
+their use as live vaccine trials against fish nocardiosis. Fish Shell- s11356-0 21-1 6517-3
+fish Immunol 131:10–20. https://d oi.o rg/1 0.1 016/j.f si.2 022.0 9. 31. Wrobel A, Leo JC, Linke D (2019) Overcoming fish defences: the
+053 virulence factors of Yersinia ruckeri. Genes (Basel) 10. https://d oi.
+14. Sandlund N, Skar C, Karlsbakk E (2023) First identification of org/1 0.3 390/g enes1 00907 00
+mycobacteriosis in Atlantic mackerel (Scomber scombrus). J Fish 32. Einarsdottir T et al (2018) Moritella viscosa in lumpfish (Cyclop-
+Dis 46:527–533. https://d oi.o rg/1 0.1 111/j fd.1 3765 terus lumpus) and Atlantic salmon (Salmo salar). J Fish Dis
+15. Ewa P et al (2023) Phylogenetic analysis of Shewanella spp. iso- 41:1751–1758. https://d oi.o rg/1 0.1 111/j fd.1 2884
+lated from fish. J Fish Dis https://d oi.o rg/1 0.1 111/j fd.1 3834 33. Alahi MEE, Mukhopadhyay SC (2017) Detection methodologies
+16. Sanches-Fernandes GMM et al (2021) Draft Genome Sequence of for pathogen and toxins: a review. Sensors (Basel) 17. https://d oi.
+Vibrio chagasii 18LP, Isolated from Gilthead Seabream (Sparus org/1 0.3 390/s 17081 885
+aurata) Larvae Reared in Aquaculture. Microbiol Resour Announc 34. Oliver JD (2010) Recent findings on the viable but nonculturable
+10:e0065821. https://d oi.o rg/1 0.1 128/M RA.0 0658-2 1 state in pathogenic bacteria. FEMS Microbiol Rev 34:415–425.
+17. Sanches-Fernandes GMM et al (2021) Draft Genome Sequence of https://d oi.o rg/1 0.1 111/j.1 574-6 976.2 009.0 0200.x
+Vibrio jasicida 20LP, an Opportunistic Bacterium Isolated from 35. Ercolini D (2004) PCR-DGGE fingerprinting: novel strategies for
+Fish Larvae. Microbiol Resour Announc 10:e0081321. https://d oi. detection of microbes in food. J Microbiol Methods 56:297–314.
+org/1 0.1 128/M RA.0 0813-2 1 https://d oi.o rg/1 0.1 016/j.m imet.2 003.1 1.0 06
+18. Urtubia R et al (2023) First report, characterization and patho- 36. Zhao X et al (2014) Advances in rapid detection methods for food-
+genicity of Vibrio chagasii isolated from diseased reared larvae of borne pathogens. J Microbiol Biotechnol 24:297–312. https://d oi.
+Chilean scallop, Argopecten purpuratus (Lamarck, 1819). Patho- org/1 0.4 014/j mb.1 310.1 0013
+gens 12. https://d oi.o rg/1 0.3 390/p athog ens12 02018 3 37. Gracias KS, McKillip JL (2004) A review of conventional detec-
+19. Declercq AM et al (2013) Columnaris disease in fish: a review tion and enumeration methods for pathogenic bacteria in food.
+with emphasis on bacterium-host interactions. Vet Res 44:27. Can J Microbiol 50:883–890. https://d oi.o rg/1 0.1 139/w 04-0 80
+https://d oi.o rg/1 0.1 186/1 297-9 716-4 4-2 7 38. Abdelsalam M et al (2023) A review of molecular diagnoses of
+20. Avendano-Herrera R, Saldarriaga-Cordoba M, Irgang R (2022) bacterial fish diseases. Aquacult Int 31:417–434. https://d oi.o rg/
+Draft genome sequence of Tenacibaculum ovolyticum To-7Br, 10.1 007/s 10499-0 22-0 0983-8
+recovered from a farmed Atlantic Salmon (Salmo salar). Micro- 39. Olymon K et al (2023) Industrial microbiology and biotechnol-
+biol Resour Announc 11:e0025422. https://d oi.o rg/1 0.1 128/m ra. ogy: emerging concepts in microbial technology. In: Verma P (ed)
+00254-2 2 Springer Nature, Singapore, pp 121–174. https://d oi.o rg/1 0.1 007/
+21. Bwalya P et al (2020) A whole-cell Lactococcus garvieae 978-9 81-9 9-2 816-3_6
+autovaccine protects Nile tilapia against infection. PLoS ONE 40. Altun S et al (2022) Shewanella oncorhynchi sp. nov., a novel
+15:e0230739. https://d oi.o rg/1 0.1 371/j ourna l.p one.0 23073 9 member of the genus Shewanella, isolated from Rainbow Trout
+22. Kotzamanidis C et al (2020) First report of isolation and genome (Oncorhynchus mykiss). Int J Syst Evol Microbiol 72. https://d oi.
+sequence of L. petauri strain from a rainbow trout Lactococcosis org/1 0.1 099/i jsem.0.0 05460
+outbreak. Curr Microbiol 77:1089–1096. https://d oi.o rg/1 0.1 007/ 41. Bayliss SC et al (2017) The promise of whole genome pathogen
+s00284-0 20-0 1905-8 sequencing for the molecular epidemiology of emerging aquacul-
+23. Williams AM, Fryer JL, Collins MD (1990) Lactococcus piscium ture pathogens. Front Microbiol 8:121. https:// doi. org/ 10. 3389/
+sp. nov. a new Lactococcus species from salmonid fish. FEMS fmicb.2 017.0 0121
+Microbiol Lett 68:109–113. https://d oi.o rg/1 0.1 111/j.1 574-6 968. 42. Sudheesh PS et al (2012) Comparative pathogenomics of bacteria
+1990.t b0413 2.x causing infectious diseases in fish. Int J Evol Biol 2012:457264.
+24. Egger RC et al (2023) Emerging fish pathogens Lactococcus https://d oi.o rg/1 0.1 155/2 012/4 57264
+petauri and L. garvieae in Nile tilapia (Oreochromis niloticus) 43. Abdella B et al (2023) Whole spectrum of Aeromonas hydrophila
+farmed in Brazil. Aquaculture 565:739093. https://d oi.o rg/1 0. virulence determinants and the identification of novel SNPs using
+1016/j.a quacu lture.2 022.7 39093 comparative pathogenomics. Sci Rep 13:7712. https://d oi.o rg/1 0.
+25. Rahman M et al (2017) Molecular identification of multiple anti- 1038/s 41598-0 23-3 4887-1
+biotic resistant fish pathogenic Enterococcus faecalis and their 44. Yang C et al (2022) Outbreak dynamics of foodborne pathogen
+control by medicinal herbs. Sci Rep 7:3747. https://d oi.o rg/1 0. Vibrio parahaemolyticus over a seventeen year period implies
+1038/s 41598-0 17-0 3673-1 hidden reservoirs. Nat Microbiol 7:1221–1229. https://d oi.o rg/
+26. Zahran E et al (2019) Experimental pathogenesis and host immune 10.1 038/s 41564-0 22-0 1182-0
+responses of Enterococcus faecalis infection in Nile tilapia (Oreo- 45. Bastardo A, Ravelo C, Romalde JL (2015) Phylogeography of
+chromis niloticus). Aquaculture 512:734319. https://d oi.o rg/1 0. Yersinia ruckeri reveals effects of past evolutionary events on the
+1016/j.a quacu lture.2 019.7 34319 current strain distribution and explains variations in the global
+27. Rozas-Serri M (2022) Why does Piscirickettsia salmonis break transmission of enteric redmouth (ERM) disease. Front Microbiol
+the immunological paradigm in farmed Salmon? Biological con- 6:1198. https://d oi.o rg/1 0.3 389/f micb.2 015.0 1198
+text to understand the relative control of Piscirickettsiosis. Front 46. Delannoy CM et al (2016) Genomic comparison of virulent and
+Immunol 13. https://d oi.o rg/1 0.3 389/fi mmu.2 022.8 56896 non-virulent Streptococcus agalactiae in fish. J Fish Dis 39:13–
+28. Bayliss SC et al (2018) Genomic epidemiology of the commer- 29. https://d oi.o rg/1 0.1 111/j fd.1 2319
+cially important pathogen Renibacterium salmoninarum within
+
+--- Page 18 ---
+364 Page 18 of 19 Molecular Biology Reports (2024) 51:364
+47. Dubey S et al (2023) The mobile gene cassette carrying tetra- PLoS ONE 18:e0285257. https://d oi.o rg/1 0.1 371/j ourna l.p one.
+cycline resistance genes in Aeromonas veronii strain Ah5S-24 028525 7
+isolated from catfish pond sediments shows similarity with a 64. Byadgi OV et al (2023) Comparative genomics of Edwardsiella
+cassette found in other environmental and foodborne bacteria. anguillarum and Edwardsiella piscicida isolated in Taiwan ena-
+Front Microbiol 14:1112941. https://d oi.o rg/1 0.3 389/f micb. bles the identification of distinctive features and potential viru-
+2023.1 11294 1 lence factors using Oxford-Nanopore MinION(R) sequencing. J
+48. Tyagi A et al (2022) Isolation, characterization and complete Fish Dis 46:287–297. https://d oi.o rg/1 0.1 111/j fd.1 3743
+genome sequencing of fish pathogenic Aeromonas veronii from 65. Bridel S et al (2020) Genetic diversity and population struc-
+diseased Labeo rohita. Aquaculture 553:738085. https://d oi.o rg/ ture of Tenacibaculum maritimum, a serious bacterial pathogen
+10.1 016/j.a quacu lture.2 022.7 38085 of marine fish: from genome comparisons to high throughput
+49. Leungtongkam U et al (2020) Genomic analysis reveals high MALDI-TOF typing. Vet Res 51:60. https://d oi.o rg/1 0.1 186/
+virulence and antibiotic resistance amongst phage susceptible s13567-0 20-0 0782-0
+Acinetobacter baumannii. Sci Rep 10:16154. https://d oi.o rg/1 0. 66. Akter T et al (2023) Virulence and antibiotic-resistance
+1038/s 41598-0 20-7 3123-y genes in Enterococcus faecalis associated with streptococco-
+50. Charette SJ (2021) Microbe profile: Aeromonas salmonicida: an sis disease in fish. Sci Rep 13:1551. https://d oi.o rg/1 0.1 038/
+opportunistic pathogen with multiple personalities. Microbiol- s41598-0 22-2 5968-8
+ogy (Reading) 167. https://d oi.o rg/1 0.1 099/m ic.0.0 01052 67. Pradhan SK et al (2023) Isolation of Aeromonas salmonicida
+51. Long M et al (2023) Comparative genomic analysis provides subspecies salmonicida from aquaculture environment in India:
+insights into taxonomy and temperature adaption of Aeromonas polyphasic identification, virulence characterization, and antibi-
+salmonicida. J Fish Dis 46:545–561. https://d oi.o rg/1 0.1 111/j fd. otic susceptibility. Microb Pathog 179:106100. https://d oi.o rg/1 0.
+13767 1016/j.m icpat h.2 023.1 06100
+52. Attere SA et al (2023) Aeromonas salmonicida isolates from 68. Yasuike M et al (2017) Analysis of the complete genome sequence
+Canada demonstrate wide distribution and clustering among of Nocardia seriolae UTF1, the causative agent of fish nocardio-
+mesophilic strains. Genome 66:108–115. https://d oi.o rg/1 0.1 139/ sis: the first reference genome sequence of the fish pathogenic
+gen-2 022-0 086 Nocardia species. PLoS ONE 12:e0173198. https://d oi.o rg/1 0.
+53. Lee BH et al (2023) Investigation of the genus Flavobacterium 1371/j ourna l.p one.0 17319 8
+as a reservoir for fish-pathogenic bacterial species: the case of 69. Aguilar M et al (2023) Genomic and proteomic aspects of p57
+Flavobacterium collinsii. Appl Environ Microbiol 89:e0216222. protein from Renibacterium salmoninarum: characteristics in
+https://d oi.o rg/1 0.1 128/a em.0 2162-2 2 virulence patterns. Microb Pathog 174:105932. https://d oi.o rg/
+54. Avendano-Herrera R et al (2022) Isolation, identification, viru- 10.1 016/j.m icpat h.2 022.1 05932
+lence potential and genomic features of Tenacibaculum piscium 70. Irshath AA et al (2023) Bacterial pathogenesis in various fish
+isolates recovered from Chilean salmonids. Transbound Emerg diseases: recent advances and specific challenges in vaccine devel-
+Dis 69:e3305–e3315. https://d oi.o rg/1 0.1 111/t bed.1 4606 opment. Vaccines (Basel) 11. https://d oi.o rg/1 0.3 390/v accin es11
+55. Bi B et al (2023) Identification and pathogenicity of emerging 020470
+fish pathogen Acinetobacter johnsonii from a disease outbreak in 71. Montigiani S et al (2002) Genomic approach for analysis of sur-
+rainbow trout (Oncorhynchus mykiss). Aquac Res 2023:1995494. face proteins in Chlamydia pneumoniae. Infect Immun 70:368–
+https://d oi.o rg/1 0.1 155/2 023/1 99549 4 379. https://d oi.o rg/1 0.1 128/I AI.7 0.1.3 68-3 79.2 002
+56. Mallik SK et al (2023) Characterization and pathological analysis 72. Ben Hamed S et al (2021) Advances in vaccines developed
+of Flavobacterium tructae recovered from farmed rainbow trout, for bacterial fish diseases, performance and limits. Aquac Res
+Oncorhynchus mykiss (Walbaum, 1792), in the Indian Himala- 52:2377–2390. https://d oi.o rg/1 0.1 111/a re.1 5114
+yan Region. Aquacult Int 31:2399–2420. https://d oi.o rg/1 0.1 007/ 73. Ma J et al (2019) A review of fish vaccine development strategies:
+s10499-0 23-0 1089-5 conventional methods and modern biotechnological approaches.
+57. Wise AL et al (2021) A review of bacterial co-infections in farmed Microorganisms 7. https:// doi. org/ 10. 3390/ micro organ isms7
+catfish: components, diagnostics, and treatment directions. Ani- 110569
+mals (Basel) 11. https://d oi.o rg/1 0.3 390/a ni111 13240 74. Da F et al (2023) Characterization of fliR-deletion mutant Deltaf-
+58. Burkinshaw BJ, Strynadka NC (2014) Assembly and structure of liR from Vibrio alginolyticus and the evaluation as a live attenu-
+the T3SS. Biochim Biophys Acta 1843:1649–1663. https://d oi. ated vaccine. Front Cell Infect Microbiol 13:1162299. https://d oi.
+org/1 0.1 016/j.b bamcr.2 014.0 1.0 35 org/1 0.3 389/f cimb.2 023.1 16229 9
+59. Zhang X et al (2023) The role and mechanisms of rstA in the 75. Serruto D, Rappuoli R (2006) Post-genomic vaccine development.
+intracellular survival of fish pathogenic Aeromonas hydrophila. J FEBS Lett 580:2985–2992. https://d oi.o rg/1 0.1 016/j.f ebsle t.2 006.
+Fish Dis 46:813–827. https://d oi.o rg/1 0.1 111/j fd.1 3790 04.0 84
+60. Thunes NC et al (2022) Type IX secretion system effectors and 76. Wangkahart E, Secombes CJ, Wang T (2018) Studies on the use of
+virulence of the model Flavobacterium columnare strain MS-FC- flagellin as an immunostimulant and vaccine adjuvant in fish aqua-
+4. Appl Environ Microbiol 88:e0170521. https://d oi.o rg/1 0.1 128/ culture. Front Immunol 9:3054. https://d oi.o rg/1 0.3 389/fi mmu.
+AEM.0 1705-2 1 2018.0 3054
+61. Thunes NC et al (2023) Secreted peptidases contribute to viru- 77. Bhattacharya M et al (2020) Computer aided novel antigenic
+lence of fish pathogen Flavobacterium columnare. Front Cell epitopes selection from the outer membrane protein sequences
+Infect Microbiol 13:1093393. https://d oi.o rg/1 0.3 389/f cimb.2 023. of Aeromonas hydrophila and its analyses. Infect Genet Evol
+109339 3 82:104320. https://d oi.o rg/1 0.1 016/j.m eegid.2 020.1 04320
+62. Eickhoff MJ et al (2022) LuxT Is a global regulator of low-cell- 78. Rappuoli R (2000) Reverse vaccinology. Curr Opin Microbiol
+density behaviors, including type III secretion, siderophore pro- 3:445–450. https://d oi.o rg/1 0.1 016/s 1369-5 274(00)0 0119-3
+duction, and aerolysin production, in Vibrio harveyi. mBio 13. 79. Chukwu-Osazuwa J et al (2022) Comparative reverse vaccinol-
+e0362121. https://d oi.o rg/1 0.1 128/m bio.0 3621-2 1 ogy of Piscirickettsia salmonis, Aeromonas salmonicida, Yers-
+63. Riborg A et al (2023) Pan-genome survey of the fish pathogen inia ruckeri, Vibrio anguillarum and Moritella viscosa, Frequent
+Yersinia ruckeri links accessory- and amplified genes to virulence. pathogens of atlantic salmon and lumpfish aquaculture. Vaccines
+(Basel) 10. https://d oi.o rg/1 0.3 390/v accin es100 30473
+
+--- Page 19 ---
+Molecular Biology Reports (2024) 51:364 Page 19 of 19 364
+80. Zhu F et al (2023) Design of a multi-epitope vaccine against six 92. Aquaculture Genomics G et al (2017) Aquaculture genomics,
+Nocardia species based on reverse vaccinology combined with genetics and breeding in the United States: current status, chal-
+immunoinformatics. Front Immunol 14:1100188. https://d oi.o rg/ lenges, and priorities for future research. BMC Genomics 18:191.
+10.3 389/fi mmu.2 023.1 10018 8 https://d oi.o rg/1 0.1 186/s 12864-0 17-3 557-1
+81. Ledesma-Feliciano C et al (2023) Improved DNA vaccine delivery 93. Wang W et al (2019) GWAS analysis indicated importance of
+with needle-free injection systems. Vaccines (Basel) 11. https:// NF-kappaB signaling pathway in host resistance against motile
+doi.o rg/1 0.3 390/v accin es110 20280 Aeromonas septicemia disease in catfish. Mar Biotechnol (NY)
+82. Singh B, Jaiswal S, Kodgire P (2023) Outer membrane proteins 21:335–347. https://d oi.o rg/1 0.1 007/s 10126-0 19-0 9883-0
+and vesicles as promising vaccine candidates against Vibrio spp. 94. Oikonomou S et al (2022) Genomic selection and genome-wide
+infections. Crit Rev Microbiol 1–17. https://d oi.o rg/1 0.1 080/ association analysis for stress response, disease resistance and
+104084 1X.2 023.2 21207 2 body weight in European Seabass. Animals (Basel) 12. https://
+83. Liu Y et al (2022) The protective efficacy of forty outer membrane doi.o rg/1 0.3 390/a ni120 30277
+proteins based DNA vaccines against Aeromonas hydrophila in 95. Vela-Avitua S et al (2023) Genome-wide association study
+zebrafish. Aquaculture Rep 27:101381. https://d oi.o rg/1 0.1 016/j. for Streptococcus iniae in Nile tilapia (Oreochromis niloticus)
+aqrep.2 022.1 01381 identifies a significant QTL for disease resistance. Front Genet
+84. Liu C et al (2019) Construction and characterization of a DNA 14:1078381. https://d oi.o rg/1 0.3 389/f gene.2 023.1 07838 1
+vaccine encoding the SagH against Streptococcus iniae. Fish 96. Ødegård J et al (2011) Methodology for genetic evaluation of
+Shellfish Immunol 89:71–75. https://d oi.o rg/1 0.1 016/j.f si.2 019. disease resistance in aquaculture species: challenges and future
+03.0 45 prospects. Aquac Res 42:103–114. https://d oi.o rg/1 0.1 111/j.1 365-
+85. Laabei M, Massey R (2016) Using functional genomics to deci- 2109.2 010.0 2669.x
+pher the complexity of microbial pathogenicity. Curr Genet 97. Sherif AH et al (2023) Zinc oxide nanoparticles boost the immune
+62:523–525. https://d oi.o rg/1 0.1 007/s 00294-0 16-0 576-4 responses in Oreochromis niloticus and improve disease resist-
+86. Srinivasa Rao PS, Lim TM, Leung KY (2003) Functional genom- ance to Aeromonas hydrophila Infection. Biol Trace Elem Res
+ics approach to the identification of virulence genes involved in 201:927–936. https://d oi.o rg/1 0.1 007/s 12011-0 22-0 3183-w
+Edwardsiella tarda pathogenesis. Infect Immun 71:1343–1351. 98. Perez-Sanchez T et al (2011) Expression of immune-related genes
+https://d oi.o rg/1 0.1 128/I AI.7 1.3.1 343-1 351.2 003 in rainbow trout (Oncorhynchus mykiss) induced by probiotic bac-
+87. Merino S et al (2015) Functional genomics of the Aeromonas sal- teria during Lactococcus garvieae infection. Fish Shellfish Immu-
+monicida lipopolysaccharide O-antigen and A-layer from typical nol 31:196–201. https://d oi.o rg/1 0.1 016/j.f si.2 011.0 5.0 05
+and atypical strains. Mar Drugs 13:3791–3808. https://d oi.o rg/1 0. 99. Bulfon C et al (2020) Resistant and susceptible rainbow trout
+3390/m d1306 3791 (Oncorhynchus mykiss) lines show distinctive immune response
+88. Munang’andu HM, Galindo-Villegas J, David L (2018) Teleosts to Lactococcus garvieae. Fish Shellfish Immunol 105:457–468.
+genomics: progress and prospects in disease prevention and con- https://d oi.o rg/1 0.1 016/j.f si.2 020.0 6.0 40
+trol. Int J Mol Sci 19. https://d oi.o rg/1 0.3 390/i jms19 04108 3
+89. Machimbirike VI et al (2021) Comparative genomics of Edwards- Publisher's Note Springer Nature remains neutral with regard to
+iellaictaluri revealed four distinct host-specific genotypes and jurisdictional claims in published maps and institutional affiliations.
+thirteen potential vaccine candidates. Genomics 113:1976–1987.
+https://d oi.o rg/1 0.1 016/j.y geno.2 021.0 4.0 16 Springer Nature or its licensor (e.g. a society or other partner) holds
+90. Houston RD et al (2020) Harnessing genomics to fast-track exclusive rights to this article under a publishing agreement with the
+genetic improvement in aquaculture. Nat Rev Genet 21:389–409. author(s) or other rightsholder(s); author self-archiving of the accepted
+https://d oi.o rg/1 0.1 038/s 41576-0 20-0 227-y manuscript version of this article is solely governed by the terms of
+91. Tadmor-Levi R, Hulata G, David L (2019) Multiple interacting such publishing agreement and applicable law.
+QTLs affect disease challenge survival in common carp (Cyprinus
+carpio). Heredity (Edinb) 123:565–578. https://d oi.o rg/1 0.1 038/
+s41437-0 19-0 224-0
+

@@ -1,0 +1,25 @@
+{
+  "id": "conv-1790081867345-566kyeop1",
+  "providerId": "opencode",
+  "title": "请基于论文和联网搜索回答: 高通量测序技术是什么",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1790081867348,
+  "lastActivityAt": 1790083070139,
+  "sessionId": "ses_f36ce4ff8ffer2URniumpdf4IL",
+  "selectedModel": "opencode:opencode/mimo-v2.6-flash-free",
+  "providerState": {
+    "databasePath": "C:\\Users\\severus\\.local\\share\\opencode\\opencode.db",
+    "nativeConversationContextEstablished": true
+  },
+  "linkedContentPath": "分子生物学期刊(学术英文积累)/揭开鱼类病原菌的基因组秘密： 水产养殖可持续发展的路线图.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 50766,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": false,
+    "inputTokens": 0,
+    "model": "opencode:opencode/mimo-v2.6-flash-free",
+    "percentage": 25
+  }
+}

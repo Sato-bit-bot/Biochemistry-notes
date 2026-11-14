@@ -1,0 +1,25 @@
+{
+  "id": "conv-1792290640912-5aex5nc90",
+  "providerId": "opencode",
+  "title": "你根据这篇论文精读2写一篇英文的演讲稿, 时长5分钟",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1792290640920,
+  "lastActivityAt": 1792417375451,
+  "sessionId": "ses_eb32711aeffeDz2t7NP6odK8Du",
+  "selectedModel": "opencode:deepseek/deepseek-flash",
+  "providerState": {
+    "databasePath": "C:\\Users\\severus\\.local\\share\\opencode\\opencode.db",
+    "nativeConversationContextEstablished": true
+  },
+  "linkedContentPath": "分子生物学期刊(学术英文积累)/论文精读2.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 56228,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 0,
+    "model": "gpt-5.6-sol",
+    "percentage": 6
+  }
+}

@@ -18,7 +18,8 @@
       },
       "images": [],
       "contentDigest": "ebc3ce2af0a837a1a8688ce4ac6d9357782bdde85d722a504804c85eb271bef2",
-      "providerAssistantMessageId": "msg_0915fed89001leYJCdzmN6aOB8"
+      "providerAssistantMessageId": "msg_0915fed89001leYJCdzmN6aOB8",
+      "providerUserMessageId": "msg_0915f3996001SNjAd1WIa8pSGs"
     },
     {
       "schemaVersion": 1,
@@ -31,7 +32,8 @@
       "canonicalText": "将这些名词解释列成表格, 更直观",
       "images": [],
       "contentDigest": "13fadfd49f421f84b6a19365873f2aa30831902b25f659aea05c4d8844a6f308",
-      "providerAssistantMessageId": "msg_091623665001hoybGVR4Fj5IYv"
+      "providerAssistantMessageId": "msg_091623665001hoybGVR4Fj5IYv",
+      "providerUserMessageId": "msg_09161e01300116rYyYyBGSz4rG"
     }
   ]
 }

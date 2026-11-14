@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1794489385201-poidgusxs",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1794489385322-yrq3v2h",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1794489385197-70165p1",
+      "timestamp": 1794489385197,
+      "rawDisplayText": "@浮游动物/第三章 甲藻门.pdf \n提炼这篇文章的要点,  然后将要点写进 @浮游动物/   markdown文件夹里,   以章节为序号",
+      "canonicalText": "@浮游动物/第三章 甲藻门.pdf \n提炼这篇文章的要点,  然后将要点写进 @浮游动物/   markdown文件夹里,   以章节为序号",
+      "images": [],
+      "contentDigest": "3b1467e6e0620a2d6a3caa01b64585fe044922fb4d36aad3afe25003d23f4ed5",
+      "providerUserMessageId": "msg_1cfe71946001w3Ij7Mn61hJuWR",
+      "providerAssistantMessageId": "msg_1cfe72af40015HmkD49Qb1XYyt"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1794489442892-w54eobj",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1794489442889-071umy5",
+      "timestamp": 1794489442889,
+      "rawDisplayText": "继续",
+      "canonicalText": "继续",
+      "images": [],
+      "contentDigest": "65f454414e2fda4840658901f9399831363ad75712ba36b930b5ad393f72f7b7"
+    }
+  ]
+}

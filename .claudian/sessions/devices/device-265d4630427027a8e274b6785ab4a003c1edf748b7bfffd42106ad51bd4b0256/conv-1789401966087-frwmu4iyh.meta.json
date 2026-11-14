@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789401966087-frwmu4iyh",
+  "providerId": "opencode",
+  "title": "Important Aeromonas spp",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789401966090,
+  "lastActivityAt": 1789440524143,
+  "sessionId": "ses_f5f5202eeffeHKVfaAicPGp2FA",
+  "selectedModel": "opencode:deepseek/deepseek-flash",
+  "providerState": {
+    "databasePath": "C:\\Users\\severus\\.local\\share\\opencode\\opencode.db",
+    "nativeConversationContextEstablished": true
+  },
+  "linkedContentPath": "分子生物学期刊(学术英文积累)/揭开鱼类病原菌的基因组秘密： 水产养殖可持续发展的路线图.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 72910,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 0,
+    "model": "deepseek-v4-flash",
+    "percentage": 36
+  }
+}

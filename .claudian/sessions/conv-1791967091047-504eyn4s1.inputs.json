@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1791967091047-504eyn4s1",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1791967091091-8g44vq2",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1791967091043-jcf5mvt",
+      "timestamp": 1791967091043,
+      "rawDisplayText": "@底栖生物/头足纲贝类的形态和构造与生理特征.md    \n补充这页的笔记",
+      "canonicalText": "@底栖生物/头足纲贝类的形态和构造与生理特征.md    \n补充这页的笔记",
+      "context": {
+        "linkedContent": {
+          "path": "底栖生物/头足纲贝类的形态和构造与生理特征.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "750566cf45ab14a5cf26b57d6691bb62148a7711f2c8bbbdb93e71afc15056ae",
+      "providerAssistantMessageId": "msg_1399c574c001p5Wt3ntGNBwF02",
+      "providerUserMessageId": "msg_1398ff28a001fo11mADckA38Vd"
+    }
+  ]
+}

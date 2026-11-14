@@ -1,0 +1,1004 @@
+﻿=== PAGE 1 ===
+pubs.acs.org/est Article
+Identifying Multicomponent Microplastics in Complex Matrices
+Using a Fast Fourier Convolutional Neural Network with Hierarchical
+Feature Mapping
+Xingqi Chen, Hongshen Wang, Wen Shao, Hexinyue Huang, Yuanqi Li, Yanwen Guo, Liang Mao,
+and Shixiang Gao*
+CiteThis:Environ.Sci.Technol.2026,60,16662鈭?6675 ReadOnline
+ACCESS *
+Metrics&More ArticleRecommendations s谋 SupportingInformation
+ABSTRACT: Identifying environmental microplastics (EMPs) via Raman spectroscopy (RS) is well-advanced, whereas
+differentiating multicomponent MPs in impure mixtures remains challenging. In this work, we developed a Fast- Fourier-
+Convolutional neural network (FFCNN) to identify MP components in mixtures based on laser-confocal RS without complex
+isolation and introduced a hierarchical feature mapping (HFM) method to visualize and interpret the learned multilayer spectral
+features. The involved mixtures included several common types of MPs (polypropylene, polyethylene, polystyrene, polyvinyl
+chloride, and polyethylene terephthalate) and minor additives or impurities. The results indicated that the macro F1-score of the
+FFCNNwas93.6%,10.18%higherthanthesecond-placeRandomForest,inthedatabasewith3600spectrafromcommercialMPs,
+mixed MPs, and EMPs. FFCNN achieved probability classification of MP mixtures via multilabel recognition. The HFM method
+visualizedandtrackedmultilayerspectralfeatureevolution,revealingthatFFClearnedprecisecomponentsignalsthroughnonlocal
+receptive field and cross-scale fusion, eliminating noise to extract and integrate MPs-related characteristics in spectra. Of 22
+environmental samples yielding one Raman spectrum each, MP component identification was 100% accurate, aligning with the
+pyrolysis-GC-MS cross-validation results. The work provides a practical framework for the rapid detection and identification of
+typical MP mixtures in the environment.
+KEYWORDS: environmental microplastics, Raman spectroscopy, fast Fourier convolution, neural network model,
+hierarchical feature mapping
+1. INTRODUCTION structures of different MP types at low concentrations in the
+Theabundanceofmicroplastics(MPs)hasbecomeoneofthe environmentsamplesmakeitdifficulttodistinguishthemfrom
+most concerning environmental issues in the modern world impurities;8 3) the weathering of MPs accompanied by
+and has attracted widespread research interest.1,2 MPs have unknown coexisting interferences in the long-term environ-
+beendemonstratedasTrojanhorsecarriersofvariouskindsof
+mental exposure makes their spectral characteristics compli-
+pollutants to form mixed contaminations in human or
+biological samples, leading to health risks.3鈭? The increasing
+penetration of MP mixtures in human tissues brings Received: April 13,2026
+unprecedented challenges to analytical methods by the fact Revised: May26,2026
+Accepted: May27,2026
+that 1) conventional methods prescribe time-consuming and
+Published: June5, 2026
+less prescriptive pretreatments to separate MPs from environ-
+mental matrices, possibly resulting in sample damage or
+introducing additional errors;6,7,9 2) the similar chemical
+漏2026AmericanChemicalSociety https://doi.org/10.1021/acs.est.6c05467
+16662 Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 2 ===
+Environmental Science & Technology pubs.acs.org/est Article
+cated.10鈭?4Therefore,specificapproachesareurgentlyneeded components in generalization tests with data of unknown
+to accurately identify MP mixtures in the environment. labels. However, existing interpretable methods are insuffi-
+Spectroscopic analysis has been widely applied to detecting ciently suited for the task of identifying multicomponent MPs
+MPs due to its rapidity, nondestructive nature, and high incomplexmatricesusingmultilabelrecognition.Forexample,
+chemical specificity.15 Raman spectroscopy (RS), using the channel-level feature gradient responses of Grad-CAM
+differentialspectraasparticularfingerprints,ismoreconducive couldcausethefinalheatmaptocontainresponseinformation
+for the advantages of pretreatment-free, excellent spatial from other categories, thereby focusing on areas unrelated to
+resolution, and low water interference in MP analysis the target component.38 GFNet primarily visualized the
+compared to infrared spectroscopy.16鈭?8 Still, MP samples in weights of the convolution kernel, focusing on the learning
+nature are usually present in the form of a mixture of content of the convolution kernel itself rather than the
+impurities, which may complicate the spectral signature of the
+responseintensityofthefeaturemap.34鈭?7Also,aCNN-based
+sample that is hard to decipher, e.g., by generating spectral interpretable graph represented the pattern knowledge in the
+peak shifts/contradictions/overlays, etc.19,20 The unique CNN convolution layer while filtering out noise activa-
+sensitivity to molecules with symmetrical configurations and tions.47,48 However, the graph鈥檚 structure and node represen-
+repeating units enables RS to distinguish the chemical tation remained fixed once established, making it hard to
+compositions of MPs from additives or impurities.21,22 A identify spectral patterns of unknown labels.
+majordisadvantageof RS,especially bytheanalysisof MPsin In this work, we developed a fast Fourier convolutional
+environmental samples (EMPs), is the interference by neural network (FFCNN) model that leveraged frequency-
+fluorescence which can be induced by inorganic (e.g., clay domain operations to extract multiscale features from raw
+minerals,dustparticles),organic(e.g.,humic substances),and spectra within a comprehensive Raman spectral database
+(micro)biological impurities in the environmental matrix as encompassingpure,aged,additive-containing,environmentally
+well as some additives (pigments).21 Furthermore, traditional weathered MPs and MP mixtures (PP, PE, PS, PVC, PET),
+RS identification methods, which rely on database matching, enabling accurate identification of multicomponent mixtures
+are largely confined as a single-label MP classification without the need for intensive spectral preprocessing. Unlike
+task.23鈭?6 This approach struggles to address the common traditionalmethodsthatrequiredpristinespectraandcomplete
+occurrenceofmultipleplasticscoexistingintherealworld.RS removal of interferents, our approach was designed to tolerate
+alone is thereupon not sufficient to accurately identify residualnoiseandbaselinedistortions,thuspermittingtheuse
+individual components of the EMPs. ofmildsamplepreparationthatminimizedplasticdegradation.
+Machine learning (ML), a leading technical approach of Furthermore, we introduced Hierarchical Feature Mapping
+artificial intelligence (AI), has been used to combine chemical (HFM),alabel-agnosticinterpretabilitytoolthatvisualizedthe
+analysis methods for identifying and classifying MPs-related model鈥檚 focus on chemically meaningful spectral bands,
+pollutants.22,24 As the RS spectra of EMPs usually reveal thereby bridging the 鈥渂lack box鈥?gap in deep learning-based
+extensive noise or anomalous peaks due to aging or environmental analysis. This framework shifts the analytical
+interferences, traditional ML models could be overfitted or burden from laborious sample purification to intelligent
+yield poorly interpreted results.25,27 Convolutional neural spectral interpretation, offering a pathway for routine
+networks (CNNs), an essential branch of ML models, have monitoring of MP mixtures in complex environmental
+been applied to a variety of identification techniques to matrices. Furthermore, we compared FFCNN with three
+determinetheconstitutionofunknownmixtures.27,28,50Onthe conventional neural network architectures: CNN (simple
+onehand,standardCNNshavelimitedreceptivefields,making
+convolutionalneuralnetwork),27ResNet(residualnetwork),39
+it difficult to simultaneously capture local peak shapes and
+andDenseNet(denselyconnectedconvolutionalnetwork)40,41
+global background variations within spectra. Also, the black- to validate the broader applicability of FFC for multi-
+box nature of deep learning models limits their reliable component identification in MP-related mixtures.
+application in environmental analysis. For instance, a self-
+attention mechanism was introduced into CNNs and 2. MATERIALS AND METHODS
+combined with silver foam substrates for the separation of
+MPs,whilethemodel鈥檚interpretabilityremainedunclear.29On 2.1. Sample Preparation and Collection
+theotherhand,internationalchemicallegislationhascalledfor 2.1.1. Preparation of Pure Samples. PP and PE pellets (with
+normativedataonMPs,whereasexistingresearchcompilations diameters of 鈮?3 渭m) were purchased from Hongyuan Macro-
+moleculeCo.,China.PSandPETspheres(withdiametersof13渭m)
+and databases related to MPs are typically nonopen-source or
+characterized by fragmented data.5,49 This situation under- were purchased from Shanghai Yisucheng Co., China. PVC pellets
+(with diameters of 500 nm to 13 渭m) were provided by
+scoresthenecessityofcollectingspectraldataindependentlyto
+Dongguanshan Plasticizing Co., China. A batch of MP commercial
+investigate the characteristics of MPs from various environ-
+products containing small amounts of additives with practical
+mental sources compared to pure plastics or model formulations were made as representatives of commercial MPs,
+plastics.13,30鈭?3 Simultaneously, developing algorithms that along with the commercial PAEs-containing MPs (Shanghai Cosinta
+alignperfectlywiththespectralvariance,toaccuratelyidentify PolymerMaterialsCo.,China)ascomparison.Toenablecomparison
+the components of EMPs or clarify the detailed differences withsubsequentenvironmentalsamples,wesubjectedthemodelMPs
+between commercial MP mixtures and EMPs without orcommercialMPstophoto-ageingtreatmentinaccordancewiththe
+methoddescribedbyShietal.42Next,avastnumberofMPmixtures
+preprocessing, remains to be explored.
+werepreparedbyarbitrarilyvaryingtheconcentrationortypesofthe
+Model interpretability is crucial for reliable MP component
+above-mentionedfivekindsofMPs,andthemassfractionofMPsin
+identification and enhancing trust in model predictions for
+anycomponentofthemixtureisnotlessthan5%asacomparisonof
+environmental analyses. Since the spectral characteristics of model mixtures with environmental mixtures. MPs were dispersed
+MP-related mixed samples overlap significantly, the explain- withanhydrousethanolordeionizedwateranddilutedto10mg路L鈭?
+ability tool must reveal the correlation patterns between for the subsequent analysis of individual plastic particles. The glass
+16663 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 3 ===
+Environmental Science & Technology pubs.acs.org/est Article
+slideforloadingMPsampleswaspurchasedfromShenzhenFangyuan toensurenomicroplasticcategorywasoverlooked.For moredetails
+GlassTech.Co.,Ltd.,China.Allsubstrateswerethoroughlycleaned aboutthe Raman spectroscopic setup,please refer to TextS3.
+by ultrasonication in ethanol and subsequently rinsed with ultrapure The actual lateral resolution of the Raman system was measured
+water to remove any possible surface contaminants. Specific usingtheknife-edgemethod.Acleansiliconwaferedgewasscanned
+composition and percentage distribution on the additive-containing acrossthelaserfocusin0.1渭msteps,andtheintegratedintensityof
+MP samples involved in this work are detailed in Supporting theSipeakat520.7cm鈭?wasrecorded.Theedgespreadfunctionwas
+Information.Inaddition,greatcarewastakeninhandlingtheslidesto differentiatedtoobtainthelinespreadfunction,yieldingameasured
+prevent any possible scratches or contamination during the experi- lateral resolution of 0.93 卤 0.08 渭m fwhm with the 50脳 objective
+ments. (NA = 0.75). To determine the smallest MP particle reliably
+2.1.2. EMP Sample Collection and Preservation. Samples detectable by our method, we acquired monodisperse PS micro-
+werecollectedfrommajorinlandriversandartificialwetlandsorlakes spheresofvaryingdiameters:5.0,2.0,1.0,0.5,and0.2渭m(Thermo
+near populated areas in Nanjing, Jiangsu Province (32掳03鈥?9鈥砃, Scientific, certified sizes). For each size, we deposited particles on
+118掳46鈥?4鈥矱). Eleven key sampling areas in Nanjing city were clean glass slides (n = 30 per size), located individual particles by
+selected based on the population heat map (assuming that the brightfield microscopy, and acquired Raman spectra under identical
+abundanceandtypesofMPsareproportionaltothepopulationofthe conditions (532 nm laser, 50脳 objective, 10 s acquisition, 3
+accumulations). Spectra were then processed through FFCNN for
+area),including4artificialwetlandclusters,4truncationpointsofthe
+identification. The 1 渭m threshold aligns with our theoretical
+Qinhuaiinlandwaterway,and3confluencesofplasticwastealongthe
+resolution and confirms that our method is reliable for particles 鈮?
+Yangtze River (Text S1). The direct picking method was chosen to
+渭m. Particles below 1 渭m produce insufficient Raman signal under
+collectplasticparticlesfromthesoilsurfacealongtheQinhuaiRiver
+ourstandardacquisitionparameters.Wehaveaddedthisasanexplicit
+usingamedium-sizedstainlessspatuladuetothepresenceofvisually
+recognizable bands of plastic along the banks of the river.7 For the limitationintherevisedmanuscriptandsuggestthatfutureworkwith
+surface-enhanced techniques or longer acquisition times may extend
+aggregatedplasticwastefloatingonthesurfaceoftheQinhuaiRiver
+detectability to the nanoscale. Size-dependent detection using
+andnearbyinnerlakes,weadoptedafive-pointsamplingmethodfor
+monodisperse polystyrene microspheres showed that particles
+sample collection by a stainless bucket of 2 L capacity. Multiple
+鈮?渭m were reliably detected (93.3鈭?00% detection rate), while
+batches of target samples were filled in the field into clean 500 mL
+particles鈮?.5渭mexhibitedasharpdeclineindetectability(43.3%for
+glassvialsforsubsequentanalysis.Plasticmicrofibers,fragments,films,
+0.5渭mand6.7%for0.2渭m)duetoinsufficientRamansignal.These
+microspheres, or nonhomogeneous mixtures including PP, PE, PS,
+results establish the practical detection limit of the method as
+PVC, and PET as the main constituents were collected at different
+approximately1渭m under the currentacquisitionconditions.
+samplinglocations,totaling6batches,12clustersofsoilsamples,and
+ToestablishquantitativecriteriaforreliableFFCNNidentification,
+15 clusters of water samples, for a total of 135 samples of
+we systematically evaluated model performance as a function of
+environmental MPs (Figure S2). The above environmental samples
+spectral signal-to-noise ratio (SNR). Pure MP spectra (n = 50 per
+were then sealed in a brown glass bottle and sorted at room
+polymer)wereartificiallydegradedwithincreasingGaussiannoiseto
+temperature.
+create test sets spanning SNR from 2 to 50 (Table S14). FFCNN
+A mild pretreatment method with only hydrogen peroxide was maintained >95% identification accuracy for SNR 鈮?10 across all
+chosen for the samples to avoid potential plastic degradation.
+polymer types. For SNR between 5 and 10, accuracy decreased to
+Environmental samples that may contain MPs were placed on the 82鈭?1%, with PVC showing the greatest sensitivity (82% at SNR =
+inner wall of the filtration device, followed by slow addition to the 5). Below SNR = 5, accuracy declined sharply to 58鈭?4%, and for
+filtration device with a hydrogen peroxide solution of 30% and SNR < 3, performance approached random guessing (42鈭?1%).
+sufficientdigestionofthesamplesatroomtemperaturewaslastedfor These findings establish SNR 鈮?5 as the minimum threshold for
+6h.Afterward,weappliedanultrasonicwaterbathtoreleaseparticles reliable identification, with SNR 鈮?10 recommended for highest
+potentiallytrappedonthefiltermembranesurface,allowingthemto confidence. Analysis of environmental spectra in our validation set
+fallintothesolutionandbecollected.Finally,thesamplesweredried showed a median SNR of 18.3 (interquartile range: 11.7鈭?6.4),
+inanovenat40掳Cfor24htoremoveexcesswater,facilitatingthe confirmingthatthemajorityofourfieldsamplesmeetorexceedthe
+transfer of the sample onto the detection slide. The raw plastic was recommendedthreshold.
+cutintocoarseparticles,thenfrozeninliquidnitrogentobecrushed,
+2.3. The Constitution of the Spectra Database
+and sieved through a 1000-mesh screen (<13 渭m, China Sieve
+Industry, Co). The processed solid MP fragments/microspheres/ Primary data sources, including five types of MPs with each kind of
+plasticfromvariousscenarios,possess500setsofspectraindividually.
+fiberswereloadedonthesurfaceoftheslidesandfixedwellwithclips.
+In the meantime, a batch of MP commercial products with practical
+2.2. Raman Spectra Collection
+formulations containing small amounts of additives was made,
+RamanspectraofMPsorMPmixtureswerecollectedonanXploRA formingatotalof500setsofspectra.AvastnumberofMPmixtures
+Plus confocal Raman spectrometer (Jobin Yvon, HORIBA Gr, with different types and concentrations were also prepared by
+France)equippedwitha10脳or50脳Olympusmicroscopeobjective arbitrarily varying the concentration ortypes of MPs,with atotal of
+500 sets of spectra. Mixtures of EMPs with a total of 500 sets of
+(numericalaperture(NA)=0.90)(manufacturedin2014)with532
+spectra were also included. Also, an open-source Raman spectrum
+nm laser excitation (laser power at the sample: 100 mW), spanning
+500鈭?500cm鈭?.Spectra wereobtainedusinga 50脳objectiveand a library called SloPP43鈭?6 containing both virgin and aged MPs was
+obtained,and200spectrathatbelongedtoourconcernedMPtypes
+10 s collection time. Mapping scanning measurements were
+were randomly selected for inclusion in our data set. The above 5
+performed on a microconfocal Raman microscope at 532 nm with
+batches of data sets were combined to form the total Raman
+10sperexposureand750nmofgrating(1200).Imagesofaselected
+spectroscopicdataset(TextS2).Notably,themaincategoriesinthe
+area(270渭m脳270渭m)wereobtainedwitharesolutionof0.5渭m脳
+constructed database were evenly distributed to ensure a balanced
+0.5 渭m 脳 2 渭m in X, Y, and Z. The confocal Raman spectrometer
+data set for model training and evaluation. The list of specific data
+featurestwodistinctfocalareaconfigurations:1)a10脳objectivelens
+relevant to testing FFC generalization performance is detailed in
+with a scan size of 270 渭m 脳 270 渭m, used to target broad regions
+Supporting InformationTableS1.
+potentially containing microplastic mixtures; and 2) a 50脳 objective
+lenswithascansizeof80渭m脳80渭m,employedtodetectsmaller 2.4. The Establishment of Model
+environmentalMPsormixtures.Thelasersimultaneouslyilluminated Thecharacteristicpeakscorrespondingtovariousplasticsoradditives
+the surfaces of enriched multicategory polymers, thereby collecting did not appear continuously but were discretely distributed or even
+the Stokes scattering signal from the entire mixed polymer complex had distinct intensities (Tables S2鈭扴7). Conventional convolution
+via Raman spectroscopy. Each sample underwent three parallel tests onlyoperatedlocallywithafixedsize,whichmadeitdifficulttomeet
+16664 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 4 ===
+Environmental Science & Technology pubs.acs.org/est Article
+Figure1.GeneralframeworkofFFCNNwithitsexplainabletool(HFM)forrecognizingMPmixturesandthedetailedarchitectureoftheFFC
+module. The structure of the FFC module is composed of two FFCs with one similar residual block, including global and local branches. The
+outputof the FFC isidentified bythe actual multilabel of MPmixtures(pairingsof truelabels withprobabilities).
+the requirements of recognizing MP mixtures with multicomplexity, multicategorization and multilabeling tasks. Multiclass classification
+suchasmultiscale,discrete,orpartialabsenceoffeatures.40Therefore, denotedaclassificationtaskinwhichthereweremultipleclasses,e.g.,
+weproposeanovelneuralnetworkarchitecturecalledthefastFourier classifying a sample that contained mainly a particular type of MP,
+convolutional neural network (FFCNN). To realize the cross-scale which could be polyethylene, polypropylene, polystyrene, etc. The
+fusionofnonlocalreceptivefields(featurescaling)andlatentfeatures model was designed for use in the classification of MPs. Multiclass
+attributed to each component, FFCNN facilitated the linking of classification assumed that each sample was assigned one and only
+discrete features with significant intensity differences between onelabel:asamplecouldbeeitherpolypropyleneorpolyethylenebut
+fingerprint and nonfingerprint regions in Raman spectra of mixtures not both. In contrast, multilabel classification gave each sample a
+to achieve accurate multicomponent identification (Figure 1). CNN seriesoftargetlabels.Itcouldbeimaginedthattheattributesofadata
+nested three layers of FFC blocks after maximum pooling in the pointwerenotmutuallyexclusive(afruitthatwasbothanappleanda
+second layer. Each FFC block module was built upon the core pear was mutually exclusive), e.g., a mixture of MPs with multiple
+conceptofResNet,leveragingtheparallelizationofidentitymapping categories may be considered to be both polyethylene and
+andresidual mapping.The residual mappingutilizedcross-layer skip polypropylene atthe sametime.
+connections to facilitate efficient learning of feature representations As mentioned above, we separated 1600 (80%) and 400 (20%)
+while the identity mapping maintained key features from the RamanspectraforeachkindofMPasthetrainingandvalidationsets,
+preceding layer and propagated them to subsequent layers (Figure respectively. The final output layer had C units, where C was the
+1). Two FFC operators were included on the route of residual number of MP classes, and used a sigmoid activation function to
+mapping,eachconsistinginternallyoftwointerconnectedpaths:1)a produce the probability distribution over the classes. Moreover, we
+local/spatialpaththatperformedordinaryconvolutiononaportionof manuallyoptimizedthemodelstructuresandhyperparametersduring
+the input feature channel; 2) a global/spectral path that operated in the processesto minimize losses,assummarized inTextS6.
+thespectraldomain.Eachpathcapturedcomplementaryinformation Inadditiontotheexistingdataset,weobtainedtheRamanspectra
+withadifferentreceptivefieldsize,wheretheexchangeofinformation ofanother135EMPsampleswithinpreviouslyselectedsamplingsites
+between paths took place internally. It is strongly believed that the (Text S1) to test the generalization performance of the model and
+operation of the Fourier transformation to convert spatial features randomlyselected27spectrawithreallabels(detailedconstituentsof
+into the spectral domain made it especially well-suited for handling MPs) at a 5:1 ratio for display. Among them, we assumed that the
+the variable and discrete feature sizes of Raman spectra in MP presence of a component was determined when the probability of a
+mixtures. In addition, its nonlocal and cross-scale fusion capabilities componentinthemixtureoutputbythemodelwasgreaterthan0.5
+provided significant advantages for the targeted identification of when the component fraction was not greater than 3, while this
+pollutants in multicomponent MPs. For more details about the threshold was reduced to 0.2 and was set empirically when the
+mathematics, the design architecture, or the concept of FFCNN, component fraction of the mixture was greater than 3 based on the
+please referto TextsS5and S6. previous 30rounds oftesting forFFCNN (TextS7).
+2.5. Model Training and Generalization 2.6. The Interpretability of the Model
+Toaccuratelyidentifythetypesofsamplesfromdifferentsources,we In this study, we utilized HFM to understand the process by which
+comparedtheperformanceoftheproposedmodelswhenperforming neural networks captured multidimensional, detailed, and complex
+16665 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 5 ===
+Environmental Science & Technology pubs.acs.org/est Article
+features and to clarify why components corresponding to similarly photothermal and natural aging. Given the large volume of
+shaped spectra were identified. HFM is very flexible and can be content related to the differences in Raman spectra of MPs
+appliedtointerpretanylayerofaCNN.Combinedwithprofessional with varying sources and compositions, please refer to Text
+analysis,itcanprovideanin-depthunderstandingofthe鈥渂lackbox鈥?
+S10 for the following part. Specifically, we uniformly precede
+model processing. The process of HFM canbe roughly divided into
+the Raman shift with 鈥溾埣鈥?in the later text to represent the
+the following steps: 1) The shallow layers capture low-level features
+possibledeviationofthespectralfeatures,althoughitgenerally
+suchasedgesandtextures;2)Themiddlelayersextractmoreabstract
+features,beginningtofocusonshapesandstructuralelements;3)The did not exceed 10 cm鈭?.
+deep layers capture high-level, semantic features, including object First, we needed to understand the actual meaning behind
+shapesandabstractpatterns.Asthenetworkdeepens,theresolution thecharacteristicpeaksintheRamanspectrumofeachtypeof
+offeaturemapsgenerallydecreasesduetopoolingoperations,soitis plastic polymer. PE and PP both had a relatively simple
+essential to select an appropriate depth that balances capturing core structure with primary and tertiary carbons predominating on
+features while maintaining an optimal resolution for visualization
+thecarbonchain.TheRamanpeaksofPEweredominatedby
+(Text S8). For information regarding specific techniques for C鈭扖 stretching (鈭?061, 鈭?129 cm鈭?), CH rocking, and
+identifyinginterpretableinformationincomplexMPsamplesutilizing 2
+bending (鈭?295, 鈭?441 cm鈭?), while more signatures were
+HFM, referto TextS9.
+observedinthefingerprintregionfortheRamanspectraofPP,
+2.7. Model Evaluation such as C鈭扖 stretching (鈭?09, 鈭?73, 鈭?152 cm鈭?), C鈭扝
+The model performance was evaluated with four commonly used rocking (鈭?27 cm鈭?), CH bending (鈭?330, 鈭?460 cm鈭?),
+metrics, namely accuracy, precision, recall, and F1-score, as the core and CH bending (鈭?41 c 2 m鈭?). As polyolefins, PP and PE
+references. Precision and F1-score were selected as the main 3
+werealmostindistinguishablefromeachotherinthatthethree
+evaluation metrics to provide a more reliable and informative
+strong characteristic peaks of CH stretching were almost
+assessmentofthemodelperformance.Precisionfocusesonevaluating 2
+themodel鈥檚abilitytoidentifypositivesamples,i.e.,howmanysamples coincided, located at 鈭?722, 鈭?843, and 鈭?881 cm鈭?,
+predicted by the model to be positive are actually positive samples. respectively, and the only difference was that PP had a CH
+3
+F1-score strikes a balance between precision and recall as a way to stretchingat鈭?953cm鈭?.Ingeneral,PEwasidentifiedbythe
+assess the comprehensive performance of the model in complex four characteristic peaks inthe rangeof 1000鈭?500 cm鈭?and
+scenarios (taking into account both the model鈥檚 ability to recognize two strong characteristic peaks in the range of 2800鈭?000
+positivesamplesanditsabilitytocoverthem).Moreinformationon cm鈭?, while PP had seven characteristic peaks in the range of
+themodel performance metricscanbefoundinText S7.
+500鈭?500 cm鈭? and three strong characteristic peaks ranging
+2.8. Ground-Truth Validation of Environmental in 2800鈭?000 cm鈭? (Figure S8a).
+Microplastics
+As a representative of MPs containing benzene rings or
+To establish reliable reference labels for environmental samples, we substituent groups, PS had branched chains substituted by
+employed a multitechnique validation approach. Individual particles
+benzene rings, so its characteristic peaks were composed of
+isolated from environmental matrices were first analyzed independ- ring breathing (鈭?001 cm鈭?), C鈭扖 stretching (鈭?20, 鈭?92,
+ently by the Raman spectroscopist using commercial reference
+鈭?200, and 鈭?604 cm鈭?), the in-plane bending of benzene
+libraries (KnowItAll). Only particles with concordant expert
+ring(鈭?032cm鈭?),CH bending(鈭?328,鈭?450cm鈭?),with
+identifications proceeded to the validation set. For a randomly 2
+selected subset (22 samples), pyrolysis-gas chromatography鈭抦ass C鈭扝 stretching on the benzene ring (鈭?052 cm鈭?) and the
+spectrometry (py-GC/MS) was performed as an orthogonal carbon chain (鈭?906 cm鈭?) as a validation supplement.
+confirmation method. Individual particles were transferred to Overall, PShad eightcharacteristic peaks ranging from 600 to
+pyrolysis cups and analyzed at 600 掳C using a Multi-Shot Pyrolyzer 1700cm鈭?,andtwostrongcharacteristicpeaksintherangeof
+EGA/PY-3030DcoupledtoaGC/MS(ShimadzuQP2020).Polymer 2800鈭?100 cm鈭?, of which, 鈭?002, 鈭?032, 鈭?601, and
+identification was based on characteristic pyrolysis products: styrene 鈭?050cm鈭?becametheuniquefingerprintsthatdistinguished
+monomer/oligomers for PS, 2,4-dimethyl-1-heptene for PP, 1-
+PS from other types of plastics. PVC, substituted by chlorine
+dodecene for PE, naphthalene for PVC, and biphenyl/benzoic acid
+atoms (Cl) on the branched chain, could be specifically
+forPET.
+distinguished by C鈭扖l stretching (鈭?36, 696 cm鈭?), C鈭扖
+3. RESULTS AND DISCUSSION stretching (鈭?107, 鈭?174 cm鈭?), C鈭扝 bending (鈭?336,
+鈭?430 cm鈭?), C鈭扝 stretching (鈭?912 cm鈭?), and Cl atom
+3.1. The Characteristics of Spectral Database
+substitutionpeak(鈭?38cm鈭?).ThefingerprintsofPVCwere
+Given the large variety and number of spectral databases, for characterized by four major peaks in the range of 1000鈭?500
+specificinformationabouttheRamanspectralcharacteristicsof cm鈭? and two peaks in the range of 600鈭?00 cm鈭?. PET was
+MPs from different sources, please refer to Text S10. This produced by polycondensation of dimethyl terephthalate and
+sectionexclusivelyaddressesthefundamentalcharacteristicsof glycol ester, with C鈭扖 stretching (鈭?33, 705 cm鈭?), C锟絆
+Raman spectra for the MP types included in the database and stretching(鈭?728cm鈭?),C鈭扖stretchingonthebenzenering
+their implications. (鈭?122, 1615 cm鈭?), CH bending (鈭?290 cm鈭?), 1,4-
+2
+Initially, it is necessary to identify the specific spectral substituted localized peaks (856 cm鈭?) on the benzene ring,
+features that distinguish various MP types or sources. In this andC鈭扝stretchingonthebenzenering(鈭?080cm鈭?)asthe
+work, we focused on the most common and representative dominant Raman features. The composition of MPs was
+plasticsfoundinwaterorsediment(e.g.,PP,PE,PS,PVC,and determined based on the location of Raman characteristic
+PET).13,30,31 Figure S8 depicts the detailed classification of
+peaks as well as on their relative intensity.
+MPs,MPmixtures,andEMPsfromdifferentsources,including
+3.2. The Identification of MPs within Differentiated Data
+five parts as follows: 1) Standard Raman spectra of targeted
+Sets
+MPs with high purity; 2) Raman spectra of MPs containing
+typical additives; 3) Raman spectra of MPs derived from To assess the ability of the target model to identify key
+commercial plastics; 4) Raman spectra of EMP mixtures with components in MP-related samples, we framed the initial task
+increasing complexity; 5) Raman spectra of MPs after asamulticlassproblem.43Theoutputofthisprocessconsisted
+16666 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 6 ===
+Environmental Science & Technology pubs.acs.org/est Article
+Figure2.Confusionmatricesofspecificdatasetsbyvariousneuralnetworks,includingdatabaseswithouta)andwithb)deformationspectraof
+MP from different sources as the multiclass problem; c) composite confusion matrix of various models for recognizing MP mixtures as the
+multilabelproblem;d)theevaluationindexesofmodelpredictionresultsinclude:Accuracy,Precision,Recall,andF1-score.Forasinglematrix,the
+numberofmulticlassificationlearningtestsandthenumberofmultilabelingtestsarenormalizedas100,randomlyselectedbythesystem,andthe
+resultsarethe averages of threeparallel replicates.
+16667 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 7 ===
+Environmental Science & Technology pubs.acs.org/est Article
+of a specific MP type along with its associated probability. aging in environmental media. The detailed distinctions in
+UnlikepreviousworkthatconcentratedondetectingMPswith identifying various MP types, as well as the performance of
+reasonablepurityorintegrity,ourstudyexaminedhowspectral different neural network models, were illuminated by the
+complexity,resultingfromartificiallyacceleratedaging,natural combined confusion matrix. For this part, the red boxes
+aging, or additives that cause photoluminescence effects, represented the miniature confusion matrices for each model
+impacted the identification of primary components in actual correspondingtoanyofthefiveMPlabels/types.Thediagonal
+MPs using various neural networks. Figure 2a displayed the lines oriented at 45掳denote thetrue examples, specificallythe
+experimental outcomes from various neural networks, with true positives and the false negatives. The sum of the samples
+overall recognition accuracy rankings as follows: FFCNN represented the number of instances that were correctly
+achievedthehighestat97.6%,followedbyDenseNetat92.8%, identified. The results indicated a trend of progressively
+thenResNetat91.8%,andfinallyCNNat89.6%.Thefindings enhanced predictions from left to right of the composite
+indicated that using ResNet or DenseNet offered minimal confusion matrix, from CNN to FFCNN, although this
+improvements in identifying aged EMPs. Conversely, the numerical difference was not statistically significant (Table 1).
+effectiveness of FFCNN in recognizing real MPs may have However, even FFCNN coped with the task of recognizing
+been undervalued. A possible explanation for this is that the mixtures containing complex components, with several false
+FFC鈥檚 built-in filter automatically eliminated irregular peak recognition instances. Therefore, we calculated the likelihood
+protrusionsorisolatedspikesresultingfromadditivesorother of incorrect matches in each sample by analyzing randomly
+contaminants. FFCNN demonstrated notably better perform-
+chosen test heatmaps. This measure, which we termed the
+ance in detecting MPs, especially in PVC and PET samples
+where spectral interference was more significant, when
+Table1.AComparisonoftheResultsfromThreeDifferent
+compared to alternative models. To verify our hypothesis, we
+Benchmark Tests on the Major Plastic Components in 22
+conducted a new series of experiments on the model after
+Heterogeneous Plastic Samples from Aquatic and
+eliminating spectral data from the test set that had been Terrestrial Environmentsa
+disturbed by impurity interference, primarily from environ-
+mental samples. This process yielded an updated confusion Sample Ramanexpert
+designation FFCNN (KnowItAll) Pyr-GC-MS
+matrix for the four neural networks. The results showed that
+the remaining three models had a statistically significant PE/PAEs PE(鈭? PE(0.87)/ PE(83,142)/1-dodecene
+PP(0.26)
+reduction of at least 4% in overall recognition accuracy for
+PS/PAEs PS(鈭? PS(0.71) PS(78,104)/Styrene
+environmental samples. In contrast, the FFCNN model
+AgedPP PP(鈭? PP(0.83) PP(70,126)/2,4-dimethyl-
+exhibited the least variation (1%) and maintained a 97.6%
+1-heptene
+accuracy(Figure2b).Thisobservationstronglysupportedour AgedPE PE(鈭? PE(0.74)/ PE(83,142)/1-dodecene
+priorhypothesisthatimpurityinterference,baselinedistortion, PP(0.31)
+or perturbation minimally affected the FFCNN鈥檚 outstanding AgedPS PS(鈭? PS(0.88) PS(78,104)/Styrene
+ability to identify MP spectra. AgedPVC PVC(鈭? PVC(0.67)/ PVC(128)/Naphthalene
+ItisnoteworthythatmultipletypesofMPswereobservedto PA(0.33)
+be nested together, forming compound pollutants in the AgedPET PET(鈭? PET(0.67) PET(105,154)/Diphenyl
+PET/ PET(鈭? PET(0.44) PET(105,153)/Diphenyl
+aquatic environment, wherein the spectrum could potentially
+Microbial
+contain information characterizing the various components.
+S1-PE/PS/ PE/PS/ 鈭?PE/PS/PVC/PET
+Consequently,itisessentialtoevaluatetheabilityofadvanced PVC/PET- PVC/PET (78,83,104,128,142,154)
+neural networks to recognize multicomponent MPs. Consid- SW (鈭?
+ering the need to identify multiple components in a mixture S1-PET-MW PET(鈭? PET(0.47) PET(105,154)/Diphenyl
+simultaneously, we reframed this aspect of the task as S1-PET-DW PET(鈭? PET(0.45) PET(105,154)/Diphenyl
+multilabel identification.43 In this approach, the model鈥檚 final S2-PE/PS-DW PE/PS(鈭? 鈭?PE/PS(78,83,104,142)
+output provides the specific types of various MPs along with S2-PS-MW PS(鈭? 鈭?PS(78,104)/Styrene
+their corresponding predicted probabilities concurrently. Text S2-PS-DW PS(鈭? 鈭?PS(78,104)/Styrene
+S4displayedacomparisonoftheexperimentalmechanismsfor S3-PVC-SW PVC(鈭? 鈭?PVC(128)/Naphthalene
+thefourneuralnetworkmodeltypesacrosstheentiredataset. S3-PVC-MW PVC(鈭? PVC(0.74) PVC(128)/Naphthalene
+To illustrate the accuracy of different models in recognizing S3-PVC-DW PVC(鈭? PVC(0.69) PVC(128)/Naphthalene
+components of mixtures associated with various MP types, we S4-PVC-DW PVC(鈭? PVC(0.75) PVC(128)/Naphthalene
+shuffled the actual labels, predicted labels, and their S4-PP-DW PP(鈭? PP(0.87) PP(70,126)/2,4-
+dimethyl-1-heptene
+corresponding probability distributions for the mixtures.
+S5-PS/PVC- PS/PVC PS(0.47) PS/PVC(78,104,128)
+Multiple rounds of experimentation revealed that when a SW (鈭?
+sample actually contained the component indicated by the S5-PS/PET- PS/PET PET(0.56) PS/PET(78,104,153)
+label, the label鈥檚 probability consistently exceeded 0.5 as an SW (鈭?
+indicative threshold. Among the four models evaluated, S5-PE/PS-SW PE/PS(鈭? 鈭?PE/PS(78,83,104,142)
+FFCNN demonstrated superior performance in accurately
+aThe22samplesinthetablecorrespondtothe22spectrashownin
+recognizing individual MP components, achieving the highest
+Figure 4a and c. The results from the KnowItAll Raman spectral
+precision. This finding is consistent with the lowest
+library are sorted from highest to lowest; 鈥溾垝鈥?indicates a deviation
+misidentification index (MI) for FFCNN (Figure S4).
+fromthetruelabel.Thepyrolysis-GCresultsaredeterminedbasedon
+Figure 2c showcased the outcomes of FFCNN鈥檚 implemen-
+thespecificpositionsofquantitativeionsandthepyrolysisproducts.
+tationofmultilabellearningonthecombinedspectraldataset. The pyrolysis products of the heterogeneous plastic mixture are
+This data set encompassed spectra from MP mixture samples omitted here. For details, see Table S13 in the Supporting
+that had undergone either artificial aging in the lab or natural Information.
+16668 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 8 ===
+Environmental Science & Technology pubs.acs.org/est Article
+misidentification index (MI), was then subjected to statistical process, we applied Hierarchical Feature Mapping (HFM).
+analysis,asillustratedinFigureS5.TheMIofthefourmodels As illustrated in Figure 3e-f, HFM visualizes how the network
+in the order of size was ResNet (0.63) > DenseNet (0.58) > progressively focuses on chemically meaningful spectral bands
+CNN(0.58)>FFCNN(0.51).Theresultsdemonstratedthat across layers锟絝rom low-level peak detection to high-level
+theaccuracyoftheneuralnetworkwassubstantiallyenhanced pattern abstraction. The darker the band in the heatmap, the
+in FFCNN in identifying true components, even when the greater its contribution to the model鈥檚 prediction. This label-
+spectral characteristics of the mixture did not precisely align agnostic tool confirms that FFCNN identifies MPs based on
+with those of the individual constituents. This improvement intrinsic vibrational features rather than spurious noise.
+was notable compared to alternative models. As mentioned WefurtherchallengedFFCNNwithcomplexenvironmental
+above, among the three convolutional neural networks, with scenarios: additive-containing commercial MPs,naturally aged
+muchhighertrainingefficiencythantraditionalmodels(Figure polymers, and particles with adhered humic substances or
+S1), FFCNN was the most effective in improving the microbes (Figure 4a). Regardless of spectral distortions锟絜.g.,
+performance of CNN in recognizing MP mixtures, with an attenuated peaks, baseline shifts, or new interference bands锟?
+F1 score of 0.936 (Figure 2d). The results of the key FFCNN correctly identified the primary polymer in all tested
+evaluation metrics for various models in multilabel classi- samples, with prediction probabilities consistently above 0.95
+fication across the entire database are shown in Table 2. The (Figure 4b). In a field study at Xuanwu Lake, Raman spectra
+FFCNN significantly outperformed other variants of CNNs from MPs collected at different water depths and sediment
+and traditional ML models on all three metrics. zones exhibited severe blurring and peak overlaps. Never-
+theless, FFCNN assigned high probability scores (>0.51) to
+Table 2. Main Evaluation Indicator Outcomes of the thetruepolymertypesforbothsingleandmixedcompositions
+DifferentModelsintheMultilabelRecognitionoftheTotal (Figure4c-d).Forachallengingfour-componentmixture(PP/
+Databasea
+PS/PVC/PET)wherecharacteristicpeakswerelargelyabsent,
+the model still yielded predictions close to the true
+Modeltype MacroF1-Score Precision Recall
+composition,albeitwithmutualinhibitionamongcomponents
+FFCNN 0.9360 0.9441 0.9280 (highest probability 0.47 for PET). These results demonstrate
+OptimizedCNN(SE-attention) 0.8192 0.8113 0.8277
+that FFCNN robustly identifies MPs in authentic environ-
+LightweightCNN 0.7613 0.7594 0.7669
+mental matrices, even when spectral quality is severely
+Randomforest 0.8342 0.9032 0.7758
+compromised.
+GradientBoosting 0.8309 0.8808 0.7870
+3.4. Comprehensive Validation of Method Performance
+SVM 0.3197 0.9211 0.2023
+SimpleCNN 0.5789 0.6500 0.5500 To systematically evaluate the robustness and practical limits
+CNN+Skip 0.5200 0.6000 0.4800 of the proposed FFCNN method, we conducted a series of
+aThe improved fast Fourier transform can efficiently process validation experiments focusing on aging tolerance, spatial
+frequency-domain signals, and Raman spectroscopy is a frequency- resolution, and size-dependent detection. Pure microplastic
+domain signal. The simple architecture avoided overfitting. The standards (PP, PE, PS, PVC, PET) were photoaged under
+previous model performed poorly because of the gradient
+simulated sunlight for up to 96 h (Figure 5). Despite
+disappearanceproblem. substantial attenuation of characteristic Raman peaks (e.g.,
+62% reduction for PP at 809cm鈭?), FFCNN maintained
+3.3. Identification of MP Mixtures and MPs in >100% classification accuracy across all polymers at 96 h,
+Environmental Samples confirming the model鈥檚 tolerance to aging-induced spectral
+To evaluate FFCNN on authentic environmental samples, we degradation (Table S16). The actual lateral spatial resolution
+randomly selected 22 samples (15 water, 7 soil/sediment) oftheconfocalRamansystemwasmeasuredbytheknife-edge
+from Nanjing鈥檚 water bodies and wetlands. For each, a method using a chromium-patterned silicon wafer. Under the
+representative Raman spectrum was acquired. As shown in 50脳 objective (NA = 0.75), the measured resolution was 0.93
+Figure 3a-c, FFCNN achieved high identification accuracy 卤0.08渭m(mean卤SD,n=10),whichisconsistentwiththe
+across single-, two-, and multicomponent MPs. For single- typicalperformanceofconfocalRamanmicroscopesandmore
+component samples, per-polymer accuracies ranged from than sufficient to resolve particles inour target size range(1鈭?
+96.8% (PVC) to 99.2% (PS), with most misclassifications 20渭m). Furthermore, size-dependent detection experiments
+occurring between spectrally similar PP and PE (3.2%). For using monodisperse polystyrene microspheres (0.2鈭?.0渭m)
+two-component mixtures, overall sample-level accuracy (both showed that particles 鈮?渭m were reliably detectable (93.3%
+components correct) was 91.7%; even when a minor detection rate, 28/30), whereas particles 鈮?.5渭m produced
+component (mass fraction <10%) was missed, the dominant insufficient signal for consistent identification (43.3% for
+polymer was correctly identified in 98.2% of cases. For 0.5渭m, 6.7% for 0.2渭m). These results establish the practical
+mixtures with 鈮? components, sample-level accuracy de- detection limit of our method as approximately 1渭m, which
+creasedto83.5%,butcomponent-levelrecallremainedhighat aligns with the typical size of environmental microplastics and
+89.2%, indicating reliable detection of most polymers in demonstrates that FFCNN performs robustly across a wide
+complex blends. For comparison, traditional library matching range of realistic sample conditions.
+and human expert analysis yielded only 41.3% and 67.5% The photoaging conditions in this work (500 W mercury
+accuracy on the same multicomponent spectra, underscoring lamps, measured irradiance of 9360 卤 210 渭W/cm2 at the
+the advantage of FFCNN. sample plane) were designed to accelerate the weathering
+Figure 3d shows a typical mixture of aggregated MPs from process. Based on the irradiance ratio between the mercury
+natural water, where overlapping spectral signals challenge lamp and natural sunlight (鈭?365 渭W/cm2 in Nanjing), the
+conventional methods. To interpret FFCNN鈥檚 decision acceleration factor is approximately 6.9. Accordingly, the 96 h
+16669 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 9 ===
+Environmental Science & Technology pubs.acs.org/est Article
+Figure3.Hierarchicalfeaturemapping(HFM)revealstheidentificationprocessofMPmixtureswithincreasingcomplexitybyFFCNN.Confusion
+matrixasaresultofrecognizinga)one-componentMP;b)two-componentmixtures;andc)multicomponentmixtures;d)microscopicimagesof
+theseparateandstackedMPcomponentsfromriverwaterbymicroconfocalimagingequippedwithRamanspectroscopy;e)five-layerHFMfor
+recognizing20%PE/80%PSmixtures;f)homogenizedmixtureswithagraduallyincreasingnumberofcomponents.Thenumbersinthegraphof
+(a)-(c)representtherelativeprobabilitythateachtypeofMPispredictedtobepresent,withthecloserthevalueisto1,themorelikelythemodel
+determinesthatthe component is present.
+artificialagingcorrespondstoapproximately28daysofnatural photochemical responses. Mercury lamps emit discrete UV
+exposure. However, it is important to acknowledge that this lines (e.g., 254 nm, 313 nm, 365 nm) that are not present in
+conversion is a simplified estimate, as acceleration factors the solar spectrum reaching the Earth鈥檚 surface, and thus the
+depend strongly on spectral matching and material-specific actual acceleration factor may deviate from the irradiance-
+16670 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 10 ===
+Environmental Science & Technology pubs.acs.org/est Article
+Figure4.TestsforMPsorMPmixturesidentificationinthenaturalenvironmentbyFFCNN.a)RamanspectracorrespondingtocommercialMP
+samplesandnaturallyagedMPs,aswellasMPsdegradedbymicrobes;b)confusionmatrixcorrespondingtotheeightsamplesof(a);c)RSof14
+environmentalsamplesrelatedtoMPs/MPmixturesobtainedfromfivesamplingsitesaroundthelake;d)confusionmatrixcorrespondingtothe
+14environmental samplesof (c).S1鈭扴5represent thefive labeledsampling points(see TextS11 fordetails).
+basedestimation.42 Therefore, theequivalentnaturalexposure 4. ENVIRONMENTAL IMPLICATIONS
+time reported here should be considered as an order-of-
+Our work directly addresses the critical analytical challenge of
+magnitude approximation rather than a precise prediction of
+identifying microplastic (MP) mixtures within complex
+field aging equivalence.
+environmental matrices. By enabling accurate, multilabel
+3.5. Application to Environmental Microplastics with classification of common polymers (PP, PE, PS, PVC, and
+Multitechnique Validation PET) from raw Raman spectra without intensive preprocess-
+To rigorously validate FFCNN鈥檚 performance on authentic ing, this work moves MP analysis closer to real-world
+environmental samples, we applied the method to micro- applicability. The capability to rapidly decipher complex
+plasticscollectedfrommultiplewaterandsoilsitesinNanjing spectral signatures of coexisting polymers, additives, and
+(XuanwuLake,QinhuaiRiver,andadjacentwetlands).For22 weathered MPs in environmental samples is a significant leap
+randomly selected samples (each providing one representative beyondexistingmethodsthatprimarilyidentifysingle,pristine
+Raman spectrum), FFCNN achieved an overall identification particles. This advancement is crucial for developing reliable
+accuracy of 100% (22/22) relative to ground-truth labels monitoring strategies as it allows for a more realistic and
+established by pyrolysis-gas chromatography/mass spectrome- comprehensive assessment of MP pollution, ultimately
+try (Pyr-GC/MS), while the independent Raman expert supporting better source tracking, risk evaluation, and
+(KnowItAll) encountered six instances where it was unable regulatory decision-making to mitigate the environmental
+toidentifysamplescorrectly(Table1).Toprovideorthogonal impact of plastic contamination. We hope that this work will
+confirmation,asubsetof14sampleswasthenanalyzedbyPyr- contribute to a better understanding of microplastic con-
+GC/MS. The polymer types identified by Pyr-GC/MS agreed tamination characteristics in urban water environments and
+with FFCNN predictions in 14 out of 14 cases (100% provide valuable information for developing novel detection
+concordance). Together, these multitechnique validation methods for MP contamination.
+experiments锟絜nvironmental testing and Pyr-GC/MS cross- The integration of FFCNN with our HFM tool opens
+validation锟絛emonstrated that FFCNN reliably identifies MP transformative prospects for environmental analysis. The
+components in complex environmental matrices, even in the FFCNN can be deployed as a powerful, automated software
+presenceofaging,additives,andresidualorganicinterferences. core for the next generation of spectroscopic instruments,
+16671 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 11 ===
+Environmental Science & Technology pubs.acs.org/est Article
+Figure5.Ramanspectraandsurfacemorphologiesoflaboratory-gradeMPsamplescollectedundertypicalphotoagingconditions.Theselected
+typicalagingtimeswere6,24,48,and96h,andthecorrespondingdegreesofagingweremeasuredusingthecarbonylindex(CI)(seeTableS15
+fordetails).(a)-(d)representthedataforthefourkindsofMPs锟絇P,PE,PS,PVC锟絘tthefourtypicalagingtimes,andtheagingprofilesforPET-
+MPsare providedinFigureS15.
+16672 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 12 ===
+Environmental Science & Technology pubs.acs.org/est Article
+enabling on-site or in-lab rapid screening of MP mixtures. microplastics from various sources; Figures (S1鈭扴15)
+Furthermore, the label-independent interpretability provided
+includingRamanspectraof aged andmixed MPs,HFM
+byHFMisnotmerelyadiagnostictoolformodelvalidation;it visualizations, and surface morphologies; Tables (S1鈭?
+acts as a discovery tool that can help environmental scientists
+S17) summarizing characteristic peaks, additive compo-
+uncover novel, discriminative spectral features of weathered
+sitions, ablation studies, signal-to-noise ratio (SNR)
+plastics or unknown additives in generalization tests, which
+thresholds,carbonylindices,predictionaccuraciesunder
+paves the way for building more intelligent and adaptive
+photoaging,andtheoreticalvsactualresolutioncompar-
+spectral libraries and fosters a deeper, more trustworthy
+isons (PDF)
+human-machine collaboration in tackling the complexity of
+environmentalmicroplasticsandotheremergingcontaminants. 鈻?
+Although the proposed integrated framework of FFCNN AUTHOR INFORMATION
+and HFM demonstrated significant advantages in identifying
+Corresponding Author
+MP-related mixtures by multilabel learning, it still has
+limitationsthatpointtofutureresearchdirections:1)Limited Shixiang Gao 鈭?State Key Laboratory of Water Pollution
+polymer coverage and size; the current model focuses on the Control and Green Resource Recycling, School of
+fivemostcommonMPpolymers(PP,PE,PS,PVC,PET)with Environment, Nanjing University, Nanjing 210023, China;
+anaveragesizerangingin0.5鈭?0渭m.However,thevarietyof orcid.org/0000-0001-9066-6970; Email: ecsxg@
+plastics in the environment, particularly nanoscale plastics, is nju.edu.cn
+extremely diverse (e.g., PMMA, PA, PC, etc.). Extending this
+Authors
+framework to a more universal spectral library encompassing
+dozens of polymers and additives requires further exploration Xingqi Chen 鈭?State Key Laboratory of Water Pollution
+and optimization in model capacity, training strategies, and Control and Green Resource Recycling, School of
+addressing more severe class imbalance issues. 2) General- Environment, Nanjing University, Nanjing 210023, China
+ization capability for samples subjected to extreme environ- Hongshen Wang 鈭?State Key Laboratory of Novel Software
+mental aging requires in-depth validation. While the model Technology, School of Computer Science and Technology,
+performswellon our existingenvironmental samples(EMPs), Nanjing University, Nanjing 210023, China; orcid.org/
+theextentandtypesofaginginthesesamplesarelimited.The 0009-0006-1673-6882
+spectral profiles of MPs subjected to extreme photodegrada- WenShao鈭扴tateKeyLaboratoryofWaterPollutionControl
+tion,thermaloxidation,orbiodegradationmayundergodrastic and Green Resource Recycling, School of Environment,
+changes. The robustness of this model on such 鈥渙ut-of- Nanjing University, Nanjing 210023, China
+distribution鈥?samples requires systematic future evaluation Hexinyue Huang 鈭?State Key Laboratory of Water Pollution
+using specialized data sets encompassing broader aging Control and Green Resource Recycling, School of
+conditions. 3) Indirect nature of interpretability methods. Environment, Nanjing University, Nanjing 210023, China
+Our developed HFM method highlights spectral regions Yuanqi Li 鈭?State Key Laboratory of Novel Software
+critical to classification decisions, offering unprecedented Technology, School of Computer Science and Technology,
+insights. However, this explanation remains indirect. It reveals Nanjing University, Nanjing 210023, China
+鈥渨here鈥?the model focuses but cannot precisely explain 鈥渨hy鈥?Yanwen Guo 鈭?State Key Laboratory of Novel Software
+a feature is discriminative with the precision of physical laws. Technology, School of Computer Science and Technology,
+Establishing a more direct, quantitative link between model Nanjing University, Nanjing 210023, China
+decisions and specific chemical bond vibrations represents a LiangMao鈭扴tateKeyLaboratoryofWaterPollutionControl
+future challenge for interpretability research. and Green Resource Recycling, School of Environment,
+Additionally, we acknowledge that the conversion between Nanjing University, Nanjing 210023, China; orcid.org/
+accelerated photoaging (96 h under a mercury lamp) and 0000-0003-4647-5485
+natural weathering is subject to uncertainties arising from
+Complete contact information is available at:
+spectral mismatch and the material-dependent nature of
+https://pubs.acs.org/10.1021/acs.est.6c05467 photodegradation kinetics. As such, the equivalent natural
+exposure duration (鈭?8 days) reported in Section 3.4 should Author Contributions
+beinterpretedasanapproximatereferenceratherthananexact
+field equivalent. This limitation is common to all accelerated X.C. is responsible for research topics, sample collection,
+weathering studies that employ artificial light sources. instrument commissioning, spectral acquisition, spectral data-
+鈻?baseestablishment,andprovidingoriginaldraft.L.M.provided
+ASSOCIATED CONTENT significant thesis revision and drafting guidance. H.W., Y.L.,
+Data Availability Statement and Y.G. developed the algorithms or models. H.H. and W.S.
+provided a partial sample to the database. S.G. conceived and
+Data will be made available on request.
+directed the overall project. All authors read and commented
+* s谋 Supporting Information on the manuscript.
+The Supporting Information is available free of charge at
+Notes
+https://pubs.acs.org/doi/10.1021/acs.est.6c05467.
+The authors declare no competing financial interest.
+Texts (S1鈭扴15) including detailed sampling site
+鈻?
+information, instrumental parameters, neural network
+ACKNOWLEDGMENTS
+architectures, mathematical derivations of fast Fourier
+convolution (FFC), hierarchical feature mapping We acknowledge the financial support from the National
+(HFM) procedures, and spectral characteristics of Natural Science Foundation of China (22241601).
+16673 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 13 ===
+Environmental Science & Technology pubs.acs.org/est Article
+鈻?
+REFERENCES (20) Balzer, K.; Bonitz, M. Quantum many-particle systems out of
+equilibrium.;Springer: Berlin Heidelberg,2013.pp. 3-11.DOI: .
+(1) Thompson, R. C.; Courtene-Jones, W.; Boucher, J.; Pahl, S.;
+(21) Liu, Y.; Yao, W.; Qin, F.; Zhou, L.; Zheng, Y. Spectral
+Raubenheimer, K.; Koelmans, A. A. Twenty years of microplastics
+Classification of Large-Scale Blended (Micro)Plastics Using FT-IR
+pollution research锟斤拷what have we learned? Science 2024, 386,
+Raw Spectra and Image-Based Machine Learning. Environ. Sci.
+No. eadl2746.
+Technol. 2023, 57(16),6656鈭?663.
+(2) MacLeod, M.; Arp, H. P. H.; Tekman, M. B.; Jahnke, A. The
+(22)Araujo,C.F.;Nolasco,M.M.;Ribeiro,A.M.;Ribeiro-Claro,P.
+global threatfrom plasticpollution. Science2021, 373,61鈭?5.
+J. Identification of microplastics using Raman spectroscopy: Latest
+(3)Zhang,C.;Zhang,G.;Sun,K.;Ren,J.;Zhou,J.;Liu,X.;Lin,F.;
+developments andfuture prospects.Water Res.2018,142, 426鈭?40.
+Yang,H.;Cao,J.;Nie,L.;Zhang,P.;Zhang,L.;Wang,Z.;Guo,H.;
+(23)Lee,S.;Jeong,H.;Hong,S.M.;Yun,D.;Lee,J.;Kim,E.;Cho,
+Lin,X.;Duan,S.;Cao,J.;Huang,H.Associationofmixedexposureto
+K. H. Automatic classification of microplastics and natural organic
+microplastics with sperm dysfunction: A multi-site study in China.
+matter mixtures using a deep learning model. Water Res. 2023, 246,
+eBiomedicine2024, 108,105369.
+(4) Leonard, S. V.; Liddle, C. R.; Atherall, C. A.; Chapman, E.; 120710.
+Watkins,M.;Calaminus,S.D.;Rotchell,J.M.Microplasticsinhuman (24) Lei, B.; Bissonnette, J. R.; Hogan, U. E.; Bec, A. E.; Feng, X.;
+blood: Polymer types, concentrations and characterisation using Smith, R. D. L. Customizable Machine-Learning Models for Rapid
+渭FTIR.Environ. Int.2024, 188,108751. Microplastic Identification Using Raman Microscopy. Anal. Chem.
+(5) Wiesinger, H.; Shalin, A.; Huang, X.; Siegrist, A.; Plinke, N.; 2022, 94(49),17011鈭?7019.
+Hellweg,S.;Wang,Z.LitChemPlast:AnOpenDatabaseofChemicals (25) Zhu, J.; Yang, M.; Ren, Z. J. Machine Learning in
+MeasuredinPlastics.Environ.Sci.Technol.Lett.2024,11(11),1147鈭?Environmental Research: Common Pitfalls and Best Practices.
+1160. Environ. Sci. Technol.2023, 57(46),17671鈭?7689.
+(6)Ao,J.;Xu,G.;Wu,H.;Xie,L.;Liu,J.;Gong,K.;Ruan,X.;Han, (26) Sunil, M.; Pallikkavaliyaveetil, N.; Nelliat, M.; Gopinath, A.;
+J.; Li, K.; Wang, W.; et al. Fast detection and 3D imaging of Chidangil,S.;Kumar,S.;Lukose,J.MachinelearningassistedRaman
+nanoplastics and microplastics by stimulated Raman scattering spectroscopy:Aviableapproachforthedetectionofmicroplastics.J.
+microscopy.Cell Rep.Phys.Sci. 2023, 4(10),101623. Water Process.Eng. 2024, 60, 105150.
+(7)Choi,S.;Lee,S.;Kim,M.K.;Yu,E.S.;Ryu,Y.S.Challengesand (27) Xie, L.; Luo, S.; Liu, Y.; Ruan, X.; Gong, K.; Ge, Q.; Li, K.;
+Recent Analytical Advances in Micro/Nanoplastic Detection. Anal. Valev,V.K.;Liu,G.;Zhang,L.AutomaticIdentificationofIndividual
+Chem. 2024,96(22),8846鈭?854. Nanoplastics by Raman Spectroscopy Based on Machine Learning.
+(8)Debraj,D.;Lavanya,M.Microplasticseverywhere:Areviewon Environ. Sci. Technol.2023, 57(46),18203鈭?8214.
+existingmethodsofextraction.Sci.TotalEnviron.2023,893,164878. (28)Lim,J.;Shin,G.;Shin,D.FastDetectionandClassificationof
+(9) Nguyen, B.; Claveau-Mallet, D.; Hernandez, L. M.; Xu, E. G.; Microplastics below 10 渭m Using CNN with Raman Spectroscopy.
+Farner, J. M.; Tufenkji, N. Separation and analysis of microplastics Anal.Chem. 2024, 96(17),6819鈭?825.
+and nanoplastics in complex environmental samples. Acc. Chem. Res. (29) Yazhou, Q.; Jiaxin, Q.; Nan, T.; Yingsheng, H.; Li, F. Deep
+2019, 52,858鈭?66. learning analysis for rapid detection and classification of household
+(10) Ivleva, N. P. Chemical analysis of microplastics and plasticsbasedonRamanspectroscopy.Spectrochim.Acta,A2024,309,
+nanoplastics: Challenges, advanced methods, and perspectives. 1386鈭?425.
+Chem. Rev.2021, 121, 11886鈭?1936. (30) Guselnikova, O.; Trelin, A.; Kang, Y. Pretreatment-free SERS
+(11) Genchi, L.; Martin, C.; Sergey, P.; Baalkhuyur, F.; Duarte, C. sensing of microplastics using a self-attention-based neural network
+M.; Liberale, C. When microplastics are not plastic: Chemical
+onhierarchicallyporousAgfoams.Nat.Commun.2024,15(1),4351.
+characterizationofenvironmentalmicrofibersusingstimulatedRaman
+(31) Mohan, K.; Lakshmanan, V. R. A critical review of the recent
+microspectroscopy.Sci. Total Environ. 2023,892, 164671.
+trendsinsourcetracingofmicroplasticsintheenvironment.Env.Res.
+(12) Henkel, C.; Hu虉ffer, T.; Hofmann, T. Polyvinyl Chloride
+2023, 239, 117394.
+Microplastics Leach Phthalates into the Aquatic Environment over
+(32)Niu,J.;Xu,D.;Wu,W.;Gao,B.Tracingmicroplasticsourcesin
+Decades.Environ. Sci. Technol.2024, 56(20),14507鈭?4516.
+urban water bodies combining their diversity, fragmentation and
+(13)Jie,Z.;Xianfeng,H.;Kena,Z.;Youwei,D.;Quanzhi,X.;Gao,
+stability.Npj Clean Water 2024, 7,37.
+Y.; Zhou, X.; Yan, B. Deciphering fluorescent and molecular
+(33) Chi, L.; Jiang, B.; Mu, Y.Fast fourier convolution34th
+fingerprint of dissolved organic matter leached from microplastics in
+Conference on Neural Information Processing Systems (NeurIPS 2020)
+water. WaterRes. 2024,250, 121047.
+NIPSVancouver, Canada2020334479鈭?488
+(14)Koelmans,A.A.;Redondo-Hasselerharm,P.E.;Nor,N.H.M.;
+(34) Sun, X.; Yan, D.; Wu, S.; Chen, Y.; Qi, J.; Du, Z. Enhanced
+de Ruijter, V. N.; Mintenig, S. M.; Kooi, M. Risk assessment of
+forecasting of chlorophyll-a concentration in coastal waters through microplasticparticles. Nat. Rev.Mater.2022, 7 (2),138鈭?52.
+integrationofFourieranalysisandTransformernetworks.WaterRes.
+(15)Shi,Y.;Shi,L.;Huang,H.;Ye,K.;Yang,L.;Wang,Z.;Sun,Y.;
+2024, 263, 122160.
+Li, D.; Shi, Y.; Xiao, L.; Gao, X. Analysis of aged microplastics: A
+(35)Rao,Y.;Zhao,W.;Zhu,Z.;Zhou,J.;Lu,J.GFNet:Globalfilter
+review.Environ. Chem.Lett. 2024, 22,1861鈭?888.
+networksforvisualrecognition.IEEETrans.PatternAnal.Mach.Intell
+(16) Singh, B.; Kumar, A. Advances in microplastics detection: A
+comprehensivereviewofmethodologiesandtheireffectiveness.Trac- 2023, 45(9), 10960鈭?0973.
+(36)Henry,M.Anultra-precisefastFouriertransform.Measurement
+TrendsAnal.Chem. 2024, 170, 117440.
+(17)Kim,J.Y.;Koh,E.H.;Yang,J.;Mun,C.;Lee,S.;Lee,H.;Kim, 2023, 220, 113372.
+J.;Park,S.;Kang,M.;Kim,D.;etal.3DPlasmonicGoldNanopocket (37)Donahue,J.;Jia,Y.;Vinyals,O.;Hoffman,J.;Zhang,N.;Tzeng,
+Structure forSERSMachine Learning-Based Microplastic Detection. E.; Darrell, T.DeCAF: A Deep Convolutional Activation Feature for
+Adv.Funct.Mater. 2024, 34,2307584. Generic Visual RecognitionProceedings of the 31st International
+(18) Dai, H.; Li, H.; Qiu, W.; Deng, S.; Han, J.; Aminabhavi, T. Conference on MachineLearningPMLR2014321647鈭?55
+Nondestructiveanalysisofplasticdebrisfrommicrotonanosizes:A (38) Fukuhara, M.; Fujiwara, K.; Maruyama, Y.; Itoh, H. Feature
+state-of-the-art review on Raman spectroscopy-based techniques. visualization of Raman spectrum analysis with deep convolutional
+Trac-TrendsAnal. Chem.2024, 176,117750. neural network.Anal.Chim. Acta 2019,1087, 11鈭?9.
+(19)Qian,N.;Gao,X.;Lang,X.;Deng,H.;Bratu,T.M.;Chen,Q.; (39) Selvaraju,R. R.;Cogswell,M.; Das,A.; Vedantam,R.;Parikh,
+Stapleton,P.;Yan,B.;Min,W.Rapidsingle-particlechemicalimaging D.; Batra, D. Grad-CAM: Visual Explanations from Deep Networks
+of nanoplastics by SRS microscopy. Proc. Natl. Acad. Sci. U. S. A. viaGradient-BasedLocalization.In2017IEEEInternationalConference
+2024, 121(3), No. e2300582121. on ComputerVision(ICCV).IEEE:Italy, 2017,pp. 618鈭?26.DOI:.
+16674 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+
+=== PAGE 14 ===
+Environmental Science & Technology pubs.acs.org/est Article
+(40)He,K.;Zhang,X.;Ren,S.;Sun,J.DeepResidualLearningfor
+Image Recognition. InProceedings of the IEEE conference on computer
+visionandpatternrecognition;IEEE,pp.770-778. 2016.
+(41) Huang, G.; Liu, Z.; Maaten, L. Densely Connected Convolu-
+tional Networks. In2017 IEEE Conference on Computer Vision and
+PatternRecognition(CVPR);IEEE:Honolulu,HI,USA,2017.DOI:.
+(42) Shi, Y.; Zheng, L.; Huang, H.; Tian, Y. C.; Gong, Z.; Liu, P.;
+Wu, X.; Li, W.; Gao, S. Formation of nano- and microplastics and
+dissolvedchemicalsduringphotodegradationofpolyesterbasefabrics
+withpolyurethanecoating.Environ.Sci.Technol.2023,57(5),1894鈭?
+1906.
+(43) Liu, W.; Wang, H.; Shen, X.; Tsang, I. W. The Emerging
+Trends of Multi-Label Learning. IEEE Trans. Pattern Anal. Mach.
+Intell.2020, 44(11),7955鈭?974.
+(44) Ramanna, S.; Morozovskii, D.; Swanson, S. S.; Bruneau, J.
+A.Machine Learning of polymer types from the spectral signature of
+Raman spectroscopymicroplasticsdataarXiv2022
+(45)Xu,Y.;Ou,Q.;Hoek,J.;Liu,G.;Lompe,K.Photo-oxidationof
+Micro-andNanoplastics:Physical,Chemical,andBiologicalEffectsin
+Environments.Environ. Sci. Technol. 2024, 58(2),991鈭?009.
+(46) Hahladakis, J. N.; Velis, C. A.; Weber, R.; Iacovidou, E.;
+Purnell, P. An overview of chemical additives present in plastics:
+Migration, release, fate and environmental impact during their use,
+disposalandrecycling. J. Hazard. Mater.2018, 344,179鈭?99.
+(47) Dohare, S.; Hernandez-Garcia, J. F.; Lan, Q.; Rahman, P.;
+Mahmood, A. R.; Sutton, R. S. Loss of plasticity in deep continual
+learning.Nature2024, 632,768鈭?74.
+(48) Zhang, Q.; Cao, R.; Shi, F.; Wu, Y. N.; Zhu, S.Interpreting
+CNNknowledge via an ExplanatoryGrapharXiv2017
+(49) Figuier虁e, R.; Wang, Z.; Glu虉ge, J.; Scheringer, M.; Siegrist, A.;
+Cousins, I. T. Data Requirements for Implementing the 鈥淓ssential-
+Use鈥滳onceptinChemicalLegislation.Environ.Sci.Technol.2025,59
+(22),10770鈭?0780.
+(50) Huang, W.; Chen, J.; Xiong, H.; Shao, L.; Wang, G.; Liu, K.;
+Chen, C.; Gao, X. Cascaded Improved Neural Network for the
+Reconstruction,Classification,andUnmixingoftheRamanSpectraof
+MixedMicroplastics.Anal.Chem. 2026, 98(11),8010鈭?022.
+16675 https://doi.org/10.1021/acs.est.6c05467
+Environ.Sci.Technol.2026,60,16662鈭?6675
+Downloaded
+from
+pubs.鈥媋cs.鈥媜rg/鈥媏sthag/鈥媋rticle-pdf/鈥?0/鈥?3/鈥?6662/鈥?5507113/鈥媏s6c05467.鈥媝df
+by
+SOUTH
+CHINA
+AGRICULTURAL
+UNIV
+user
+on
+09
+September
+2026
+

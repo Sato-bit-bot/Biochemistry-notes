@@ -11,6 +11,8 @@
     "providerSessionId": "b1391e48-f525-40b4-b2b8-b4c4b0323d09"
   },
   "linkedContentPath": "生物化学笔记/生物化学笔记/蛋白质/组成蛋白质氨基酸的结构与分类.md",
+  "isPinned": false,
+  "isArchived": true,
   "usage": {
     "model": "opus",
     "inputTokens": 399,

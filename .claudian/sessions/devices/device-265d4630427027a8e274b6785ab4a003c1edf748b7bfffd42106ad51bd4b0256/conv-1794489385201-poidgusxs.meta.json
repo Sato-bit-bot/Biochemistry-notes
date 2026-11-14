@@ -1,0 +1,16 @@
+{
+  "id": "conv-1794489385201-poidgusxs",
+  "providerId": "opencode",
+  "title": "@浮游动物/第三章 甲藻门",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1794489385205,
+  "lastActivityAt": 1794489489126,
+  "sessionId": "ses_e3018e716ffeo2FtTDlE2ye6Js",
+  "selectedModel": "opencode:deepseek/deepseek-flash",
+  "providerState": {
+    "databasePath": "C:\\Users\\severus\\.local\\share\\opencode\\opencode.db",
+    "nativeConversationContextEstablished": true
+  },
+  "isPinned": false,
+  "isArchived": true
+}

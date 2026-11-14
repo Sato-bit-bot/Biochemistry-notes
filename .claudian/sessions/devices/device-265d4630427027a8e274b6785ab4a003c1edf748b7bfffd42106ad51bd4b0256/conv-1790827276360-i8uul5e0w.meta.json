@@ -1,0 +1,24 @@
+{
+  "id": "conv-1790827276360-i8uul5e0w",
+  "providerId": "opencode",
+  "title": "你是一个英文论文阅读的助手",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1790827276366,
+  "lastActivityAt": 1790827960430,
+  "sessionId": "ses_f0a604218ffeRtk01K3yROCK4X",
+  "selectedModel": "opencode:opencode/mimo-v2.6-flash-free",
+  "providerState": {
+    "databasePath": "C:\\Users\\severus\\.local\\share\\opencode\\opencode.db",
+    "nativeConversationContextEstablished": true
+  },
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 18945,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 0,
+    "model": "deepseek-v4-flash",
+    "percentage": 9
+  }
+}

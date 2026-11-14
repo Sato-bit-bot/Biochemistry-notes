@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1792290640912-5aex5nc90",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1792290640979-vf1uptx",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1792290640909-iqq7obo",
+      "timestamp": 1792290640909,
+      "rawDisplayText": "你根据这篇论文精读2写一篇英文的演讲稿, 时长5分钟",
+      "canonicalText": "你根据这篇论文精读2写一篇英文的演讲稿, 时长5分钟",
+      "context": {
+        "linkedContent": {
+          "path": "分子生物学期刊(学术英文积累)/论文精读2.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "03a94bbceedb1f5c818c00538b134229ac99895ce89bd70ee9cfa7bdcc0b61ad",
+      "providerAssistantMessageId": "msg_14cd9014a001343jJGabDr000o",
+      "providerUserMessageId": "msg_14cd8eeb9001eAnoBJllSee1vz"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1792290720229-9rpdppd",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1792290720224-vtdtip3",
+      "timestamp": 1792290720224,
+      "rawDisplayText": "在同一个目录下新建一个笔记, 将演讲稿写入",
+      "canonicalText": "在同一个目录下新建一个笔记, 将演讲稿写入",
+      "images": [],
+      "contentDigest": "c84281d8dd933c168d8f92299c59dfe9bcd664f4f136570ea93f8c40e344dffb",
+      "providerAssistantMessageId": "msg_14cda304b001wehphpdWEZGsqj",
+      "providerUserMessageId": "msg_14cda0a46001Cw72STjpbcSRkT"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1792291149569-xfk03xz",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1792291149563-2uhl59t",
+      "timestamp": 1792291149563,
+      "rawDisplayText": "\"D:\\obsidian知识库\\Biochemistry-notes\\分子生物学期刊(学术英文积累)\\Journal Club_ Bacterial Fish Pathogens Genomics.pptx\"\n这是ppt的框架, 你根据此框架和演讲稿,  生成一个PPT大纲",
+      "canonicalText": "\"D:\\obsidian知识库\\Biochemistry-notes\\分子生物学期刊(学术英文积累)\\Journal Club_ Bacterial Fish Pathogens Genomics.pptx\"\n这是ppt的框架, 你根据此框架和演讲稿,  生成一个PPT大纲",
+      "images": [],
+      "contentDigest": "6e28cc545423e1585b6677e5c3c3c2a5cdcdff10e054d6c162896f0b3effd447",
+      "providerAssistantMessageId": "msg_14ce0c6a1001siWmbT7i5QYbgV",
+      "providerUserMessageId": "msg_14ce0976c001VmfUyOKC9ZA36P"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1792291276457-z0uleel",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1792291276451-06jmfir",
+      "timestamp": 1792291276451,
+      "rawDisplayText": "不需要你来做PPT, 你将详细的大纲和设计规范这里成markdown写到 @分子生物学期刊(学术英文积累)/",
+      "canonicalText": "不需要你来做PPT, 你将详细的大纲和设计规范这里成markdown写到 @分子生物学期刊(学术英文积累)/",
+      "images": [],
+      "contentDigest": "d0afb7eb4a6ff07b7a62962a5faeae6c2ccb6d7d9ce1eeca03f5f608b38776d9",
+      "providerAssistantMessageId": "msg_14ce2e3e7001MWgn9W403XrkOT",
+      "providerUserMessageId": "msg_14ce28714001PSEVX1jV8Rcp21"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1792376012077-565ar14",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1792376012036-yymd76h",
+      "timestamp": 1792376012036,
+      "rawDisplayText": "这个场景不切合实际, 按照我说的修改, 翻译: 每当我们检测细菌病原体样本的时候, 往往需要花费一到两周的时间来培育细菌.",
+      "canonicalText": "这个场景不切合实际, 按照我说的修改, 翻译: 每当我们检测细菌病原体样本的时候, 往往需要花费一到两周的时间来培育细菌.",
+      "context": {
+        "editorSelection": {
+          "notePath": "分子生物学期刊(学术英文积累)/论文精读2-演讲稿.md",
+          "mode": "selection",
+          "selectedText": "Imagine a fish farmer on a coastal pond. One morning, the fish stop feeding. Within a week, half the stock is dead. She sends samples to a laboratory — and then she waits. She waits for the culture to grow. ",
+          "lineCount": 1,
+          "startLine": 17
+        }
+      },
+      "images": [],
+      "contentDigest": "9160f6b3b586f280e3cb8c638a6213beb9e1d59253d45a5a8b3d46dfdb641c46",
+      "providerAssistantMessageId": "msg_151f050cc001j7yo4z69XlmacT",
+      "providerUserMessageId": "msg_151efa8a0001NrHp6SjTFXOVac"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1792417352492-panfs5w",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1792417352462-p2dzrnd",
+      "timestamp": 1792417352462,
+      "rawDisplayText": "QTL是什么",
+      "canonicalText": "QTL是什么",
+      "context": {
+        "editorSelection": {
+          "notePath": "分子生物学期刊(学术英文积累)/论文精读2-演讲稿.md",
+          "mode": "selection",
+          "selectedText": "QTL mapping has already identified resistance regions in sea bream, catfish, turbot, and flounder.",
+          "lineCount": 1,
+          "startLine": 59
+        }
+      },
+      "images": [],
+      "contentDigest": "279ad2fc59572493822413fc4205df0bbc05c637398b45113c4c4ba47f746f7b",
+      "providerAssistantMessageId": "msg_15466793d001vr2oJsooy3vN97",
+      "providerUserMessageId": "msg_15466791a001jCRg8sNr6Czpct"
+    }
+  ]
+}

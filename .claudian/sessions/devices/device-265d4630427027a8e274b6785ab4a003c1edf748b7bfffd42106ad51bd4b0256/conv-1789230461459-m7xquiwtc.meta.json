@@ -1,0 +1,24 @@
+{
+  "id": "conv-1789230461459-m7xquiwtc",
+  "providerId": "opencode",
+  "title": "我怎么理解多线程的数据安全",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789230461461,
+  "lastActivityAt": 1789322118871,
+  "sessionId": "ses_f698dba37ffexTE7YH6bp67ziR",
+  "selectedModel": "opencode:deepseek/deepseek-flash",
+  "providerState": {
+    "databasePath": "C:\\Users\\severus\\.local\\share\\opencode\\opencode.db",
+    "nativeConversationContextEstablished": true
+  },
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 63913,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": false,
+    "inputTokens": 0,
+    "model": "opencode:opencode/mimo-v2.5-free",
+    "percentage": 32
+  }
+}

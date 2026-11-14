@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1791907185252-3swandeil",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1791907185308-gonuy61",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1791907185241-g9nv7dl",
+      "timestamp": 1791907185241,
+      "rawDisplayText": "@浮游动物/   \n把海洋浮游生物学习题PDF 阅读一遍, 然后用转成markdown文档, 格式和字体,行间距\n要和原pdf保持一致",
+      "canonicalText": "@浮游动物/   \n把海洋浮游生物学习题PDF 阅读一遍, 然后用转成markdown文档, 格式和字体,行间距\n要和原pdf保持一致",
+      "images": [],
+      "contentDigest": "93f984207ef1d7be9a51e008893ac3dc509be26ae209c8e50ce51ccd238fbd86",
+      "providerUserMessageId": "msg_135fdf4790017WWmQOcv661i1G",
+      "providerAssistantMessageId": "msg_135fdf4a2001O0HcP8LCD94k5m"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1791942979106-0r5k145",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1791942979091-g9wpjw6",
+      "timestamp": 1791942979091,
+      "rawDisplayText": "@浮游动物/   \n把海洋浮游生物学习题PDF 阅读一遍, 写入一份新的markdown文件, 格式和字体,行间距都\n要和原pdf保持一致",
+      "canonicalText": "@浮游动物/   \n把海洋浮游生物学习题PDF 阅读一遍, 写入一份新的markdown文件, 格式和字体,行间距都\n要和原pdf保持一致",
+      "images": [],
+      "contentDigest": "392b081bbb9dcf9d94f36bbcd72fc51614781cafb6a78368f1bcbef32c94bce0",
+      "providerAssistantMessageId": "msg_138394cff001zGtpKo3QGRtHXS",
+      "providerUserMessageId": "msg_138200039001XUclqvlIL9LscC"
+    }
+  ]
+}

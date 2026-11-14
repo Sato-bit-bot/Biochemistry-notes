@@ -4,39 +4,42 @@
     "type": "split",
     "children": [
       {
-        "id": "5310d7c9eaf1730d",
+        "id": "7567a316ac03baff",
         "type": "tabs",
         "children": [
           {
-            "id": "65fbda92ef0d871d",
+            "id": "ddebae6b10cf4944",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "生物化学笔记/生物化学笔记/蛋白质/组成蛋白质氨基酸的结构与分类.md",
-                "mode": "source",
-                "source": false
+                "file": "浮游动物/第三章 甲藻门.pdf"
               },
-              "icon": "lucide-file",
-              "title": "组成蛋白质氨基酸的结构与分类"
-            }
-          },
-          {
-            "id": "4fbe18996394bea4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "分子生物学期刊(学术英文积累)/揭开鱼类病原菌的基因组秘密： 水产养殖可持续发展的路线图.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "揭开鱼类病原菌的基因组秘密： 水产养殖可持续发展的路线图"
+              "icon": "lucide-file-text",
+              "title": "第三章 甲藻门"
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "c14f6b81e07b6987",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "703238d9ec295f4a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "浮游动物/markdown/第三章 甲藻门.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "第三章 甲藻门"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,12 +96,23 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
+          },
+          {
+            "id": "17dce9dea11db8cf",
+            "type": "leaf",
+            "state": {
+              "type": "simple-wordbook-lookup",
+              "state": {},
+              "icon": "book-search",
+              "title": "Lookup"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 272.70001220703125,
+    "collapsed": true
   },
   "right": {
     "id": "18143e5edabdda34",
@@ -196,7 +210,17 @@
             }
           },
           {
-            "id": "882f5e0781f41249",
+            "id": "95d9ab4e47cdad54",
+            "type": "leaf",
+            "state": {
+              "type": "simple-wordbook-sidebar",
+              "state": {},
+              "icon": "notepad-text",
+              "title": "Word Sidebar"
+            }
+          },
+          {
+            "id": "1a0274a139170a13",
             "type": "leaf",
             "state": {
               "type": "claudian-view",
@@ -205,11 +229,19 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789144790404-5lvwatd",
-                      "conversationId": "conv-1789145326612-uxu3vhcfz"
+                      "tabId": "tab-1791906923583-btu1y4i",
+                      "conversationId": "conv-1791907185252-3swandeil"
+                    },
+                    {
+                      "tabId": "tab-1791966828573-wfpjz4a",
+                      "conversationId": "conv-1791967091047-504eyn4s1"
+                    },
+                    {
+                      "tabId": "tab-1792290526296-pscjspl",
+                      "conversationId": "conv-1792290640912-5aex5nc90"
                     }
                   ],
-                  "activeTabId": "tab-1789144790404-5lvwatd"
+                  "activeTabId": "tab-1792290526296-pscjspl"
                 }
               },
               "icon": "bot",
@@ -221,7 +253,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.699951171875
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,45 +265,60 @@
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
       "obsidian-git:Open Git source control": false,
-      "realclaudian:Open Claudian": false
+      "realclaudian:Open Claudian": false,
+      "simple-wordbook:Word Sidebar": false,
+      "simple-wordbook:Lookup": false,
+      "simple-wordbook:Library": false,
+      "simple-wordbook:Study Center": false
     }
   },
-  "active": "6c16daf32721e1c5",
+  "active": "703238d9ec295f4a",
   "lastOpenFiles": [
-    "V. anguillarum.md",
-    "分子生物学期刊(学术英文积累)/揭开鱼类病原菌的基因组秘密： 水产养殖可持续发展的路线图.md",
+    "浮游动物/第十二章 枝角类.ppt",
+    "浮游动物/第十二章 枝角类.pdf",
+    "浮游动物/第三章 甲藻门.pdf",
+    "浮游动物/markdown/第三章 甲藻门.md",
+    "26年海洋底栖生物学1-4章内容/2-中国海洋底栖生物_要点.md",
+    "浮游动物/海洋浮游生物学习题.pdf",
+    "浮游动物/attachments/绿藻衣藻结构图.png",
+    "浮游动物/attachments/选择1A.png",
+    "浮游动物/markdown",
+    "26年海洋底栖生物学1-4章内容/3-海洋底栖植物-大型底栖藻类_要点.md",
+    "26年海洋底栖生物学1-4章内容/2-中国海洋底栖生物.pdf",
+    "浮游动物/第六章 金藻门.pdf",
+    "26年海洋底栖生物学1-4章内容/3-海洋底栖植物-大型底栖藻类.pdf",
+    "26年海洋底栖生物学1-4章内容/4-海洋底栖软体动物.pdf",
+    "生物化学笔记/生物化学笔记/蛋白质/氨基酸.md",
+    "生物化学笔记/专业名词.md",
+    "生物化学笔记/生物化学笔记/_raw.txt",
+    "生物化学笔记/生物化学笔记/_pdftext.mjs",
+    "生物化学笔记/生物化学笔记/_write_test.md",
+    "Pasted image 20261110140938.png",
+    "底栖生物/中国海洋底栖生物的种类.md",
+    "底栖生物/头足纲贝类的形态和构造与生理特征.md",
     "生物化学笔记/生物化学笔记/蛋白质/组成蛋白质氨基酸的结构与分类.md",
-    "Pasted image 20260911103550.png",
-    "copilot/copilot-log.md",
-    "copilot/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md",
-    "鱼类学笔记/鱼类形态学/外部形态/头部器官.md",
-    "分子生物学期刊(学术英文积累)",
+    "生物化学笔记/生物化学笔记/核酸化学/第二章：核酸化学.md",
+    "分子生物学期刊(学术英文积累)/论文精读2.md",
+    "分子生物学期刊(学术英文积累)/论文精读2-演讲稿.md",
+    "生物化学笔记/生物化学笔记/细菌性鱼类病原体的基因组奥秘.md",
+    "分子生物学期刊(学术英文积累)/论文精读2-PPT大纲.md",
+    "分子生物学期刊(学术英文积累)/揭开鱼类病原菌的基因组秘密： 水产养殖可持续发展的路线图.md",
+    "2026-10-16.md",
+    "浮游动物/海洋浮游生物学.md",
+    "浮游动物/海洋浮游生物学习题.md",
+    "浮游动物/attachments/选择7D.png",
+    "浮游动物/attachments/选择7C.png",
+    "浮游动物/attachments/选择7B.png",
+    "浮游动物/attachments/选择7A.png",
+    "浮游动物/attachments/选择2D.png",
+    "浮游动物/attachments/选择2C.png",
+    "浮游动物/attachments/选择2B.png",
+    "浮游动物/第二章-硅藻门-总结.md",
+    "浮游动物/藻类.md",
+    "生物化学笔记/生物化学笔记/核酸化学/核苷酸.md",
+    "分子生物学期刊(学术英文积累)/论文精读.md",
     "README.md",
-    "鱼类学笔记/鱼类形态学/外部形态",
-    "鱼类学笔记/鱼类形态学",
-    "鱼类学笔记",
-    "新建文件夹",
-    "copilot/skills/obsidian-cli/SKILL.md",
-    "copilot/skills/obsidian-cli/LICENSE",
-    "copilot/skills/obsidian-cli",
-    "copilot/skills/json-canvas/SKILL.md",
-    "copilot/skills/json-canvas/LICENSE",
-    "copilot/skills/json-canvas/references/EXAMPLES.md",
-    "copilot/skills/json-canvas/references",
-    "copilot/skills/json-canvas",
-    "copilot/skills/obsidian-bases/SKILL.md",
-    "copilot/skills/obsidian-bases/references/EXAMPLES.md",
-    "copilot/skills/obsidian-markdown/SKILL.md",
-    "copilot/skills/obsidian-markdown/references/PROPERTIES.md",
-    "copilot/skills/obsidian-markdown/references/EMBEDS.md",
-    "copilot/skills/obsidian-markdown/references/CALLOUTS.md",
-    "copilot/skills/openartifacts-publish/SKILL.md",
-    "copilot/skills/openartifacts-publish/themes/research-memo.md",
-    "copilot/skills/copilot-fetch-x/SKILL.md",
-    "copilot/skills/copilot-youtube-transcript/SKILL.md",
-    "copilot/skills/copilot-read-pdf/SKILL.md",
-    "copilot/skills/copilot-web-fetch/SKILL.md",
-    "copilot/skills/copilot-web-search/SKILL.md",
-    "生物化学笔记/生物化学笔记/欢迎.md"
+    "生物化学笔记/生物化学笔记/蛋白质/蛋白质的三层结构.md",
+    "浮游动物.md"
   ]
 }

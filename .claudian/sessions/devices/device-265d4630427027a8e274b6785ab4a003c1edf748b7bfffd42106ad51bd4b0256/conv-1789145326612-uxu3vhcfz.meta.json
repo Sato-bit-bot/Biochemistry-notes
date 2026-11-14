@@ -6,7 +6,7 @@
   "createdAt": 1789145326617,
   "lastActivityAt": 1789145538228,
   "sessionId": "ses_f6ea0c6adffeaVphed0pqFmhTL",
-  "selectedModel": "opencode:opencode/mimo-v2.5-free",
+  "selectedModel": "opencode:deepseek/deepseek-flash",
   "providerState": {
     "databasePath": "C:\\Users\\severus\\.local\\share\\opencode\\opencode.db",
     "nativeConversationContextEstablished": true

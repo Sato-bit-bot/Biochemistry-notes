@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789521975334-f4nz3d8zo",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789521975389-uuch8tl",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789521975315-a8rxonc",
+      "timestamp": 1789521975315,
+      "rawDisplayText": "你是一个学术论文翻译的助手, 你需要做到:\n1.准确翻译英文文献, 学术术语翻译准确.\n2.只需要翻译我在对话框法给你的段落, 在我询问专业知识的时候对专业知识做出解释",
+      "canonicalText": "你是一个学术论文翻译的助手, 你需要做到:\n1.准确翻译英文文献, 学术术语翻译准确.\n2.只需要翻译我在对话框法给你的段落, 在我询问专业知识的时候对专业知识做出解释",
+      "images": [],
+      "contentDigest": "dd4f29e4f9da700cf617bf7f1135c5d273d179d80aec91fb42762c443d120ced",
+      "providerAssistantMessageId": "msg_0a7d30f430010enfkKBuvP6UdM",
+      "providerUserMessageId": "msg_0a7d28bf9001167LlcbP26mUM0"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789522074627-tnt5l0o",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789522074623-53mf0ea",
+      "timestamp": 1789522074623,
+      "rawDisplayText": "Identifying environmental microplastics (EMPs) via Raman spectroscopy (RS) is well-advanced, whereas differentiating multicomponent MPs in impure mixtures remains challenging. In this work, we developed a Fast- Fourier- Convolutional neural network (FFCNN) to identify MP components in mixtures based on laser-confocal RS without complex isolation and introduced a hierarchical feature mapping (HFM) method to visualize and interpret the learned multilayer spectral features. The involved mixtures included several common types of MPs (polypropylene, polyethylene, polystyrene, polyvinyl chloride, and polyethylene terephthalate) and minor additives or impurities. The results indicated that the macro F1-score of the FFCNN was 93.6%, 10.18% higher than the second-place Random Forest, in the database with 3600 spectra from commercial MPs, mixed MPs, and EMPs. FFCNN achieved probability classification of MP mixtures via multilabel recognition. The HFM method visualized and tracked multilayer spectral feature evolution, revealing that FFC learned precise component signals through nonlocal receptive field and cross-scale fusion, eliminating noise to extract and integrate MPs-related characteristics in spectra. Of 22 environmental samples yielding one Raman spectrum each, MP component identification was 100% accurate, aligning with the pyrolysis-GC-MS cross-validation results. The work provides a practical framework for the rapid detection and identification of typical MP mixtures in the environment. KEYWORDS: environmental microplastics, Raman spectroscopy, fast Fourier convolution, neural network model, hierarchical feature mapping",
+      "canonicalText": "Identifying environmental microplastics (EMPs) via Raman spectroscopy (RS) is well-advanced, whereas differentiating multicomponent MPs in impure mixtures remains challenging. In this work, we developed a Fast- Fourier- Convolutional neural network (FFCNN) to identify MP components in mixtures based on laser-confocal RS without complex isolation and introduced a hierarchical feature mapping (HFM) method to visualize and interpret the learned multilayer spectral features. The involved mixtures included several common types of MPs (polypropylene, polyethylene, polystyrene, polyvinyl chloride, and polyethylene terephthalate) and minor additives or impurities. The results indicated that the macro F1-score of the FFCNN was 93.6%, 10.18% higher than the second-place Random Forest, in the database with 3600 spectra from commercial MPs, mixed MPs, and EMPs. FFCNN achieved probability classification of MP mixtures via multilabel recognition. The HFM method visualized and tracked multilayer spectral feature evolution, revealing that FFC learned precise component signals through nonlocal receptive field and cross-scale fusion, eliminating noise to extract and integrate MPs-related characteristics in spectra. Of 22 environmental samples yielding one Raman spectrum each, MP component identification was 100% accurate, aligning with the pyrolysis-GC-MS cross-validation results. The work provides a practical framework for the rapid detection and identification of typical MP mixtures in the environment. KEYWORDS: environmental microplastics, Raman spectroscopy, fast Fourier convolution, neural network model, hierarchical feature mapping",
+      "images": [],
+      "contentDigest": "6498997053e0d5804f9faa8c6759dd69e63cebcf0bd7f8848440ea12fe6f2371",
+      "providerAssistantMessageId": "msg_0a7d3dc3c0013xrn2gLwYlymTn",
+      "providerUserMessageId": "msg_0a7d3dc27001RpOUiIy0TdAkRI"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789537893353-go0x5zf",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789537893329-z1i20zv",
+      "timestamp": 1789537893329,
+      "rawDisplayText": "@6.5est.pdf \n我们翻译第一部分:1. INTRODUCTION",
+      "canonicalText": "@6.5est.pdf \n我们翻译第一部分:1. INTRODUCTION",
+      "images": [],
+      "contentDigest": "fea29692fc30499a9ff2364d3aa31b4a18402ff0f0d02a738b3fc2164a57ce09",
+      "providerAssistantMessageId": "msg_0a8c62f8b001boD46YCzckfwBQ",
+      "providerUserMessageId": "msg_0a8c5532a001aWJ1701HQqpuio"
+    }
+  ]
+}

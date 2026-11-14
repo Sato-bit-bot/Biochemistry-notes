@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1790081867345-566kyeop1",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790081867384-cqeo4k6",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1790081867343-auvsycm",
+      "timestamp": 1790081867343,
+      "rawDisplayText": "请基于论文和联网搜索回答: 高通量测序技术是什么?",
+      "canonicalText": "请基于论文和联网搜索回答: 高通量测序技术是什么?",
+      "context": {
+        "linkedContent": {
+          "path": "分子生物学期刊(学术英文积累)/揭开鱼类病原菌的基因组秘密： 水产养殖可持续发展的路线图.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "ab626d216274c4f9eae53af99e29f4f61451d699ba6b7f8e5927ffc6d9357a01"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790081892430-nslqhlv",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1790081892428-ymt1gm3",
+      "timestamp": 1790081892428,
+      "rawDisplayText": "请基于论文和联网搜索回答: 高通量测序技术是什么?",
+      "canonicalText": "请基于论文和联网搜索回答: 高通量测序技术是什么?",
+      "images": [],
+      "contentDigest": "ab626d216274c4f9eae53af99e29f4f61451d699ba6b7f8e5927ffc6d9357a01",
+      "providerAssistantMessageId": "msg_0c9323821001s3vYCYbxiTL10E"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790082839307-yg1gjxb",
+      "userTurnOrdinal": 3,
+      "state": "staged",
+      "localMessageId": "msg-1790082839300-5i1zeib",
+      "timestamp": 1790082839300,
+      "rawDisplayText": "PCR是什么",
+      "canonicalText": "PCR是什么",
+      "images": [],
+      "contentDigest": "c90a189301a8f78a682205ef3ef6811fd2b9ef1e1d6738f8493dc963a2cac31a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790083025967-845ji8c",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1790083025961-iumdt7c",
+      "timestamp": 1790083025961,
+      "rawDisplayText": "PCR是什么",
+      "canonicalText": "PCR是什么",
+      "images": [],
+      "contentDigest": "c90a189301a8f78a682205ef3ef6811fd2b9ef1e1d6738f8493dc963a2cac31a",
+      "providerAssistantMessageId": "msg_0c9435daa001fhqzbuiJqajMvl"
+    }
+  ]
+}

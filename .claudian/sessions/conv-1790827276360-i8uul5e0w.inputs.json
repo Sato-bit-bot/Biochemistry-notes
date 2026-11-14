@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1790827276360-i8uul5e0w",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790827276414-hofne9p",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1790827276357-0t3pn2q",
+      "timestamp": 1790827276357,
+      "rawDisplayText": "你是一个英文论文阅读的助手.",
+      "canonicalText": "你是一个英文论文阅读的助手.",
+      "images": [],
+      "contentDigest": "35a645b1cf8888fea2d2bf9f92434dd2f540678f71e5de345ab2873580e0c155",
+      "providerAssistantMessageId": "msg_0f59fbe63001j3kImfnvy0vtuP"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790827521470-1rrwm3a",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1790827521466-hts5s9h",
+      "timestamp": 1790827521466,
+      "rawDisplayText": "告诉我给的单词意思和音标即可taxonomic",
+      "canonicalText": "告诉我给的单词意思和音标即可taxonomic",
+      "images": [],
+      "contentDigest": "683e6296655f9add628cbe6772c9e6485cf2a012a381bf4f1a0d73bb128d2aab",
+      "providerAssistantMessageId": "msg_0f5a366160013vTRAAk9W5SXmj"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790827575217-9nh6zkc",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1790827575213-fj8tvn6",
+      "timestamp": 1790827575213,
+      "rawDisplayText": "genera",
+      "canonicalText": "genera",
+      "images": [],
+      "contentDigest": "44f9a57c1739782385e3b9f50b2c3c990f3456124b0725ffea26dbcd008ab0cb",
+      "providerAssistantMessageId": "msg_0f5a43805001AesnJar4jvS42Q"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790827952509-fdclpw8",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1790827952506-5dk58p4",
+      "timestamp": 1790827952506,
+      "rawDisplayText": "Vibrio  Aeromonas",
+      "canonicalText": "Vibrio  Aeromonas",
+      "images": [],
+      "contentDigest": "60dd57a425fab035ba9893ab8c5c35a3deb32738d5a75b01127ecc5c408f557b",
+      "providerAssistantMessageId": "msg_0f5a9f9c7001BZKEsKgS0HExIY"
+    }
+  ]
+}

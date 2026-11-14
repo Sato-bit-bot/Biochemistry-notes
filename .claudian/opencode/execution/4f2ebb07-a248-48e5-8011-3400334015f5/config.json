@@ -1,0 +1,30 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "build": {
+      "prompt": "{file:D:\\obsidian知识库\\Biochemistry-notes\\.claudian\\opencode\\execution\\4f2ebb07-a248-48e5-8011-3400334015f5\\system.md}"
+    },
+    "claudian-yolo": {
+      "mode": "primary",
+      "permission": {
+        "plan_enter": "allow",
+        "question": "allow"
+      },
+      "prompt": "{file:D:\\obsidian知识库\\Biochemistry-notes\\.claudian\\opencode\\execution\\4f2ebb07-a248-48e5-8011-3400334015f5\\system.md}"
+    },
+    "claudian-safe": {
+      "mode": "primary",
+      "permission": {
+        "plan_enter": "allow",
+        "question": "allow",
+        "bash": "ask",
+        "edit": "ask"
+      },
+      "prompt": "{file:D:\\obsidian知识库\\Biochemistry-notes\\.claudian\\opencode\\execution\\4f2ebb07-a248-48e5-8011-3400334015f5\\system.md}"
+    },
+    "plan": {
+      "prompt": "{file:D:\\obsidian知识库\\Biochemistry-notes\\.claudian\\opencode\\execution\\4f2ebb07-a248-48e5-8011-3400334015f5\\system.md}"
+    }
+  },
+  "username": "Severus"
+}

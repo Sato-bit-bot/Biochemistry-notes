@@ -1,0 +1,348 @@
+{
+  "wordbookFiles": [
+    {
+      "path": "分子生物学期刊(学术英文积累)/bacterialWordBook.json",
+      "name": "bacterialWordBook",
+      "enabled": true,
+      "readonly": false
+    }
+  ],
+  "masteryMode": "global",
+  "masteryFilePath": ".obsidian/plugins/simple-wordbook/_wordbook_mastery.json",
+  "ignoredFilePath": ".obsidian/plugins/simple-wordbook/_wordbook_ignored.json",
+  "pluginLanguage": "auto",
+  "enableHighlight": true,
+  "enableHoverPreview": true,
+  "enableBlurDefinition": false,
+  "enableFoldDefinition": false,
+  "enableMastery": true,
+  "highlightColor": "#ffff00",
+  "customHighlightColor": "#ffff00",
+  "mdHighlightOpacity": 30,
+  "pdfHighlightOpacity": 70,
+  "underlineColor": "",
+  "followCardColor": true,
+  "enableTextColorHighlight": false,
+  "highlightStyles": {
+    "underlineType": "none",
+    "bold": true
+  },
+  "enableHighlightScopeFilter": false,
+  "enableSidebarScopeFilter": false,
+  "scopeMode": "include",
+  "scopePaths": [],
+  "enterMode": "local_only",
+  "localSearchMode": "smart",
+  "maxLocalResults": 10,
+  "enableDebugLog": false,
+  "languages": [
+    {
+      "id": "en",
+      "displayName": "English (US)",
+      "standardCode": "en",
+      "presetCodes": {
+        "google": "en",
+        "baidu": "en",
+        "system": "en-US",
+        "custom": "en"
+      }
+    },
+    {
+      "id": "en-GB",
+      "displayName": "English (UK)",
+      "standardCode": "en-GB",
+      "presetCodes": {
+        "google": "en-GB",
+        "baidu": "en",
+        "system": "en-GB",
+        "custom": "en-GB"
+      }
+    },
+    {
+      "id": "zh",
+      "displayName": "中文",
+      "standardCode": "zh",
+      "presetCodes": {
+        "google": "zh",
+        "baidu": "zh",
+        "system": "zh-CN",
+        "custom": "zh"
+      }
+    },
+    {
+      "id": "ja",
+      "displayName": "日本語",
+      "standardCode": "ja",
+      "presetCodes": {
+        "google": "ja",
+        "baidu": "jp",
+        "system": "ja-JP",
+        "custom": "ja"
+      }
+    },
+    {
+      "id": "ko",
+      "displayName": "한국어",
+      "standardCode": "ko",
+      "presetCodes": {
+        "google": "ko",
+        "baidu": "kor",
+        "system": "ko-KR",
+        "custom": "ko"
+      }
+    },
+    {
+      "id": "fr",
+      "displayName": "Français",
+      "standardCode": "fr",
+      "presetCodes": {
+        "google": "fr",
+        "baidu": "fra",
+        "system": "fr-FR",
+        "custom": "fr"
+      }
+    },
+    {
+      "id": "de",
+      "displayName": "Deutsch",
+      "standardCode": "de",
+      "presetCodes": {
+        "google": "de",
+        "baidu": "de",
+        "system": "de-DE",
+        "custom": "de"
+      }
+    },
+    {
+      "id": "es",
+      "displayName": "Español",
+      "standardCode": "es",
+      "presetCodes": {
+        "google": "es",
+        "baidu": "spa",
+        "system": "es-ES",
+        "custom": "es"
+      }
+    },
+    {
+      "id": "it",
+      "displayName": "Italiano",
+      "standardCode": "it",
+      "presetCodes": {
+        "google": "it",
+        "baidu": "it",
+        "system": "it-IT",
+        "custom": "it"
+      }
+    },
+    {
+      "id": "ru",
+      "displayName": "Русский",
+      "standardCode": "ru",
+      "presetCodes": {
+        "google": "ru",
+        "baidu": "ru",
+        "system": "ru-RU",
+        "custom": "ru"
+      }
+    },
+    {
+      "id": "ar",
+      "displayName": "العربية",
+      "standardCode": "ar",
+      "presetCodes": {
+        "google": "ar",
+        "baidu": "ara",
+        "system": "ar-SA",
+        "custom": "ar"
+      }
+    },
+    {
+      "id": "pt",
+      "displayName": "Português",
+      "standardCode": "pt",
+      "presetCodes": {
+        "google": "pt",
+        "baidu": "pt",
+        "system": "pt-PT",
+        "custom": "pt"
+      }
+    },
+    {
+      "id": "nl",
+      "displayName": "Nederlands",
+      "standardCode": "nl",
+      "presetCodes": {
+        "google": "nl",
+        "baidu": "nl",
+        "system": "nl-NL",
+        "custom": "nl"
+      }
+    },
+    {
+      "id": "pl",
+      "displayName": "Polski",
+      "standardCode": "pl",
+      "presetCodes": {
+        "google": "pl",
+        "baidu": "pl",
+        "system": "pl-PL",
+        "custom": "pl"
+      }
+    },
+    {
+      "id": "tr",
+      "displayName": "Türkçe",
+      "standardCode": "tr",
+      "presetCodes": {
+        "google": "tr",
+        "baidu": "tr",
+        "system": "tr-TR",
+        "custom": "tr"
+      }
+    },
+    {
+      "id": "vi",
+      "displayName": "Tiếng Việt",
+      "standardCode": "vi",
+      "presetCodes": {
+        "google": "vi",
+        "baidu": "vi",
+        "system": "vi-VN",
+        "custom": "vi"
+      }
+    }
+  ],
+  "defaultLanguage": "en",
+  "ttsPreset": "youdao",
+  "ttsUrlTemplate": "https://dict.youdao.com/dictvoice?audio={{word}}&type={{type}}",
+  "customTtsUrlTemplate": "",
+  "pronunciationVariant": "us",
+  "speechRatePresets": {
+    "youdao": {
+      "min": 1,
+      "max": 5,
+      "value": 3
+    },
+    "baidu": {
+      "min": 1,
+      "max": 5,
+      "value": 3
+    },
+    "google": {
+      "min": 0.24,
+      "max": 1.5,
+      "value": 0.8
+    },
+    "custom": {
+      "min": 0.5,
+      "max": 2,
+      "value": 1
+    }
+  },
+  "enableSystemTTS": false,
+  "systemTTSVoiceName": "default",
+  "systemTTSSpeechRate": 1,
+  "systemTTSPitch": 1,
+  "lastUsedCardColor": "yellow",
+  "apiProvider": "deepseek",
+  "apiBaseUrl": "https://api.deepseek.com/v1/chat/completions",
+  "api": {
+    "mode": "secret_storage",
+    "secretName": "deepseek",
+    "encryptedData": null
+  },
+  "apiModel": "deepseek-chat",
+  "aiTemperature": 0.5,
+  "aiMaxTokens": 1500,
+  "aiContextMode": "line",
+  "pdfContextChars": 150,
+  "systemPrompts": [
+    {
+      "name": "prompt1",
+      "content": "You are a dictionary assistant. Answer accurately and concisely. Each word is followed by its phonetic transcription and an example English sentence.  Respond in Chinese."
+    }
+  ],
+  "defaultSystemPrompt": "prompt1",
+  "defaultPrompt": "Please give an accurate and concise explanation of \"{word}\" based on the following context: {context}",
+  "customPrompts": [],
+  "aiContextPrompt": "",
+  "selectedPrompt": "默认",
+  "study": {
+    "dailyGoal": 10,
+    "dailyReviewLimit": 20,
+    "flashcardAutoFlip": 0,
+    "newWordOrder": "sequential",
+    "reviewOrder": "due_first",
+    "flashcardShowPhonetic": true,
+    "flashcardShowTabs": true,
+    "enableFineFeedback": false,
+    "enableBookmark": false,
+    "enableSpellMode": false,
+    "spellPronounceOnStart": false,
+    "spellPronounceOnComplete": false,
+    "spellPronounceOnError": false,
+    "spellMaskMode": "blur",
+    "spellMaskPlaceholder": "•",
+    "spellCheckMode": "perChar",
+    "spellFullWordReset": true,
+    "spellErrorResetMode": "perChar",
+    "spellFeedbackDelay": 600,
+    "spellSlotPlaceholder": "",
+    "intervalDays": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "selectedWordbook": "分子生物学期刊(学术英文积累)/bacterialWordBook.json",
+    "startFace": "front"
+  },
+  "studyParams": {
+    "baseDelta": {
+      "again": -0.12,
+      "hard": -0.08,
+      "good": 0.05,
+      "easy": 0.12
+    },
+    "extraDelta": {
+      "good": 0.05,
+      "easy": 0.03
+    },
+    "difficultyMin": 0.7,
+    "difficultyMax": 1.5,
+    "rewardThreshold": 3,
+    "suspend": {
+      "again": [
+        {
+          "threshold": 3,
+          "days": 4
+        },
+        {
+          "threshold": 6,
+          "days": 8
+        },
+        {
+          "threshold": 9,
+          "days": 30
+        }
+      ],
+      "hard": [
+        {
+          "threshold": 3,
+          "days": 3
+        },
+        {
+          "threshold": 6,
+          "days": 5
+        },
+        {
+          "threshold": 9,
+          "days": 15
+        }
+      ]
+    }
+  },
+  "selectedSourceMap": {}
+}

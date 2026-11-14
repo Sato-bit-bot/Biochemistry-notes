@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789869832763-7wfb8qswj",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789869832821-jbt5lzq",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789869832760-fqv5s4l",
+      "timestamp": 1789869832760,
+      "rawDisplayText": "@backtaria.pdf 现在需要你帮我总结这篇论文\n先做结构化概览；\n\n再逐段解释核心方法；\n\n遇到概念时要求规范解释和通俗例子；\n\n遇到公式时要求说明目标、变量和设计动机；\n\n遇到图表时要求解释实验目的和结论；\n\n最后让它梳理论文逻辑链和局限性。\n写到 @分子生物学期刊(学术英文积累)/论文精读2.md",
+      "canonicalText": "@backtaria.pdf 现在需要你帮我总结这篇论文\n先做结构化概览；\n\n再逐段解释核心方法；\n\n遇到概念时要求规范解释和通俗例子；\n\n遇到公式时要求说明目标、变量和设计动机；\n\n遇到图表时要求解释实验目的和结论；\n\n最后让它梳理论文逻辑链和局限性。\n写到 @分子生物学期刊(学术英文积累)/论文精读2.md",
+      "images": [],
+      "contentDigest": "063073ab309573ab774a481adb104390969a078ce4631c726b21ea0290633c8b",
+      "providerAssistantMessageId": "msg_0bc928ebc001MY7iiMVqzLa1jg",
+      "providerUserMessageId": "msg_0bc8e6a40001V4LefuzShoSZ0n"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790081748765-nvt52or",
+      "userTurnOrdinal": 2,
+      "state": "staged",
+      "localMessageId": "msg-1790081748748-yo5rqrj",
+      "timestamp": 1790081748748,
+      "rawDisplayText": "请基于论文和联网搜索回答: 高通量测序技术是什么?",
+      "canonicalText": "请基于论文和联网搜索回答: 高通量测序技术是什么?",
+      "images": [],
+      "contentDigest": "ab626d216274c4f9eae53af99e29f4f61451d699ba6b7f8e5927ffc6d9357a01"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1790081850799-yefrtb3",
+      "userTurnOrdinal": 3,
+      "state": "staged",
+      "localMessageId": "msg-1790081850794-injevzi",
+      "timestamp": 1790081850794,
+      "rawDisplayText": "请基于论文和联网搜索回答: 高通量测序技术是什么?",
+      "canonicalText": "请基于论文和联网搜索回答: 高通量测序技术是什么?",
+      "images": [],
+      "contentDigest": "ab626d216274c4f9eae53af99e29f4f61451d699ba6b7f8e5927ffc6d9357a01"
+    }
+  ]
+}
